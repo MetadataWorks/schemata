@@ -4,4 +4,4 @@
 
 ### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/docs/dataset.html)
 
-### 2. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/docs/federation.html)
+### 2. [HDR UK Federation Specification](https://github.com/HDRUK/schemata/docs/federation.html)
