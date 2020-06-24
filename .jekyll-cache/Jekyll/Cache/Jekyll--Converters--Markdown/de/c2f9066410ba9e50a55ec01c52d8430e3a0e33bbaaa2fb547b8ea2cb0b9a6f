@@ -1,0 +1,54 @@
+I"�<hr />
+<p>2.     Versioning and publishing
+===</p>
+
+<p> </p>
+
+<p>A registry will contain Data Models that will be in different stages of
+development, currently we envisage:</p>
+
+<p> </p>
+
+<p>1.     Draft – Data Models are being built and changed, the contents are not
+fixed and therefore the data model cannot be used by another (federated)
+registry.</p>
+
+<p>2.     Live – A Data Model will be fixed in terms of its technical structure and
+metadata</p>
+
+<p>3.     Published – A Data Model can be published to other organisations within
+the federation, and some aspects of the metadata are made available and
+searchable for all.</p>
+
+<p>4.     Superceded – A Data Model can be replaced as the current “Live” or
+“Published” version, however it is still accessible and available within the
+registry. Users are aware by its status that there is a newer version available.</p>
+
+<p>5.     Deprecated – A Data Model is no longer used and maybe deleted in the near
+future.</p>
+
+<p> </p>
+
+<p><em>As a researcher I need to collaborate with other researchers in my organisation
+to build a new research dataset, and therefore we both need access to a “draft”
+Data Model which we can alter and update until we are happy with it.</em></p>
+
+<p> </p>
+
+<p><em>As a researcher I need to make my Data Model available and publish it locally,
+at this point it is given a new unique identifier, such as &lt;domain name&gt;&lt;data
+model identifier – version 1.0.0&gt;, see the first pass of the version diagram –
+Figure X.</em></p>
+
+<p> </p>
+
+<p><em>As a researcher I need to update an existing Live Data Model. In this case I
+would create a new version, as a draft, which would then become &lt;domain
+name&gt;&lt;data model identifier – version 1.0.0&gt; of the data model (see Figure X
+below), and it would replace version 1.0.0 as the current “live” version, itself
+being now marked as “superceded”.</em></p>
+
+<p> </p>
+
+<p> </p>
+:ET
