@@ -12,4 +12,4 @@ title: Home
 
 
 
-### 2. [HDR UK Federation Specification](/schemata/docs/schemata/federation/HDRFederation.html)
+### 2. [HDR UK Federation Specification](/schemata/docs/federation/HDRFederation.html)
