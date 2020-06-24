@@ -22,14 +22,16 @@ title: HDR Schema Specifications
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/schemata" # the subpath of your site, e.g. /blog
+url: "https://metadataworks.github.io " # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: 
 
 plugins:
     - jekyll-relative-links
     - jekyll-feed
+    - github-pages
+ 
   
 
 # Build settings
@@ -44,11 +46,7 @@ include: ['/docs']
 include: ['/docs/federation']
 include: ['/docs/hdrschema']
 
-collections:
-  pages:
-    output: true
-    permalink: /:docs/
- 
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
