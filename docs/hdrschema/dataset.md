@@ -166,7 +166,7 @@ Provide a clear and brief descriptive signpost for researchers who are searching
 
 **minimum length**: the minimum number of characters for this string is: `5`
 
-## publisher
+### publisher
 
 This is the organisation responsible for running or supporting the data access request process, as well as publishing and maintaining the metadata. In most this will be the same as the HDR UK Organisation (Hub or Alliance Member). However, in some cases this will be different i.e. Tissue Directory are an HDR UK Gateway organisation but coordinate activities across a number of data publishers i.e. Cambridge Blood and Stem Cell Biobank.
 
@@ -191,7 +191,7 @@ This is the organisation responsible for running or supporting the data access r
 
 **minimum length**: the minimum number of characters for this string is: `2`
 
-## contactPoint
+### contactPoint
 
 An explanation about the purpose of this instance.
 

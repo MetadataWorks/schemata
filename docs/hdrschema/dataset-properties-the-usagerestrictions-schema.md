@@ -1,3 +1,7 @@
+---
+layout: default
+title: The usageRestrictions schema Schema
+---
 # The usageRestrictions schema Schema
 
 ```txt

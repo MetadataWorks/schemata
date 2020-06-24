@@ -1,17 +1,7 @@
- 
-
-
-
-**Document type:       Proposal**
-
-**Title:                           Healthcare Metadata Federation
-Specification**
-
-**Status:                       DRAFT**
-
-**Date of document:   2020-06-08**
-
-**Source:                      David Milward**
+---
+layout: default
+title: HDR Metadata Federation Specification
+---
 
 
 1       Contents
