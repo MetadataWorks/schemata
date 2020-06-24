@@ -1,7 +1,4 @@
----
-layout: default
-title: About
----
+
 
 ![generate-markdown](https://github.com/HDRUK/schemata/workflows/generate-markdown/badge.svg)
 
