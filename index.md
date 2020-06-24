@@ -7,7 +7,7 @@ title: Home
 # HDR UK Schemata
 
 
-### 1. [HDR UK Dataset Schema](/docs/Readme.html)
+### 1. [HDR UK Dataset Schema](/docs/hdrschema/dataset.html)
 
 
 

@@ -4,14 +4,20 @@ title: HDR Metadata Federation Specification
 ---
 
 
-1       Contents
+### Contents
 ================
 
 Table of Contents
 
-[1    Scope.](HDRFederation1.md)
+[Scope](#Scope)
+[Versioning](#Versioning)
+[Scope](#Scope)
+[Scope](#Scope)
+[Scope](#Scope)
+[Scope](#Scope)
+[Scope](#Scope)
 
-[2    Versioning and publishing. ](HDRFederation2.md)
+ 
 
 [3    Normative References. ](HDRFederation3.md)
 
@@ -31,8 +37,8 @@ Table of Contents
 
  
 
-2       Scope
-=============
+### Scope
+ 
 
 This specification is intended to serve as a specification for enabling multiple 
 metadata registries to carry out federated operations such as search on
@@ -67,8 +73,8 @@ The purposes of the ISO 11179 standard are to promote the following:
 
 *    Re-use of the components of data
 
-2.1       Key Decisions
------------------------
+#### Key Decisions
+ 
 
 This document is intended to be an initial discussion document. The principles
 of the specification need to be defined in general terms, before we can move to
@@ -83,7 +89,7 @@ Key theoretical stages:
 To build a federation we need to agree on identifiers and versioning as the core
 of the registry system.
 
-1.     Unique Identifiers
+#### Unique Identifiers
 
 We need to agree how to uniquely identify datasets within the registry.  This is
 linked to the idea of versioning and publishing, and currently a system based on
@@ -167,9 +173,8 @@ with other organizations.*
 
  
 
-2.2.     Versioning and publishing
-===
- 
+### Versioning 
+
 
 A registry will contain Data Models that will be in different stages of
 development, currently we envisage:
