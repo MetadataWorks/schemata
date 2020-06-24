@@ -33,7 +33,7 @@ plugins:
   
 
 # Build settings
-theme: jekyll-theme-hacker
+theme: jekyll-theme-architect
 markdown: kramdown
 
 relative_links:
