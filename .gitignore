@@ -1,3 +1,4 @@
+<<<<<<<
 .DS_Store
 
 ### Jekyll ###
@@ -70,3 +71,12 @@ Temporary Items
 .apdisk
 
 
+
+=======
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+>>>>>>>

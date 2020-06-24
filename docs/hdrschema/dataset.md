@@ -1,4 +1,8 @@
-# HDR UK Dataset Schema
+---
+title: HDR UK Dataset Schema
+layout: home
+---
+ 
 
 ```txt
 http://healthdatagateway.org/schema/dataset.json
