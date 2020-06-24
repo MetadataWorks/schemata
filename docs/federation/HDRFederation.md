@@ -216,7 +216,7 @@ being now marked as “superceded”.*
 
  
 
-![**Registry Publishing**](../../schemata/images/FMD_RegistryPublishing.png)
+![**Registry Publishing**](../../images/FMD_RegistryPublishing.png)
 
 3       Proposal Background    {#Proposal}
 ===========================
