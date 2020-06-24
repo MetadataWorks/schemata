@@ -10,34 +10,26 @@ title: HDR Metadata Federation Specification
 Table of Contents
 
 [Scope](#Scope)
+
 [Versioning](#Versioning)
-[Scope](#Scope)
-[Scope](#Scope)
-[Scope](#Scope)
-[Scope](#Scope)
-[Scope](#Scope)
 
- 
+[Proposal Background](#Proposal)
 
-[3    Normative References. ](HDRFederation3.md)
+[Basic Principles](#Principles)
 
-[4    Terms and Definitions. ](HDRFederation4.md)
+[Metamodel Specification](#Metamodel)
 
-[5    Proposal Background. ](HDRFederation5.md)
+[Minimum Viable Product API](#API)
 
-[6    Metamodel Specification. ](HDRFederation6.md)
+[Summary](#Summary)
 
-[7    Minimum Viable Product API ](HDRFederation7.md)
+[Appendix 1. Normative References](#References)
 
-[8    Summary. ](HDRFederation8.md)
-
-[9    Appendix 1. Formal Specification.](HDRFederation9.md)
-
-[10   Appendix 2  Proposed Grammar. ](HDRFederation10.md)
+[Appendix 2. [Terms and Definitions](#Terms)] 
 
  
 
-### Scope
+### Scope {#Scope}
  
 
 This specification is intended to serve as a specification for enabling multiple 
@@ -173,7 +165,7 @@ with other organizations.*
 
  
 
-### Versioning 
+### Versioning {#Versioning}
 
 
 A registry will contain Data Models that will be in different stages of
@@ -226,7 +218,7 @@ being now marked as “superceded”.*
 
 ![**Registry Publishing**](../../images/FMD_RegistryPublishing.png)
 
-3       Proposal Background
+3       Proposal Background    {#Proposal}
 ===========================
 
 3.1      Background
@@ -623,7 +615,7 @@ standard references datasets (e.g. NHS Data Dictionary).
 
  
 
-5       Basic Principles
+5       Basic Principles    {#Principles}
 ========================
 
  
@@ -856,7 +848,7 @@ system. The search should go ahead using keywords, which are protected as
 ‘business’ metadata, however all these items above will be visible on a search
 result.
 
-6       Metamodel Specification
+6       Metamodel Specification   {#Metamodel}
 ===============================
 
 This section is informative at present, much depends on answers given in the
@@ -1389,7 +1381,7 @@ Measurement Unit
 
  
 
-7       Minimum Viable Product (MVP) : Implementation 
+7       Minimum Viable Product (MVP) : Implementation    {#API}
 ======================================================
 
 **Recommendation: We develop a simple example of a federated system using
@@ -1590,7 +1582,7 @@ For full XSD details please see Appendix 4.
 
  
 
-8       Summary
+8       Summary    {#Summary}
 ===============
 
 The FMDR has a simpler metamodel than ISO11179, defined by a formal grammar, and
@@ -1633,7 +1625,7 @@ scalable approach to semantic interoperability, Science of Computer Programming,
 Volume  192,2020,102426,ISSN 0167-6423,
 <https://doi.org/10.1016/j.scico.2020.102426>.
 
-Appendix 1. Normative References
+Appendix 1. Normative References   {#References}
 ================================
 
 The following documents, in whole or in part, are normatively referenced in this
@@ -1653,7 +1645,7 @@ This is incomplete, but we can do later on…
 
  
 
-Appendix 2. Terms and Definitions
+Appendix 2. Terms and Definitions    {#Terms}
 =================================
 
 For the purposes of this document, the terms and definitions contained in
