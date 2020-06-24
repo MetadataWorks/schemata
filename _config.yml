@@ -23,7 +23,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "/schemata" # the subpath of your site, e.g. /blog
-url: "https://metadataworks.github.io " # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://metadataworks.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: 
 
