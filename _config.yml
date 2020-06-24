@@ -40,8 +40,8 @@ relative_links:
   enabled: true
   collections: true
   
-include: ['docs']
-include: ['docs/federation']
+include: ['/docs']
+include: ['/docs/federation']
 include: ['docs/hdrschema']
 
 collections:
