@@ -1,14 +1,13 @@
 ---
 layout: default
-title: About
+title: Home
 ---
-
 ![generate-markdown](https://github.com/HDRUK/schemata/workflows/generate-markdown/badge.svg)
 
 # HDR UK Schemata
 
 
-### 1. [HDR UK Dataset Schema](/docs/hdrschema/dataset.html)
+### 1. [HDR UK Dataset Schema](/docs/Readme.html)
 
 
 
