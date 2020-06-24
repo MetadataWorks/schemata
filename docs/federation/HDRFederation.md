@@ -216,7 +216,7 @@ being now marked as “superceded”.*
 
  
 
-![**Registry Publishing**](../../schemata/images/FMD_RegistryPublishing.png)
+![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_RegistryPublishing.png)
 
 3       Proposal Background    {#Proposal}
 ===========================
@@ -397,7 +397,7 @@ below.
 
 **Figure A: Cancer Registry Model A**
 
-![**Registry Publishing**](../../schemata/images/FMD_FigureA.png)
+![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_FigureA.png)
 
  
 
@@ -405,7 +405,7 @@ below.
 
 **Figure B: Cancer Registry Model B**
 
-![**Registry Publishing**](../../schemata/images/FMD_FigureB.png)
+![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_FigureB.png)
 
  
 
@@ -882,7 +882,7 @@ a much more flexible structure metadata registry in the long term.
 
 6.1      The Current ISO11179 Metamodel
 ---------------------------------------
- ![**Registry Publishing**](../../schemata/images/FMD_ISOMetamodel.png)
+ ![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_ISOMetamodel.png)
 
 Figure 1 - Consolidated metamodel from ISO11179-3
 
@@ -1138,7 +1138,7 @@ then has the possibility to be transferred with the data during data transfer
 operations, or due to the reference mechanisms in place to be referred to at a
 later point in time.
 
- ![**Registry Publishing**](../../schemata/images/FMD_NewMetamodel.png)
+ ![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_NewMetamodel.png)
 
 Figure 2; FMDR Core Metamodel (subject to change)
 
@@ -1546,7 +1546,7 @@ carried out by email.
 
  
 
-  ![**Registry Publishing**](../../images/FMD_Ox_XSD.png)
+  ![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_Ox_XSD.png)
 
  
 
@@ -1563,7 +1563,7 @@ carried out by email.
  
 
  
-  ![**Registry Publishing**](../../images/FMD_MDW_XSD.png)
+  ![**Registry Publishing**](https://metadataworks.github.io/schemata/images/FMD_MDW_XSD.png)
 
  
  
