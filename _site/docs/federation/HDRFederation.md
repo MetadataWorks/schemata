@@ -50,11 +50,12 @@ datasets held by Health Data Research UK (HDRUK) members and Hubs.
 It is intended that the specification be developed and extended, in time, to
 serve UK National Health Service and Healthcare organisations globally.
 
-Much of the work has been built on attempts to build a technical metadata
+Much of the work has been based on the idea of building a technical metadata
 meta-model in order to automate much of the mapping, curation and relationship
-work which is carried out manually on datasets, in order to integrate data in a
+work which is carried out manually on datasets. This is needed in order to integrate data in a
 machine-friendly fashion.  The work builds on work expressed in ISO11179, which
-is a 6-part standard specifying how to design and build a metadata registry.
+is a 6-part standard specifying how to design and build a metadata registry, but uses a new meta-model
+which enables automation of metadata management, an essential part of integrating dataset.
 
 Enabling automated data-matching by using metadata will not achieve semantic
 interoperability on its own, however it will help to achieve data integration in
@@ -72,9 +73,9 @@ The purposes of the ISO 11179 standard are to promote the following:
 
 *    Harmonization and standardization of data within an organization and across organizations
 
--    Management of the components of data
+*    Management of the components of data
 
--    Re-use of the components of data
+*    Re-use of the components of data
 
 2.1       Key Decisions
 -----------------------
@@ -176,8 +177,8 @@ with other organizations.*
 
  
 
-2.     Versioning and publishing
-
+2.2.     Versioning and publishing
+===
  
 
 A registry will contain Data Models that will be in different stages of
@@ -228,7 +229,7 @@ being now marked as “superceded”.*
 
  
 
-![**A close up of a map Description automatically generated**](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.jpg)
+![**Registry Publishing**](../../images/FMD_RegistryPublishing.png)
 
 3       Proposal Background
 ===========================
@@ -396,22 +397,20 @@ been assessed and moved using transformations.
 
 As an example, suppose I need the following very simple table of data:
 
- 
-
- 
-
- 
+| Date of Consultation  | Diagnosis |
+| --- | --- |
+| `Date` | Data Conforming to SNOMED CT |
+| `Date` | Data Conforming to SNOMED CT |
 
 And I suspect I may need data from Cancer Registry A, and Cancer Registry B, the
 schemas are given for Cancer Registry A in an XSD document, and for Cancer
 Registry B in a relational database schema. These are shown in Figure A and B
 below.
-
  
 
 **Figure A: Cancer Registry Model A**
 
-![A screenshot of a social media post Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.jpg)
+![**Registry Publishing**](../../images/FMD_FigureA.png)
 
  
 
@@ -419,7 +418,7 @@ below.
 
 **Figure B: Cancer Registry Model B**
 
-![A screenshot of a social media post Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.jpg)
+![**Registry Publishing**](../../images/FMD_FigureB.png)
 
  
 
@@ -896,8 +895,7 @@ a much more flexible structure metadata registry in the long term.
 
 6.1      The Current ISO11179 Metamodel
 ---------------------------------------
-
-![](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.jpg)
+ ![**Registry Publishing**](../../images/FMD_ISOMetamodel.png)
 
 Figure 1 - Consolidated metamodel from ISO11179-3
 
@@ -1153,7 +1151,7 @@ then has the possibility to be transferred with the data during data transfer
 operations, or due to the reference mechanisms in place to be referred to at a
 later point in time.
 
-![A screenshot of a cell phone Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.jpg)
+ ![**Registry Publishing**](../../images/FMD_NewMetamodel.png)
 
 Figure 2; FMDR Core Metamodel (subject to change)
 
@@ -1561,9 +1559,7 @@ carried out by email.
 
  
 
- 
-
-![A screenshot of a social media post Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.jpg)
+  ![**Registry Publishing**](../../images/FMD_Ox_XSD.png)
 
  
 
@@ -1579,10 +1575,10 @@ carried out by email.
 
  
 
-![A screenshot of a cell phone Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.jpg)
+ 
+  ![**Registry Publishing**](../../images/FMD_MDW_XSD.png)
 
-![A screenshot of a cell phone Description automatically generated](file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.jpg)
-
+ 
  
 
  
@@ -1650,10 +1646,10 @@ document and are indispensable for its application. For dated references, only
 the edition cited applies. For undated references, the latest edition of the
 referenced document (including any amendments) applies.
 
-¾   ISO/IEC 11179 – 1, Information technology *—* Metadata registries (MDR) *—*
+*   ISO/IEC 11179 – 1, Information technology *—* Metadata registries (MDR) *—*
 Part 1: Framework
 
-¾   ISO/IEC 11179 – 3, Information technology *—* Metadata registries (MDR) *—*
+*   ISO/IEC 11179 – 3, Information technology *—* Metadata registries (MDR) *—*
 Part 3: Registry metamodel and basic attributes
 
 This is incomplete, but we can do later on…

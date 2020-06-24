@@ -16,10 +16,10 @@
 <meta property="og:url" content="http://localhost:4000/docs/federation/HDRFederation.html" />
 <meta property="og:site_name" content="schemata" />
 <script type="application/ld+json">
-{"headline":"schemata","url":"http://localhost:4000/docs/federation/HDRFederation.html","description":"HDR UK Schemas","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/docs/federation/HDRFederation.html","headline":"schemata","description":"HDR UK Schemas","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=893a86480989836d423873a70bf68462e05dc0c9">
+    <link rel="stylesheet" href="/assets/css/style.css?v=508c9907f50570b50e39e3684816b2e12e85e360">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -90,11 +90,12 @@ datasets held by Health Data Research UK (HDRUK) members and Hubs.
 It is intended that the specification be developed and extended, in time, to
 serve UK National Health Service and Healthcare organisations globally.</p>
 
-<p>Much of the work has been built on attempts to build a technical metadata
+<p>Much of the work has been based on the idea of building a technical metadata
 meta-model in order to automate much of the mapping, curation and relationship
-work which is carried out manually on datasets, in order to integrate data in a
+work which is carried out manually on datasets. This is needed in order to integrate data in a
 machine-friendly fashion.  The work builds on work expressed in ISO11179, which
-is a 6-part standard specifying how to design and build a metadata registry.</p>
+is a 6-part standard specifying how to design and build a metadata registry, but uses a new meta-model
+which enables automation of metadata management, an essential part of integrating dataset.</p>
 
 <p>Enabling automated data-matching by using metadata will not achieve semantic
 interoperability on its own, however it will help to achieve data integration in
@@ -112,9 +113,9 @@ out to develop this metamodel is covered papers referenced in (8) and (9).</p>
 
 <p>*    Harmonization and standardization of data within an organization and across organizations</p>
 
-<p>-    Management of the components of data</p>
+<p>*    Management of the components of data</p>
 
-<p>-    Re-use of the components of data</p>
+<p>*    Re-use of the components of data</p>
 
 <h2 id="21-key-decisions">2.1       Key Decisions</h2>
 
@@ -215,8 +216,7 @@ with other organizations.</em></p>
 
 <p> </p>
 
-<p>2.     Versioning and publishing</p>
-
+<h1 id="22-versioning-and-publishing">2.2.     Versioning and publishing</h1>
 <p> </p>
 
 <p>A registry will contain Data Models that will be in different stages of
@@ -267,7 +267,7 @@ being now marked as “superceded”.</em></p>
 
 <p> </p>
 
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.jpg" alt="**A close up of a map Description automatically generated**" /></p>
+<p><img src="/images/FMD_RegistryPublishing.png" alt="**Registry Publishing**" /></p>
 
 <h1 id="3-proposal-background">3       Proposal Background</h1>
 
@@ -431,22 +431,34 @@ been assessed and moved using transformations.</p>
 
 <p>As an example, suppose I need the following very simple table of data:</p>
 
-<p> </p>
-
-<p> </p>
-
-<p> </p>
+<table>
+  <thead>
+    <tr>
+      <th>Date of Consultation</th>
+      <th>Diagnosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Date</code></td>
+      <td>Data Conforming to SNOMED CT</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Date</code></td>
+      <td>Data Conforming to SNOMED CT</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>And I suspect I may need data from Cancer Registry A, and Cancer Registry B, the
 schemas are given for Cancer Registry A in an XSD document, and for Cancer
 Registry B in a relational database schema. These are shown in Figure A and B
-below.</p>
-
-<p> </p>
+below.
+ </p>
 
 <p><strong>Figure A: Cancer Registry Model A</strong></p>
 
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.jpg" alt="A screenshot of a social media post Description automatically generated" /></p>
+<p><img src="/images/FMD_FigureA.png" alt="**Registry Publishing**" /></p>
 
 <p> </p>
 
@@ -454,7 +466,7 @@ below.</p>
 
 <p><strong>Figure B: Cancer Registry Model B</strong></p>
 
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.jpg" alt="A screenshot of a social media post Description automatically generated" /></p>
+<p><img src="/images/FMD_FigureB.png" alt="**Registry Publishing**" /></p>
 
 <p> </p>
 
@@ -921,8 +933,7 @@ technical binding instead of XML/UML as it currently is. The advantage would be
 a much more flexible structure metadata registry in the long term.</p>
 
 <h2 id="61-the-current-iso11179-metamodel">6.1      The Current ISO11179 Metamodel</h2>
-
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.jpg" alt="" /></p>
+<p><img src="/images/FMD_ISOMetamodel.png" alt="**Registry Publishing**" /></p>
 
 <p>Figure 1 - Consolidated metamodel from ISO11179-3</p>
 
@@ -1175,7 +1186,7 @@ then has the possibility to be transferred with the data during data transfer
 operations, or due to the reference mechanisms in place to be referred to at a
 later point in time.</p>
 
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.jpg" alt="A screenshot of a cell phone Description automatically generated" /></p>
+<p><img src="/images/FMD_NewMetamodel.png" alt="**Registry Publishing**" /></p>
 
 <p>Figure 2; FMDR Core Metamodel (subject to change)</p>
 
@@ -1578,9 +1589,7 @@ carried out by email.</p>
 
 <p> </p>
 
-<p> </p>
-
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.jpg" alt="A screenshot of a social media post Description automatically generated" /></p>
+<p><img src="/images/FMD_Ox_XSD.png" alt="**Registry Publishing**" /></p>
 
 <p> </p>
 
@@ -1596,9 +1605,7 @@ carried out by email.</p>
 
 <p> </p>
 
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.jpg" alt="A screenshot of a cell phone Description automatically generated" /></p>
-
-<p><img src="file:////Users/davidmilward/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.jpg" alt="A screenshot of a cell phone Description automatically generated" /></p>
+<p><img src="/images/FMD_MDW_XSD.png" alt="**Registry Publishing**" /></p>
 
 <p> </p>
 
@@ -1664,10 +1671,10 @@ document and are indispensable for its application. For dated references, only
 the edition cited applies. For undated references, the latest edition of the
 referenced document (including any amendments) applies.</p>
 
-<p>¾   ISO/IEC 11179 – 1, Information technology <em>—</em> Metadata registries (MDR) <em>—</em>
+<p><em>   ISO/IEC 11179 – 1, Information technology *—</em> Metadata registries (MDR) <em>—</em>
 Part 1: Framework</p>
 
-<p>¾   ISO/IEC 11179 – 3, Information technology <em>—</em> Metadata registries (MDR) <em>—</em>
+<p><em>   ISO/IEC 11179 – 3, Information technology *—</em> Metadata registries (MDR) <em>—</em>
 Part 3: Registry metamodel and basic attributes</p>
 
 <p>This is incomplete, but we can do later on…</p>
