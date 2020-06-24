@@ -3,9 +3,9 @@
 # HDR UK Schemata
 
 
-### 1. [HDR UK Dataset Schema](https://github.com/HDRUK/schemata/docs/hdrschema/dataset.html)
+### 1. [HDR UK Dataset Schema](/docs/hdrschema/dataset.html)
 
 
 
 
-### 2. [HDR UK Federation Specification](https://github.com/HDRUK/schemata/docs/federation/HDRFederation.html)
+### 2. [HDR UK Federation Specification](/docs/federation/HDRFederation.html)
