@@ -43,6 +43,11 @@ relative_links:
 include: ['docs']
 include: ['docs/federation']
 include: ['docs/hdrschema']
+
+collections:
+  pages:
+    output: true
+    permalink: /:docs/
  
 # Exclude from processing.
 # The following items will not be processed, by default.
