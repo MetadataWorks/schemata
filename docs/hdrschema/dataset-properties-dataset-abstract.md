@@ -1,3 +1,7 @@
+---
+title: Dataset abstract Schema
+layout: default
+---
 # Dataset abstract Schema
 
 ```txt
@@ -9,7 +13,7 @@ Provide a clear and brief descriptive signpost for researchers who are searching
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                    |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json\*](../schema/dataset.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json\*](../dataset.schema.json "open original schema") |
 
 ## abstract Type
 

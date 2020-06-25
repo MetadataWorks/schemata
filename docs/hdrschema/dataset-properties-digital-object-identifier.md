@@ -1,3 +1,7 @@
+---
+title: Digital Object Identifier Schema
+layout: default
+---
 # Digital Object Identifier Schema
 
 ```txt

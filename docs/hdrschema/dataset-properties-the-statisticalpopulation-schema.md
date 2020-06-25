@@ -1,3 +1,7 @@
+---
+title: The statisticalPopulation schema Schema
+layout: default
+---
 # The statisticalPopulation schema Schema
 
 ```txt

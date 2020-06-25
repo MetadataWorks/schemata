@@ -1,3 +1,7 @@
+---
+title: The accessEnvironment schema Schema
+layout: default
+---
 # The accessEnvironment schema Schema
 
 ```txt

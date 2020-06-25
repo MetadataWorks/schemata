@@ -1,3 +1,7 @@
+---
+title: The setting schema Schema
+layout: default
+---
 # The setting schema Schema
 
 ```txt

@@ -1,3 +1,7 @@
+---
+title: Dataset identifier Schema
+layout: home
+---
 # The geographicCoverage schema Schema
 
 ```txt

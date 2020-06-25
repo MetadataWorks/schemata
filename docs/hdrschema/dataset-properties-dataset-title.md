@@ -1,3 +1,7 @@
+---
+title: Dataset title Schema
+layout: default
+---
 # Dataset title Schema
 
 ```txt

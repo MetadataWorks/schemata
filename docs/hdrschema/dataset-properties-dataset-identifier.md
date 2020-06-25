@@ -1,4 +1,7 @@
-# Dataset identifier Schema
+---
+title: Dataset identifier
+layout: default
+---
 
 ```txt
 #/properties/id#/properties/id

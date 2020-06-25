@@ -1,3 +1,7 @@
+---
+title: Dataset publisher Schema
+layout: default
+---
 # Dataset publisher Schema
 
 ```txt

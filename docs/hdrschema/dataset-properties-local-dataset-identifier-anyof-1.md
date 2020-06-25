@@ -1,3 +1,7 @@
+---
+title: Untitled array in HDR UK Dataset Schema
+layout: default
+---
 # Untitled array in HDR UK Dataset Schema
 
 ```txt

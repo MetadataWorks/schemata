@@ -1,3 +1,7 @@
+---
+title: Dataset identifier Schema
+layout: home
+---
 # Untitled array in HDR UK Dataset Schema
 
 ```txt

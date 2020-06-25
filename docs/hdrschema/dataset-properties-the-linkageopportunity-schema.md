@@ -1,3 +1,7 @@
+---
+title: Dataset identifier Schema
+layout: home
+---
 # The linkageOpportunity schema Schema
 
 ```txt

@@ -1,3 +1,7 @@
+---
+title: Untitled string in HDR UK Dataset Schema
+layout: default
+---
 # Untitled string in HDR UK Dataset Schema
 
 ```txt

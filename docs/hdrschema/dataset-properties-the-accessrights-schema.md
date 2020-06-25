@@ -1,3 +1,7 @@
+---
+title: The accessRights schema Schema
+layout: default
+---
 # The accessRights schema Schema
 
 ```txt

@@ -1,3 +1,7 @@
+---
+title: The releaseDate schema Schema
+layout: default
+---
 # The releaseDate schema Schema
 
 ```txt

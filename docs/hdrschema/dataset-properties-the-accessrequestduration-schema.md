@@ -1,3 +1,7 @@
+---
+title: The accessRequestDuration schema Schema
+layout: default
+---
 # The accessRequestDuration schema Schema
 
 ```txt

@@ -1,7 +1,6 @@
 ---
----
 title: HDR UK Dataset Schema
-layout: home
+layout: default
 ---
  
 
