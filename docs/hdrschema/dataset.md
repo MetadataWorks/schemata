@@ -7,653 +7,238 @@ http://healthdatagateway.org/schema/dataset.json
 HDR UK Dataset Schema
 
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                  |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | --------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [dataset.schema.json](../schema/dataset.schema.json "open original schema") |
+| Abstract               | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                               |
+| :--------------------- | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------------ |
+| Cannot be instantiated | Yes        | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [dataset.schema.json](../out/dataset.schema.json "open original schema") |
 
 ## HDR UK Dataset Type
 
 `object` ([HDR UK Dataset](dataset.md))
 
-# HDR UK Dataset Properties
+all of
 
-| Property                                                  | Type     | Required | Nullable       | Defined by                                                                                                                                                      |
-| :-------------------------------------------------------- | -------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                                 | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-identifier.md "\#/properties/id#/properties/id")                                                                    |
-| [identifier](#identifier)                                 | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-local-dataset-identifier.md "\#/properties/identifier#/properties/identifier")                                              |
-| [title](#title)                                           | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-title.md "\#/properties/title#/properties/title")                                                                   |
-| [abstract](#abstract)                                     | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-abstract.md "\#/properties/abstract#/properties/abstract")                                                          |
-| [publisher](#publisher)                                   | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-dataset-publisher.md "\#/properties/publisher#/properties/publisher")                                                       |
-| [contactPoint](#contactPoint)                             | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-contactpoint-schema.md "\#/properties/contactPoint#/properties/contactPoint")                                           |
-| [accessRights](#accessRights)                             | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-accessrights-schema.md "\#/properties/accessRights#/properties/accessRights")                                           |
-| [group](#group)                                           | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-group-schema.md "\#/properties/group#/properties/group")                                                                |
-| [description](#description)                               | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-description-schema.md "\#/properties/description#/properties/description")                                              |
-| [media](#media)                                           | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-media-schema.md "\#/properties/media#/properties/media")                                                                |
-| [purpose](#purpose)                                       | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-purpose-schema.md "\#/properties/purpose#/properties/purpose")                                                          |
-| [source](#source)                                         | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-source-schema.md "\#/properties/source#/properties/source")                                                             |
-| [setting](#setting)                                       | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-setting-schema.md "\#/properties/setting#/properties/setting")                                                          |
-| [releaseDate](#releaseDate)                               | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-releasedate-schema.md "\#/properties/releaseDate#/properties/releaseDate")                                              |
-| [accessRequestCost](#accessRequestCost)                   | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-accessrequestcost-schema.md "\#/properties/accessRequestCost#/properties/accessRequestCost")                            |
-| [accessRequestDuration](#accessRequestDuration)           | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-accessrequestduration-schema.md "\#/properties/accessRequestDuration#/properties/accessRequestDuration")                |
-| [accessEnvironment](#accessEnvironment)                   | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-accessenvironment-schema.md "\#/properties/accessEnvironment#/properties/accessEnvironment")                            |
-| [usageRestrictions](#usageRestrictions)                   | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-usagerestrictions-schema.md "\#/properties/usageRestrictions#/properties/usageRestrictions")                            |
-| [dataController](#dataController)                         | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-datacontroller-schema.md "\#/properties/dataController#/properties/dataController")                                     |
-| [dataProcessor](#dataProcessor)                           | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-dataprocessor-schema.md "\#/properties/dataProcessor#/properties/dataProcessor")                                        |
-| [license](#license)                                       | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-license-schema.md "\#/properties/license#/properties/license")                                                          |
-| [derivedDatasets](#derivedDatasets)                       | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-deriveddatasets-schema.md "\#/properties/derivedDatasets#/properties/derivedDatasets")                                  |
-| [linkedDataset](#linkedDataset)                           | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-linkeddataset-schema.md "\#/properties/linkedDataset#/properties/linkedDataset")                                        |
-| [linkageOpportunity](#linkageOpportunity)                 | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-linkageopportunity-schema.md "\#/properties/linkageOpportunity#/properties/linkageOpportunity")                         |
-| [geographicCoverage](#geographicCoverage)                 | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-geographiccoverage-schema.md "\#/properties/geographicCoverage#/properties/geographicCoverage")                         |
-| [periodicity](#periodicity)                               | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-periodicity-schema.md "\#/properties/periodicity#/properties/periodicity")                                              |
-| [datasetEndDate](#datasetEndDate)                         | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-datasetenddate-schema.md "\#/properties/datasetEndDate#/properties/datasetEndDate")                                     |
-| [datasetStartDate](#datasetStartDate)                     | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-datasetstartdate-schema.md "\#/properties/datasetStartDate#/properties/datasetStartDate")                               |
-| [jurisdiction](#jurisdiction)                             | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-jurisdiction-schema.md "\#/properties/jurisdiction#/properties/jurisdiction")                                           |
-| [populationType](#populationType)                         | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-populationtype-schema.md "\#/properties/populationType#/properties/populationType")                                     |
-| [disabmiguatingDescription](#disabmiguatingDescription)   | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-disabmiguatingdescription-schema.md "\#/properties/disabmiguatingDescription#/properties/disabmiguatingDescription")    |
-| [statisticalPopulation](#statisticalPopulation)           | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-statisticalpopulation-schema.md "\#/properties/statisticalPopulation#/properties/statisticalPopulation")                |
-| [ageBand](#ageBand)                                       | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-ageband-schema.md "\#/properties/ageBand#/properties/ageBand")                                                          |
-| [physicalSampleAvailability](#physicalSampleAvailability) | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-physicalsampleavailability-schema.md "\#/properties/physicalSampleAvailability#/properties/physicalSampleAvailability") |
-| [keywords](#keywords)                                     | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-keywords-schema.md "\#/properties/keywords#/properties/keywords")                                                       |
-| [conformsTo](#conformsTo)                                 | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-conformsto-schema.md "\#/properties/conformsTo#/properties/conformsTo")                                                 |
-| [controlledVocabulary](#controlledVocabulary)             | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-controlledvocabulary-schema.md "\#/properties/controlledVocabulary#/properties/controlledVocabulary")                   |
-| [language](#language)                                     | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-language-schema.md "\#/properties/language#/properties/language")                                                       |
-| [format](#format)                                         | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-format-schema.md "\#/properties/format#/properties/format")                                                             |
-| [fileSize](#fileSize)                                     | `string` | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-filesize-schema.md "\#/properties/fileSize#/properties/fileSize")                                                       |
-| [creator](#creator)                                       | `string` | Required | cannot be null | [HDR UK Dataset](dataset-properties-the-creator-schema.md "\#/properties/creator#/properties/creator")                                                          |
-| [citations](#citations)                                   | Merged   | Optional | cannot be null | [HDR UK Dataset](dataset-properties-the-citations-schema.md "\#/properties/citations#/properties/citations")                                                    |
-| [doi](#doi)                                               | Merged   | Required | cannot be null | [HDR UK Dataset](dataset-properties-digital-object-identifier.md "\#/properties/doi#/properties/doi")                                                           |
-| Additional Properties                                     | Any      | Optional | can be null    |                                                                                                                                                                 |
+-   [Descriptive Metadata](dataset-definitions-descriptive-metadata.md "check type definition")
 
-## id
+# HDR UK Dataset Definitions
 
-Dataset identifier
+## Definitions group physicalsampleavailability
 
+Reference this group by using
 
-`id`
-
--   is required
--   Type: `string` ([Dataset identifier](dataset-properties-dataset-identifier.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-dataset-identifier.md "\#/properties/id#/properties/id")
-
-### id Type
-
-`string` ([Dataset identifier](dataset-properties-dataset-identifier.md))
-
-### id Constraints
-
-**maximum length**: the maximum number of characters for this string is: `36`
-
-**minimum length**: the minimum number of characters for this string is: `36`
-
-**pattern**: the string must match the following regular expression: 
-
-```regexp
-^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/physicalsampleavailability"}
 ```
 
-[try pattern](https://regexr.com/?expression=%5E%5Ba-fA-F0-9%5D%7B8%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B4%7D-%5Ba-fA-F0-9%5D%7B12%7D%24 "try regular expression with regexr.com")
-
-## identifier
-
-Local dataset identifier
 
 
-> FIX SPEC: Conforms to spec, but this MAY be an array of strings. FIXME: Rename to local identifier
->
 
-`identifier`
+`physicalsampleavailability`
 
 -   is optional
--   Type: merged type ([Local dataset identifier](dataset-properties-local-dataset-identifier.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-local-dataset-identifier.md "\#/properties/identifier#/properties/identifier")
+-   defined in: [HDR UK Dataset](dataset-definitions-physicalsampleavailability.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/physicalsampleavailability")
 
-### identifier Type
+### physicalsampleavailability Type
 
-merged type ([Local dataset identifier](dataset-properties-local-dataset-identifier.md))
+`string`
 
-any of
+### physicalsampleavailability Constraints
 
--   [Untitled string in HDR UK Dataset](dataset-properties-local-dataset-identifier-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-local-dataset-identifier-anyof-1.md "check type definition")
+**enum**: the value of this property must be equal to one of the following values:
 
-## title
+| Value                            | Explanation |
+| :------------------------------- | ----------- |
+| `"NOT AVAILABLE"`                |             |
+| `"BONE MARROW"`                  |             |
+| `"CANCER CELL LINES"`            |             |
+| `"CORE BIOPSY"`                  |             |
+| `"CDNA/MRNA"`                    |             |
+| `"DNA"`                          |             |
+| `"FAECES"`                       |             |
+| `"IMMORTALIZED CELL LINES"`      |             |
+| `"MICRORNA"`                     |             |
+| `"PERIPHERAL BLOOD CELLS"`       |             |
+| `"PLASMA"`                       |             |
+| `"PM TISSUE"`                    |             |
+| `"PRIMARY CELLS"`                |             |
+| `"RNA"`                          |             |
+| `"SALIVA"`                       |             |
+| `"SERUM"`                        |             |
+| `"SWABS"`                        |             |
+| `"TISSUE"`                       |             |
+| `"URINE"`                        |             |
+| `"WHOLE BLOOD"`                  |             |
+| `"AVAILABILITY TO BE CONFIRMED"` |             |
 
-Name of the dataset limited to 80 characters. It should provide a short description of the dataset and be unique across the gateway. If your title is not unique, please add a prefix with your organisation name or identifier to differentiate it from other datasets within the Gateway. Please avoid acronyms wherever possible. Good titles should summarise the content of the dataset and if relevant, the region the dataset covers.
+## Definitions group followup
 
+Reference this group by using
 
-`title`
-
--   is required
--   Type: `string` ([Dataset title](dataset-properties-dataset-title.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-dataset-title.md "\#/properties/title#/properties/title")
-
-### title Type
-
-`string` ([Dataset title](dataset-properties-dataset-title.md))
-
-### title Constraints
-
-**maximum length**: the maximum number of characters for this string is: `80`
-
-**minimum length**: the minimum number of characters for this string is: `2`
-
-## abstract
-
-Provide a clear and brief descriptive signpost for researchers who are searching for data that may be relevant to their research. The abstract should allow the reader to determine the scope of the data collection and accurately summarise its content. The optimal length is one paragraph (limited to 255 characters) and effective abstracts should avoid long sentences and abbreviations where possible
-
-
-`abstract`
-
--   is required
--   Type: `string` ([Dataset abstract](dataset-properties-dataset-abstract.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-dataset-abstract.md "\#/properties/abstract#/properties/abstract")
-
-### abstract Type
-
-`string` ([Dataset abstract](dataset-properties-dataset-abstract.md))
-
-### abstract Constraints
-
-**maximum length**: the maximum number of characters for this string is: `255`
-
-**minimum length**: the minimum number of characters for this string is: `5`
-
-## publisher
-
-This is the organisation responsible for running or supporting the data access request process, as well as publishing and maintaining the metadata. In most this will be the same as the HDR UK Organisation (Hub or Alliance Member). However, in some cases this will be different i.e. Tissue Directory are an HDR UK Gateway organisation but coordinate activities across a number of data publishers i.e. Cambridge Blood and Stem Cell Biobank.
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/followup"}
+```
 
 
-> Conforms to spec, but this MAY be an an object of organisation
->
-
-`publisher`
-
--   is required
--   Type: `string` ([Dataset publisher](dataset-properties-dataset-publisher.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-dataset-publisher.md "\#/properties/publisher#/properties/publisher")
-
-### publisher Type
-
-`string` ([Dataset publisher](dataset-properties-dataset-publisher.md))
-
-### publisher Constraints
-
-**maximum length**: the maximum number of characters for this string is: `80`
-
-**minimum length**: the minimum number of characters for this string is: `2`
-
-## contactPoint
-
-An explanation about the purpose of this instance.
 
 
-`contactPoint`
-
--   is required
--   Type: `string` ([The contactPoint schema](dataset-properties-the-contactpoint-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-contactpoint-schema.md "\#/properties/contactPoint#/properties/contactPoint")
-
-### contactPoint Type
-
-`string` ([The contactPoint schema](dataset-properties-the-contactpoint-schema.md))
-
-### contactPoint Constraints
-
-**email**: the string must be an email address, according to [RFC 5322, section 3.4.1](https://tools.ietf.org/html/rfc5322 "check the specification")
-
-## accessRights
-
-The URL of a webpage where the data access request process and/or guidance is provided. If there is more than one access process i.e. industry vs academic please provide both. If such a resource or the underlying process doesn’t exist, please provide “In Progress”, until both the process and the documentation are ready.
-
-
-> FIXME: Conforms to spec, but this SHOULD be an array or URIs as cardinality is 1:\*
->
-
-`accessRights`
-
--   is required
--   Type: merged type ([The accessRights schema](dataset-properties-the-accessrights-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-accessrights-schema.md "\#/properties/accessRights#/properties/accessRights")
-
-### accessRights Type
-
-merged type ([The accessRights schema](dataset-properties-the-accessrights-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-accessrights-schema-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-accessrights-schema-anyof-1.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-accessrights-schema-anyof-2.md "check type definition")
-
-## group
-
-An explanation about the purpose of this instance.
-
-
-> Conforms to spec, but this MAY be an array of groups
->
-
-`group`
+`followup`
 
 -   is optional
--   Type: `string` ([The group schema](dataset-properties-the-group-schema.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-group-schema.md "\#/properties/group#/properties/group")
+-   defined in: [HDR UK Dataset](dataset-definitions-followup.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/followup")
 
-### group Type
+### followup Type
 
-`string` ([The group schema](dataset-properties-the-group-schema.md))
+`string`
 
-## description
+### followup Constraints
 
-A free-text account of the record. An html account of the data that provides context and scope of the data (limited to 50,000 characters) and/or a resolvable URL that describes the dataset.
+**enum**: the value of this property must be equal to one of the following values:
 
+| Value             | Explanation |
+| :---------------- | ----------- |
+| `"0 - 6 MONTHS"`  |             |
+| `"6 - 12 MONTHS"` |             |
+| `"1 - 10 YEARS"`  |             |
+| `"> 10 YEARS"`    |             |
+| `"UNKNOWN"`       |             |
 
-`description`
+## Definitions group purpose
 
--   is optional
--   Type: merged type ([The description schema](dataset-properties-the-description-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-description-schema.md "\#/properties/description#/properties/description")
+Reference this group by using
 
-### description Type
-
-merged type ([The description schema](dataset-properties-the-description-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-description-schema-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-description-schema-anyof-1.md "check type definition")
-
-## media
-
-Please provide any media associated with the Gateway Organisation using a valid URI. This is an opportunity to provide additional context that could be useful for researchers wanting to undestand more about the dataset and its relevance to their research question. The following formats will be accepted .jpg, .png or .svg, .pdf, .xslx or .docx.
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/purpose"}
+```
 
 
-> FIXME: Conforms to spec, but this SHOULD to be an array of URIs as cardinality 0:\*
->
 
-`media`
-
--   is optional
--   Type: merged type ([The media schema](dataset-properties-the-media-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-media-schema.md "\#/properties/media#/properties/media")
-
-### media Type
-
-merged type ([The media schema](dataset-properties-the-media-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-media-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-media-schema-anyof-1.md "check type definition")
-
-## purpose
-
-Pleases indicate the purpose(s) that the dataset was collected. Multiple purposes may be provided
-
-
-> FIXME: Mandatory, but cardinality 0:\* Possibly deprecate.
->
 
 `purpose`
 
 -   is optional
--   Type: merged type ([The purpose schema](dataset-properties-the-purpose-schema.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-purpose-schema.md "\#/properties/purpose#/properties/purpose")
+-   defined in: [HDR UK Dataset](dataset-definitions-purpose.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/purpose")
 
 ### purpose Type
 
-merged type ([The purpose schema](dataset-properties-the-purpose-schema.md))
+`string`
 
-any of
+### purpose Constraints
 
--   [Untitled string in HDR UK Dataset](dataset-properties-the-purpose-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-purpose-schema-anyof-1.md "check type definition")
+**enum**: the value of this property must be equal to one of the following values:
 
-## source
+| Value                | Explanation |
+| :------------------- | ----------- |
+| `"STUDY"`            |             |
+| `"DISEASE REGISTRY"` |             |
+| `"TRIAL"`            |             |
+| `"CARE"`             |             |
+| `"AUDIT"`            |             |
+| `"ADMINISTRATIVE"`   |             |
+| `"FINANCIAL"`        |             |
+| `"OTHER"`            |             |
 
-Pleases indicate the source(s) that the dataset was collected. Multiple source(s) may be provided
+## Definitions group source
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/source"}
+```
 
 
-> FIXME: Mandatory, but cardinality 0:\* Possibly deprecate.
->
+
 
 `source`
 
 -   is optional
--   Type: merged type ([The source schema](dataset-properties-the-source-schema.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-source-schema.md "\#/properties/source#/properties/source")
+-   defined in: [HDR UK Dataset](dataset-definitions-source.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/source")
 
 ### source Type
 
-merged type ([The source schema](dataset-properties-the-source-schema.md))
+`string`
 
-any of
+### source Constraints
 
--   [Untitled string in HDR UK Dataset](dataset-properties-the-source-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-source-schema-anyof-1.md "check type definition")
+**enum**: the value of this property must be equal to one of the following values:
 
-## setting
+| Value                  | Explanation |
+| :--------------------- | ----------- |
+| `"EPR"`                |             |
+| `"ELECTRONIC SURVEY"`  |             |
+| `"LIMS"`               |             |
+| `"PAPER BASED "`       |             |
+| `"FREETEXT NLP"`       |             |
+| `"MACHINE GENERATED "` |             |
+| `"OTHER"`              |             |
 
-Pleases indicate the setting(s) where data was collected. Multiple settings may be provided.
+## Definitions group setting
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/setting"}
+```
 
 
-> FIXME: Mandatory, but cardinality 0:\*. Possibly deprecate.
->
+
 
 `setting`
 
 -   is optional
--   Type: merged type ([The setting schema](dataset-properties-the-setting-schema.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-setting-schema.md "\#/properties/setting#/properties/setting")
+-   defined in: [HDR UK Dataset](dataset-definitions-setting.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/setting")
 
 ### setting Type
 
-merged type ([The setting schema](dataset-properties-the-setting-schema.md))
+`string`
 
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-setting-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-setting-schema-anyof-1.md "check type definition")
-
-## releaseDate
-
-An explanation about the purpose of this instance.
-
-
-`releaseDate`
-
--   is optional
--   Type: `string` ([The releaseDate schema](dataset-properties-the-releasedate-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-releasedate-schema.md "\#/properties/releaseDate#/properties/releaseDate")
-
-### releaseDate Type
-
-`string` ([The releaseDate schema](dataset-properties-the-releasedate-schema.md))
-
-### releaseDate Constraints
-
-**date time**: the string must be a date time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
-
-## accessRequestCost
-
-An explanation about the purpose of this instance.
-
-
-`accessRequestCost`
-
--   is required
--   Type: `string` ([The accessRequestCost schema](dataset-properties-the-accessrequestcost-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-accessrequestcost-schema.md "\#/properties/accessRequestCost#/properties/accessRequestCost")
-
-### accessRequestCost Type
-
-`string` ([The accessRequestCost schema](dataset-properties-the-accessrequestcost-schema.md))
-
-## accessRequestDuration
-
-Please provide an indication of the typical processing times based on the types of requests typically received.
-
-
-`accessRequestDuration`
-
--   is optional
--   Type: `string` ([The accessRequestDuration schema](dataset-properties-the-accessrequestduration-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-accessrequestduration-schema.md "\#/properties/accessRequestDuration#/properties/accessRequestDuration")
-
-### accessRequestDuration Type
-
-`string` ([The accessRequestDuration schema](dataset-properties-the-accessrequestduration-schema.md))
-
-### accessRequestDuration Constraints
+### setting Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value          | Explanation |
-| :------------- | ----------- |
-| `"<1 Week"`    |             |
-| `"1-2 Weeks"`  |             |
-| `"2-4 Weeks"`  |             |
-| `"1-2 Months"` |             |
-| `"2-6 Months"` |             |
-| `">6 Months"`  |             |
-| `"Other"`      |             |
-
-## accessEnvironment
-
-Please provide a brief description of the data access environment that is currently available to researchers.
-
-
-`accessEnvironment`
-
--   is optional
--   Type: `string` ([The accessEnvironment schema](dataset-properties-the-accessenvironment-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-accessenvironment-schema.md "\#/properties/accessEnvironment#/properties/accessEnvironment")
-
-### accessEnvironment Type
-
-`string` ([The accessEnvironment schema](dataset-properties-the-accessenvironment-schema.md))
-
-### accessEnvironment Constraints
-
-**maximum length**: the maximum number of characters for this string is: `5000`
-
-**minimum length**: the minimum number of characters for this string is: `5`
-
-## usageRestrictions
-
-Please provide a description of any usage restrictions of key terms and conditions under which access to the dataset is provided.
-
-
-> FIXME: Missing from Onboarding tool, so not captured
->
-
-`usageRestrictions`
-
--   is required
--   Type: merged type ([The usageRestrictions schema](dataset-properties-the-usagerestrictions-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-usagerestrictions-schema.md "\#/properties/usageRestrictions#/properties/usageRestrictions")
-
-### usageRestrictions Type
-
-merged type ([The usageRestrictions schema](dataset-properties-the-usagerestrictions-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-usagerestrictions-schema-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-usagerestrictions-schema-anyof-1.md "check type definition")
-
-## dataController
-
-Data Controller means a person/entity who (either alone or jointly or in common with other persons/entities) determines the purposes for which and the way any Data Subject data, specifically personal data or are to be processed.
-
-
-`dataController`
-
--   is required
--   Type: `string` ([The dataController schema](dataset-properties-the-datacontroller-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-datacontroller-schema.md "\#/properties/dataController#/properties/dataController")
-
-### dataController Type
-
-`string` ([The dataController schema](dataset-properties-the-datacontroller-schema.md))
-
-### dataController Constraints
-
-**maximum length**: the maximum number of characters for this string is: `5000`
-
-**minimum length**: the minimum number of characters for this string is: `5`
-
-## dataProcessor
-
-A Data Processor, in relation to any Data Subject data, specifically personal data, means any person/entity (other than an employee of the data controller) who processes the data on behalf of the data controller.
-
-
-`dataProcessor`
-
--   is optional
--   Type: merged type ([The dataProcessor schema](dataset-properties-the-dataprocessor-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-dataprocessor-schema.md "\#/properties/dataProcessor#/properties/dataProcessor")
-
-### dataProcessor Type
-
-merged type ([The dataProcessor schema](dataset-properties-the-dataprocessor-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-dataprocessor-schema-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-dataprocessor-schema-anyof-1.md "check type definition")
-
-## license
-
-An explanation about the purpose of this instance.
-
-
-`license`
-
--   is required
--   Type: `string` ([The license schema](dataset-properties-the-license-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-license-schema.md "\#/properties/license#/properties/license")
-
-### license Type
-
-`string` ([The license schema](dataset-properties-the-license-schema.md))
-
-## derivedDatasets
-
-Indicate if derived datasets or predefined extracts are available and the type of derivation available.
-
-
-> FIXME: Conforms to spec, but this SHOULD to be an array of datasets as cardinality 0:\*
->
-
-`derivedDatasets`
-
--   is optional
--   Type: merged type ([The derivedDatasets schema](dataset-properties-the-deriveddatasets-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-deriveddatasets-schema.md "\#/properties/derivedDatasets#/properties/derivedDatasets")
-
-### derivedDatasets Type
-
-merged type ([The derivedDatasets schema](dataset-properties-the-deriveddatasets-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-deriveddatasets-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-deriveddatasets-schema-anyof-1.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-deriveddatasets-schema-anyof-2.md "check type definition")
-
-## linkedDataset
-
-If applicable, please provide the DOI of other datasets that have previously been linked to this dataset and their availability. If no DOI is available, please provide the title of the datasets that can be linked, where possible using the same title of a dataset previously onboarded.
-
-
-> FIXME: If linked $title must start with 'Linked'. FIXME: Conforms to spec, but this SHOULD to be an array of datasets as cardinality 0:\*
->
-
-`linkedDataset`
-
--   is optional
--   Type: merged type ([The linkedDataset schema](dataset-properties-the-linkeddataset-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-linkeddataset-schema.md "\#/properties/linkedDataset#/properties/linkedDataset")
-
-### linkedDataset Type
-
-merged type ([The linkedDataset schema](dataset-properties-the-linkeddataset-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-linkeddataset-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-linkeddataset-schema-anyof-1.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-linkeddataset-schema-anyof-2.md "check type definition")
-
-## linkageOpportunity
-
-If applicable, please indicate if there is the opportunity to link this dataset to additional data sources. If possible, please describe the data elements that could be used to link to external data sources i.e. region or postcode could be used to link to open datasets such as air pollution or deprivation indices. In addition, please describe the restricted data elements that cannot be used to link to other datasets.
-
-
-`linkageOpportunity`
-
--   is optional
--   Type: `string` ([The linkageOpportunity schema](dataset-properties-the-linkageopportunity-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-linkageopportunity-schema.md "\#/properties/linkageOpportunity#/properties/linkageOpportunity")
-
-### linkageOpportunity Type
-
-`string` ([The linkageOpportunity schema](dataset-properties-the-linkageopportunity-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-linkageopportunity-schema-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-the-linkageopportunity-schema-anyof-1.md "check type definition")
-
-## geographicCoverage
-
-The geographical area covered by the dataset.
-
-
-> FIXME: Update to geoname pattern
->
-
-`geographicCoverage`
-
--   is optional
--   Type: `string` ([The geographicCoverage schema](dataset-properties-the-geographiccoverage-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-geographiccoverage-schema.md "\#/properties/geographicCoverage#/properties/geographicCoverage")
-
-### geographicCoverage Type
-
-`string` ([The geographicCoverage schema](dataset-properties-the-geographiccoverage-schema.md))
-
-### geographicCoverage Constraints
-
-**URI**: the string must be a URI, according to [RFC 3986](https://tools.ietf.org/html/rfc4291 "check the specification")
-
-### geographicCoverage Examples
+| Value                     | Explanation |
+| :------------------------ | ----------- |
+| `"CLINIC"`                |             |
+| `"PRIMARY CARE"`          |             |
+| `"ACCIDENT AN EMERGENCY"` |             |
+| `"OUTPATIENTS"`           |             |
+| `"IN-PATIENTS  "`         |             |
+| `"SERVICES"`              |             |
+| `"COMMUNITY "`            |             |
+| `"HOME"`                  |             |
+| `"PRIVATE"`               |             |
+| `"PHARMACY"`              |             |
+| `"OTHER"`                 |             |
+
+## Definitions group periodicity
+
+Reference this group by using
 
 ```json
-"GB"
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/periodicity"}
 ```
 
-## periodicity
 
-The frequency at which dataset is published.
 
 
 `periodicity`
 
--   is required
--   Type: `string` ([The periodicity schema](dataset-properties-the-periodicity-schema.md))
+-   is optional
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-periodicity-schema.md "\#/properties/periodicity#/properties/periodicity")
+-   defined in: [HDR UK Dataset](dataset-definitions-periodicity.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/periodicity")
 
 ### periodicity Type
 
-`string` ([The periodicity schema](dataset-properties-the-periodicity-schema.md))
+`string`
 
 ### periodicity Constraints
 
@@ -661,77 +246,586 @@ The frequency at which dataset is published.
 
 | Value          | Explanation |
 | :------------- | ----------- |
-| `"Static"`     |             |
-| `"Annual"`     |             |
-| `"Biennial"`   |             |
-| `"Quaterly"`   |             |
-| `"Bimonthly"`  |             |
-| `"Monthly"`    |             |
-| `"Biweekly"`   |             |
-| `"Daily"`      |             |
-| `"Irregular"`  |             |
-| `"Continious"` |             |
+| `"STATIC"`     |             |
+| `"ANNUAL"`     |             |
+| `"BIENNIAL"`   |             |
+| `"QUARTERLY"`  |             |
+| `"BIMONTHLY"`  |             |
+| `"MONTHLY"`    |             |
+| `"BIWEEKLY"`   |             |
+| `"WEEKLY"`     |             |
+| `"SEMIWEEKLY"` |             |
+| `"DAILY"`      |             |
+| `"IRREGULAR"`  |             |
+| `"CONTINUOUS"` |             |
 
-## datasetEndDate
+## Definitions group timelag
 
-The end of the time period that the dataset provides coverage for.
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/timelag"}
+```
 
 
-`datasetEndDate`
+
+
+`timelag`
 
 -   is optional
--   Type: `string` ([The datasetEndDate schema](dataset-properties-the-datasetenddate-schema.md))
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-datasetenddate-schema.md "\#/properties/datasetEndDate#/properties/datasetEndDate")
+-   defined in: [HDR UK Dataset](dataset-definitions-timelag.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/timelag")
 
-### datasetEndDate Type
+### timelag Type
 
-`string` ([The datasetEndDate schema](dataset-properties-the-datasetenddate-schema.md))
+`string`
 
-### datasetEndDate Constraints
+### timelag Constraints
 
-**date**: the string must be a date string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
+**enum**: the value of this property must be equal to one of the following values:
 
-## datasetStartDate
+| Value          | Explanation |
+| :------------- | ----------- |
+| `">1 WEEK"`    |             |
+| `"1-2 WEEKS"`  |             |
+| `"2-4 WEEKS"`  |             |
+| `"1-2 MONTHS"` |             |
+| `"2-6 MONTHS"` |             |
+| `">6 MONTHS"`  |             |
+| `"VARIABLE"`   |             |
+| `"NA"`         |             |
 
-The start of the time period that the dataset provides coverage for.
+## Definitions group datauselimitation
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/datauselimitation"}
+```
 
 
-`datasetStartDate`
 
--   is required
--   Type: `string` ([The datasetStartDate schema](dataset-properties-the-datasetstartdate-schema.md))
+
+`datauselimitation`
+
+-   is optional
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-datasetstartdate-schema.md "\#/properties/datasetStartDate#/properties/datasetStartDate")
+-   defined in: [HDR UK Dataset](dataset-definitions-datauselimitation.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/datauselimitation")
 
-### datasetStartDate Type
+### datauselimitation Type
 
-`string` ([The datasetStartDate schema](dataset-properties-the-datasetstartdate-schema.md))
+`string`
 
-### datasetStartDate Constraints
+### datauselimitation Constraints
 
-**date**: the string must be a date string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
+**enum**: the value of this property must be equal to one of the following values:
 
-## jurisdiction
+| Value                              | Explanation |
+| :--------------------------------- | ----------- |
+| `"GENERAL RESEARCH USE"`           |             |
+| `"GENETIC STUDIES ONLY"`           |             |
+| `"NO GENERAL METHODS RESEARCH"`    |             |
+| `"NO RESTRICTION"`                 |             |
+| `"RESEARCH SPECIFIC RESTRICTIONS"` |             |
+| `"RESEARCH USE ONLY"`              |             |
+| `"NO LINKAGE"`                     |             |
 
-Please use country code from ISO 3166-1 country codes and the associated ISO 3166-2 for regions, cities, states etc. for the country/state under whose laws the data subjects’ data is collected, processed and stored.
+## Definitions group datauserequirements
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/datauserequirements"}
+```
+
+
+
+
+`datauserequirements`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-datauserequirements.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/datauserequirements")
+
+### datauserequirements Type
+
+`string`
+
+### datauserequirements Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value                                 | Explanation |
+| :------------------------------------ | ----------- |
+| `"COLLABORATION REQUIRED"`            |             |
+| `"ETHICS APPROVAL REQUIRED"`          |             |
+| `"GEOGRAPHICAL RESTRICTIONS"`         |             |
+| `"INSTITUTION SPECIFIC RESTRICTIONS"` |             |
+| `"NOT FOR PROFIT USE"`                |             |
+| `"PROJECT SPECIFIC RESTRICTIONS"`     |             |
+| `"PUBLICATION MORATORIUM"`            |             |
+| `"PUBLICATION REQUIRED"`              |             |
+| `"RETURN TO DATABASE OR RESOURCE"`    |             |
+| `"TIME LIMIT ON USE"`                 |             |
+| `"USER SPECIFIC RESTRICTION"`         |             |
+
+## Definitions group accessrequestduration
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/accessrequestduration"}
+```
+
+
+
+
+`accessrequestduration`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-accessrequestduration.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/accessrequestduration")
+
+### accessrequestduration Type
+
+`string`
+
+### accessrequestduration Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value          | Explanation |
+| :------------- | ----------- |
+| `">1 WEEK"`    |             |
+| `"1-2 WEEKS"`  |             |
+| `"2-4 WEEKS"`  |             |
+| `"1-2 MONTHS"` |             |
+| `"2-6 MONTHS"` |             |
+| `">6 MONTHS"`  |             |
+| `"OTHER"`      |             |
+
+## Definitions group standardiseddatamodels
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/standardiseddatamodels"}
+```
+
+
+
+
+`standardiseddatamodels`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-standardiseddatamodels.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/standardiseddatamodels")
+
+### standardiseddatamodels Type
+
+`string`
+
+### standardiseddatamodels Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"HL7 FHIR "` |             |
+| `"HL7 V2"`    |             |
+| `"HL7 CDA"`   |             |
+| `"HL7 CCOW"`  |             |
+| `"LOINC"`     |             |
+| `"DICOM"`     |             |
+| `"I2B2"`      |             |
+| `"IHE"`       |             |
+| `"OMOP"`      |             |
+| `"OPENEHR"`   |             |
+| `"SENTINEL"`  |             |
+| `"PCORNET"`   |             |
+| `"CDISC"`     |             |
+| `"LOCAL"`     |             |
+| `"OTHER"`     |             |
+
+## Definitions group controlledvocabulary
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/controlledvocabulary"}
+```
+
+
+
+
+`controlledvocabulary`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-controlledvocabulary.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/controlledvocabulary")
+
+### controlledvocabulary Type
+
+`string`
+
+### controlledvocabulary Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value                   | Explanation |
+| :---------------------- | ----------- |
+| `"LOCAL"`               |             |
+| `"OPCS4"`               |             |
+| `"READ "`               |             |
+| `"SNOMED CT "`          |             |
+| `"SNOMED RT "`          |             |
+| `"DM+D"`                |             |
+| `"NHS NATIONAL CODES "` |             |
+| `"ODS "`                |             |
+| `"LOINC "`              |             |
+| `"ICD10 "`              |             |
+| `"ICD10CM "`            |             |
+| `"ICD10PCS "`           |             |
+| `"ICD9CM "`             |             |
+| `"ICD9"`                |             |
+| `"ICDO3 "`              |             |
+| `"AMT "`                |             |
+| `"APC "`                |             |
+| `"ATC "`                |             |
+| `"CIEL "`               |             |
+| `"HPO"`                 |             |
+| `"CPT4 "`               |             |
+| `"DPD "`                |             |
+| `"DRG "`                |             |
+| `"HEMONC"`              |             |
+| `"JMDC "`               |             |
+| `"KCD7 "`               |             |
+| `"MULTUM"`              |             |
+| `"NAACCR"`              |             |
+| `"NDC"`                 |             |
+| `"NDFRT "`              |             |
+| `"OXMIS "`              |             |
+| `"RXNORM"`              |             |
+| `"RXNORM EXTENSION "`   |             |
+| `"SPL "`                |             |
+| `"OTHER "`              |             |
+
+## Definitions group statisticalpopulationcontrained
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/statisticalpopulationcontrained"}
+```
+
+
+
+
+`statisticalpopulationcontrained`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-statisticalpopulationcontrained.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/statisticalpopulationcontrained")
+
+### statisticalpopulationcontrained Type
+
+`string`
+
+### statisticalpopulationcontrained Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value        | Explanation |
+| :----------- | ----------- |
+| `"Persons"`  |             |
+| `"Events"`   |             |
+| `"Findings"` |             |
+
+## Definitions group eightycharacters
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/eightycharacters"}
+```
+
+
+
+
+`eightycharacters`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-eightycharacters.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/eightycharacters")
+
+### eightycharacters Type
+
+`string`
+
+### eightycharacters Constraints
+
+**maximum length**: the maximum number of characters for this string is: `80`
+
+**minimum length**: the minimum number of characters for this string is: `1`
+
+## Definitions group abstract
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/abstract"}
+```
+
+
+
+
+`abstract`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-abstract.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/abstract")
+
+### abstract Type
+
+`string`
+
+### abstract Constraints
+
+**maximum length**: the maximum number of characters for this string is: `255`
+
+**minimum length**: the minimum number of characters for this string is: `1`
+
+## Definitions group email
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/email"}
+```
+
+
+
+
+`email`
+
+-   is optional
+-   Type: `email`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-email.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/email")
+
+### email Type
+
+`email`
+
+## Definitions group commaseparatedlist
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/commaseparatedlist"}
+```
+
+
+
+
+`commaseparatedlist`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-commaseparatedlist.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/commaseparatedlist")
+
+### commaseparatedlist Type
+
+`string`
+
+### commaseparatedlist Constraints
+
+**pattern**: the string must match the following regular expression: 
+
+```regexp
+/[0-9a-zA-Z]+(,[0-9a-zA-Z]+)*/
+```
+
+[try pattern](https://regexr.com/?expression=%2F%5B0-9a-zA-Z%5D%2B(%2C%5B0-9a-zA-Z%5D%2B)*%2F "try regular expression with regexr.com")
+
+## Definitions group doi
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/doi"}
+```
+
+
+
+
+`doi`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-doi.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/doi")
+
+### doi Type
+
+`string`
+
+### doi Constraints
+
+**pattern**: the string must match the following regular expression: 
+
+```regexp
+^10.\d{4,9}/[-._;()/:a-zA-Z0-9]+$
+```
+
+[try pattern](https://regexr.com/?expression=%5E10.%5Cd%7B4%2C9%7D%2F%5B-._%3B()%2F%3Aa-zA-Z0-9%5D%2B%24 "try regular expression with regexr.com")
+
+## Definitions group description
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/description"}
+```
+
+
+
+
+`description`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-description.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/description")
+
+### description Type
+
+`string`
+
+### description Constraints
+
+**maximum length**: the maximum number of characters for this string is: `3000`
+
+**minimum length**: the minimum number of characters for this string is: `5`
+
+## Definitions group url
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/url"}
+```
+
+
+
+
+`url`
+
+-   is optional
+-   Type: `url`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-url.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/url")
+
+### url Type
+
+`url`
+
+## Definitions group agerange
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/agerange"}
+```
+
+
+
+
+`agerange`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-agerange.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/agerange")
+
+### agerange Type
+
+`string`
+
+### agerange Constraints
+
+**pattern**: the string must match the following regular expression: 
+
+```regexp
+/(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])/
+```
+
+[try pattern](https://regexr.com/?expression=%2F(150%7C1%5B0-4%5D%5B0-9%5D%7C%5B0-9%5D%7C%5B1-8%5D%5B0-9%5D%7C9%5B0-9%5D)-(150%7C1%5B0-4%5D%5B0-9%5D%7C%5B0-9%5D%7C%5B1-8%5D%5B0-9%5D%7C9%5B0-9%5D)%2F "try regular expression with regexr.com")
+
+## Definitions group longDescription
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/longDescription"}
+```
+
+
+
+
+`longDescription`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-longdescription.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/longDescription")
+
+### longDescription Type
+
+`string`
+
+### longDescription Constraints
+
+**maximum length**: the maximum number of characters for this string is: `5000`
+
+**minimum length**: the minimum number of characters for this string is: `5`
+
+## Definitions group isocountrycode
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/isocountrycode"}
+```
+
+
 
 
 > FIXME: Add ISO 3166-2 Subdivision code pattern
 >
 
-`jurisdiction`
+`isocountrycode`
 
--   is required
--   Type: `string` ([The jurisdiction schema](dataset-properties-the-jurisdiction-schema.md))
+-   is optional
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-jurisdiction-schema.md "\#/properties/jurisdiction#/properties/jurisdiction")
+-   defined in: [HDR UK Dataset](dataset-definitions-isocountrycode.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/isocountrycode")
 
-### jurisdiction Type
+### isocountrycode Type
 
-`string` ([The jurisdiction schema](dataset-properties-the-jurisdiction-schema.md))
+`string`
 
-### jurisdiction Constraints
+### isocountrycode Constraints
 
 **pattern**: the string must match the following regular expression: 
 
@@ -741,290 +835,37 @@ Please use country code from ISO 3166-1 country codes and the associated ISO 316
 
 [try pattern](https://regexr.com/?expression=%5E%5BA-Z%5D%7B2%7D(-%5BA-Z%5D%7B2%2C3%7D)%3F%24 "try regular expression with regexr.com")
 
-## populationType
+## Definitions group linkeddatasets
 
-Please provide a valid SNOMED CT concept that describes the measure within the dataset i.e. participants in a study, modality, or images with certain characteristics.
-
-
-> FIXME: Check against SNOMED-CT TERMS. Conforms to spec but MAY be array of strings
->
-
-`populationType`
-
--   is required
--   Type: merged type ([The populationType schema](dataset-properties-the-populationtype-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-populationtype-schema.md "\#/properties/populationType#/properties/populationType")
-
-### populationType Type
-
-merged type ([The populationType schema](dataset-properties-the-populationtype-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-populationtype-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-populationtype-schema-anyof-1.md "check type definition")
-
-## disabmiguatingDescription
-
-If SNOMED CT term does not provide sufficient detail, please provide a description that disambiguates the population type.
-
-
-> FIXME: Rename MDC response to ageRange according to spec
->
-
-`disabmiguatingDescription`
-
--   is optional
--   Type: `string` ([The disabmiguatingDescription schema](dataset-properties-the-disabmiguatingdescription-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-disabmiguatingdescription-schema.md "\#/properties/disabmiguatingDescription#/properties/disabmiguatingDescription")
-
-### disabmiguatingDescription Type
-
-`string` ([The disabmiguatingDescription schema](dataset-properties-the-disabmiguatingdescription-schema.md))
-
-### disabmiguatingDescription Constraints
-
-**pattern**: the string must match the following regular expression: 
-
-```regexp
-\d{1,3}-\d{1,3}
-```
-
-[try pattern](https://regexr.com/?expression=%5Cd%7B1%2C3%7D-%5Cd%7B1%2C3%7D "try regular expression with regexr.com")
-
-## statisticalPopulation
-
-An explanation about the purpose of this instance.
-
-
-> FIXME: Spec calls this Measured Value
->
-
-`statisticalPopulation`
-
--   is required
--   Type: merged type ([The statisticalPopulation schema](dataset-properties-the-statisticalpopulation-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-statisticalpopulation-schema.md "\#/properties/statisticalPopulation#/properties/statisticalPopulation")
-
-### statisticalPopulation Type
-
-merged type ([The statisticalPopulation schema](dataset-properties-the-statisticalpopulation-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-statisticalpopulation-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-statisticalpopulation-schema-anyof-1.md "check type definition")
-
-## ageBand
-
-Please indicate the age range in whole years of participants in the dataset. Please provide range in the following format ‘[min age] – [max age]’ where both the minimum and maximum are whole numbers (integers).
-
-
-> FIXME: Rename MDC response to ageRange according to spec
->
-
-`ageBand`
-
--   is optional
--   Type: `string` ([The ageBand schema](dataset-properties-the-ageband-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-ageband-schema.md "\#/properties/ageBand#/properties/ageBand")
-
-### ageBand Type
-
-`string` ([The ageBand schema](dataset-properties-the-ageband-schema.md))
-
-### ageBand Constraints
-
-**pattern**: the string must match the following regular expression: 
-
-```regexp
-\d{1,3}-\d{1,3}
-```
-
-[try pattern](https://regexr.com/?expression=%5Cd%7B1%2C3%7D-%5Cd%7B1%2C3%7D "try regular expression with regexr.com")
-
-## physicalSampleAvailability
-
-Availability of physical samples associated with the dataset. If samples are available, please indicate the types of samples that are available.
-
-
-`physicalSampleAvailability`
-
--   is required
--   Type: `string` ([The physicalSampleAvailability schema](dataset-properties-the-physicalsampleavailability-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-physicalsampleavailability-schema.md "\#/properties/physicalSampleAvailability#/properties/physicalSampleAvailability")
-
-### physicalSampleAvailability Type
-
-`string` ([The physicalSampleAvailability schema](dataset-properties-the-physicalsampleavailability-schema.md))
-
-### physicalSampleAvailability Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value                            | Explanation |
-| :------------------------------- | ----------- |
-| `"Not Available"`                |             |
-| `"Bone Marrow"`                  |             |
-| `"Cancer Cell Lines"`            |             |
-| `"Core Biopsy"`                  |             |
-| `"CDNA/MRNA"`                    |             |
-| `"DNA"`                          |             |
-| `"Faeces"`                       |             |
-| `"Immortalized Cel Lines"`       |             |
-| `"MicroRNA"`                     |             |
-| `"Peripheral Blood Cells"`       |             |
-| `"Plasma"`                       |             |
-| `"PM Tissue"`                    |             |
-| `"Primary Cells"`                |             |
-| `"RNA"`                          |             |
-| `"Saliva"`                       |             |
-| `"Serum"`                        |             |
-| `"Swabs"`                        |             |
-| `"Tissue"`                       |             |
-| `"Urine"`                        |             |
-| `"Whole Blood"`                  |             |
-| `"Availability To Be Confirmed"` |             |
-
-### physicalSampleAvailability Examples
+Reference this group by using
 
 ```json
-"Not Available"
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/linkeddatasets"}
 ```
 
-## keywords
-
-An explanation about the purpose of this instance.
 
 
-> Conforms to spec, but this MAY be an array of strings
->
 
-`keywords`
-
--   is required
--   Type: `string` ([The keywords schema](dataset-properties-the-keywords-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-keywords-schema.md "\#/properties/keywords#/properties/keywords")
-
-### keywords Type
-
-`string` ([The keywords schema](dataset-properties-the-keywords-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-keywords-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-keywords-schema-anyof-1.md "check type definition")
-
-### keywords Constraints
-
-**pattern**: the string must match the following regular expression: 
-
-```regexp
-[0-9a-zA-Z._\-]+(,[0-9a-zA-Z.\-_]+)*
-```
-
-[try pattern](https://regexr.com/?expression=%5B0-9a-zA-Z._%5C-%5D%2B(%2C%5B0-9a-zA-Z.%5C-_%5D%2B)* "try regular expression with regexr.com")
-
-## conformsTo
-
-An explanation about the purpose of this instance.
-
-
-`conformsTo`
-
--   is required
--   Type: `string` ([The conformsTo schema](dataset-properties-the-conformsto-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-conformsto-schema.md "\#/properties/conformsTo#/properties/conformsTo")
-
-### conformsTo Type
-
-`string` ([The conformsTo schema](dataset-properties-the-conformsto-schema.md))
-
-### conformsTo Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value        | Explanation |
-| :----------- | ----------- |
-| `"HL7 FHIR"` |             |
-| `"HL7 V2"`   |             |
-| `"HL7 CDA"`  |             |
-| `"HL7 CCOW"` |             |
-| `"LOINC"`    |             |
-| `"DICOM"`    |             |
-| `"I2B2"`     |             |
-| `"IHE"`      |             |
-| `"OMOP"`     |             |
-| `"OPENEHR"`  |             |
-| `"SENTINEL"` |             |
-| `"PCORNET"`  |             |
-| `"LOCAL"`    |             |
-| `"OTHER"`    |             |
-
-## controlledVocabulary
-
-List any relevant terminologies / ontologies / controlled vocabularies, such as ICD 10 Codes, NHS Data Dictionary National Codes or SNOMED CT International, that are being used by the dataset.
-
-
-> FIXME: Confroms to spec, but MAY be a list of strings
->
-
-`controlledVocabulary`
+`linkeddatasets`
 
 -   is optional
--   Type: merged type ([The controlledVocabulary schema](dataset-properties-the-controlledvocabulary-schema.md))
+-   Type: `url`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-controlledvocabulary-schema.md "\#/properties/controlledVocabulary#/properties/controlledVocabulary")
+-   defined in: [HDR UK Dataset](dataset-definitions-linkeddatasets.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/linkeddatasets")
 
-### controlledVocabulary Type
+### linkeddatasets Type
 
-merged type ([The controlledVocabulary schema](dataset-properties-the-controlledvocabulary-schema.md))
+`url`
 
-any of
+## Definitions group format
 
--   [Untitled string in HDR UK Dataset](dataset-properties-the-controlledvocabulary-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-controlledvocabulary-schema-anyof-1.md "check type definition")
-
-### controlledVocabulary Examples
+Reference this group by using
 
 ```json
-"See ConformsTo"
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/format"}
 ```
 
-## language
 
-This should list all the languages in which the dataset metadata and underlying data is made available.
-
-
-> FIXME: Conforms to spec, but may be a list of strings given cardinality 1:\*. Validate against external list of languages. Resources defined by the Library of Congress (ISO 639-1, ISO 639-2) SHOULD be used.
->
-
-`language`
-
--   is required
--   Type: merged type ([The language schema](dataset-properties-the-language-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-language-schema.md "\#/properties/language#/properties/language")
-
-### language Type
-
-merged type ([The language schema](dataset-properties-the-language-schema.md))
-
-any of
-
--   [Untitled string in HDR UK Dataset](dataset-properties-the-language-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-language-schema-anyof-1.md "check type definition")
-
-## format
-
-If multiple formats are available please specify.
 
 
 > FIXME: Conforms to spec, but may be a list of strings given cardinality 1:\*. Validate against external list of formats, e.g. <https://www.iana.org/assignments/media-types/media-types.xhtml>
@@ -1032,103 +873,323 @@ If multiple formats are available please specify.
 
 `format`
 
--   is required
--   Type: merged type ([The format schema](dataset-properties-the-format-schema.md))
+-   is optional
+-   Type: `string`
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-format-schema.md "\#/properties/format#/properties/format")
+-   defined in: [HDR UK Dataset](dataset-definitions-format.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/format")
 
 ### format Type
 
-merged type ([The format schema](dataset-properties-the-format-schema.md))
+`string`
 
-any of
+### format Constraints
 
--   [Untitled string in HDR UK Dataset](dataset-properties-the-format-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-format-schema-anyof-1.md "check type definition")
+**minimum length**: the minimum number of characters for this string is: `1`
 
-## fileSize
+## Definitions group descriptive-metadata
 
-An explanation about the purpose of this instance.
-
-
-`fileSize`
-
--   is optional
--   Type: `string` ([The fileSize schema](dataset-properties-the-filesize-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-filesize-schema.md "\#/properties/fileSize#/properties/fileSize")
-
-### fileSize Type
-
-`string` ([The fileSize schema](dataset-properties-the-filesize-schema.md))
-
-### fileSize Examples
+Reference this group by using
 
 ```json
-"301MB"
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/descriptive-metadata"}
 ```
 
-## creator
-
-Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher. No employee details should be provided.
+Describes a resource for purposes of discovery and identification.
 
 
-`creator`
-
--   is required
--   Type: `string` ([The creator schema](dataset-properties-the-creator-schema.md))
--   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-creator-schema.md "\#/properties/creator#/properties/creator")
-
-### creator Type
-
-`string` ([The creator schema](dataset-properties-the-creator-schema.md))
-
-## citations
-
-Please provide the keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced.
-
-
-> FIXME: Conforms to spec, but may be a list of citation strings
->
-
-`citations`
+`descriptive-metadata`
 
 -   is optional
--   Type: merged type ([The citations schema](dataset-properties-the-citations-schema.md))
+-   Type: `object` ([Descriptive Metadata](dataset-definitions-descriptive-metadata.md))
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-the-citations-schema.md "\#/properties/citations#/properties/citations")
+-   defined in: [HDR UK Dataset](dataset-definitions-descriptive-metadata.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/descriptive-metadata")
 
-### citations Type
+### descriptive-metadata Type
 
-merged type ([The citations schema](dataset-properties-the-citations-schema.md))
+`object` ([Descriptive Metadata](dataset-definitions-descriptive-metadata.md))
 
-any of
+## Definitions group summary
 
--   [Untitled string in HDR UK Dataset](dataset-properties-the-citations-schema-anyof-0.md "check type definition")
--   [Untitled array in HDR UK Dataset](dataset-properties-the-citations-schema-anyof-1.md "check type definition")
+Reference this group by using
 
-## doi
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/summary"}
+```
 
-All HDR UK registered datasets should either have a Digital Object Identifier (DOI) or be working towards obtaining one. If a DOI is available, please provide the DOI.
 
 
-`doi`
 
--   is required
--   Type: merged type ([Digital Object Identifier](dataset-properties-digital-object-identifier.md))
+`summary`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-summary.md))
 -   cannot be null
--   defined in: [HDR UK Dataset](dataset-properties-digital-object-identifier.md "\#/properties/doi#/properties/doi")
+-   defined in: [HDR UK Dataset](dataset-definitions-summary.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/summary")
 
-### doi Type
+### summary Type
 
-merged type ([Digital Object Identifier](dataset-properties-digital-object-identifier.md))
+`object` ([Details](dataset-definitions-summary.md))
 
-any of
+## Definitions group documentation
 
--   [Untitled string in HDR UK Dataset](dataset-properties-digital-object-identifier-anyof-0.md "check type definition")
--   [Untitled string in HDR UK Dataset](dataset-properties-digital-object-identifier-anyof-1.md "check type definition")
+Reference this group by using
 
-## Additional Properties
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/documentation"}
+```
 
-Additional properties are allowed and do not have to follow a specific schema
+
+
+
+`documentation`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-documentation.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-documentation.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/documentation")
+
+### documentation Type
+
+`object` ([Details](dataset-definitions-documentation.md))
+
+## Definitions group coverage
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/coverage"}
+```
+
+
+
+
+`coverage`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-coverage.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-coverage.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/coverage")
+
+### coverage Type
+
+`object` ([Details](dataset-definitions-coverage.md))
+
+## Definitions group provenance
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/provenance"}
+```
+
+
+
+
+`provenance`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-provenance.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-provenance.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/provenance")
+
+### provenance Type
+
+`object` ([Details](dataset-definitions-provenance.md))
+
+## Definitions group origin
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/origin"}
+```
+
+
+
+
+`origin`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-origin.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-origin.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/origin")
+
+### origin Type
+
+`object` ([Details](dataset-definitions-origin.md))
+
+## Definitions group temporal
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/temporal"}
+```
+
+
+
+
+`temporal`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-temporal.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-temporal.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/temporal")
+
+### temporal Type
+
+`object` ([Details](dataset-definitions-temporal.md))
+
+## Definitions group accessibility
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/accessibility"}
+```
+
+
+
+
+`accessibility`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-accessibility.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-accessibility.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/accessibility")
+
+### accessibility Type
+
+`object` ([Details](dataset-definitions-accessibility.md))
+
+## Definitions group usage
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/usage"}
+```
+
+
+
+
+`usage`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-usage.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-usage.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/usage")
+
+### usage Type
+
+`object` ([Details](dataset-definitions-usage.md))
+
+## Definitions group access
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/access"}
+```
+
+
+
+
+`access`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-access.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-access.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/access")
+
+### access Type
+
+`object` ([Details](dataset-definitions-access.md))
+
+## Definitions group formatStandards
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/formatStandards"}
+```
+
+
+
+
+`formatStandards`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-formatstandards.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-formatstandards.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/formatStandards")
+
+### formatStandards Type
+
+`object` ([Details](dataset-definitions-formatstandards.md))
+
+## Definitions group enrichmentLinkage
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/enrichmentLinkage"}
+```
+
+
+
+
+`enrichmentLinkage`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-enrichmentlinkage.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-enrichmentlinkage.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/enrichmentLinkage")
+
+### enrichmentLinkage Type
+
+`object` ([Details](dataset-definitions-enrichmentlinkage.md))
+
+## Definitions group observations
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/observations"}
+```
+
+
+
+
+`observations`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-observations.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-observations.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/observations")
+
+### observations Type
+
+`object` ([Details](dataset-definitions-observations.md))
+
+## Definitions group observation
+
+Reference this group by using
+
+```json
+{"$ref":"http://healthdatagateway.org/schema/dataset.json#/definitions/observation"}
+```
+
+
+
+
+`observation`
+
+-   is optional
+-   Type: `object` ([Details](dataset-definitions-observation.md))
+-   cannot be null
+-   defined in: [HDR UK Dataset](dataset-definitions-observation.md "http&#x3A;//healthdatagateway.org/schema/dataset.json#/definitions/observation")
+
+### observation Type
+
+`object` ([Details](dataset-definitions-observation.md))
