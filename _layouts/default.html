@@ -11,14 +11,17 @@
     <body>
     <div class="container-lg px-3 my-5 markdown-body">
     {% if site.title and site.title != page.title %}
-    <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+    <h1 style="color:darkolivegreen; font-size:100%; text-align:center;"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
     {% endif %}
+     <section style="text-align:center;">
+        
     {% include navigation.html %}
+ 
     {{ content }}
-    
+    </section>
     {% if site.github.private != true and site.github.license %}
     <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-    This site is open source. {% github_edit_link "Improve this page" %}.
+
     </div>
     {% endif %}
     </div>
