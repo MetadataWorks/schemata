@@ -35,7 +35,7 @@ plugins:
   
 
 # Build settings
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
 markdown: kramdown
 
 relative_links:
