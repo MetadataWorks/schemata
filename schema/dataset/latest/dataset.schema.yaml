@@ -372,9 +372,9 @@ definitions:
         "$id": "#/member/accessRequestCost"
         title: Organisation Access Request Cost
         "$comment": No standard identified
-        description: "Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
+        description: "Please provide link(s) to a webpage or a short description detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian."
         allOf:
-          - "$ref": "#/definitions/longDescription"
+          - "$ref": "#/definitions/shortDescription"
 
       dataUseLimitation:
         "$id": "#/member/dataUseLimitation"
@@ -585,8 +585,7 @@ definitions:
         "$comment": https://ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/
         description: Pleases indicate the setting(s) where data was collected. Multiple
               settings may be provided
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
           - "$ref": "#/definitions/setting"
@@ -606,8 +605,8 @@ definitions:
         title: Periodicity
         "$comment": dct:accrualPeriodicity
         default: ''
-        description: 'Please indicate the frequency of publishing. If a dataset is
-            published regularly please choose a publishing periodicity from the constrained
+        description: 'Please indicate the frequency of distribution release. If a dataset is
+            distributed regularly please choose a distribution release periodicity from the constrained
             list and indicate the next release date. When the release date becomes historical,
             a new release date will be calculated based on the publishing periodicity.
             If a dataset has been published and will remain static please indicate that
@@ -655,8 +654,8 @@ definitions:
         title: End Date
         "$comment": dcat:endDate
         description: The end of the time period that the dataset provides coverage
-            for. If the dataset is “Continuous” and has no known end date, please leave
-            blank. If there are multiple cohorts in the dataset with varying end dates,
+            for. If the dataset is “Continuous” and has no known end date, please state
+            continuous. If there are multiple cohorts in the dataset with varying end dates,
             please provide the latest date and use the description or the media attribute
             to provide more information.
         anyOf:
@@ -666,7 +665,7 @@ definitions:
           format: date-time
         - type: string
           enum:
-          - NOT APPLICABLE
+          - CONTINUOUS
 
       timeLag:
         "$id": "#/properties/provenance/temporal/timeLag"
@@ -761,7 +760,7 @@ definitions:
           Also include a list of known citations, if available and should be links
           to existing resources where the dataset has been used or referenced. Please
           provide multiple entries, or if you are using a csv upload please provide
-          them as a tab separated list. [Author] ([Year]) [Title] . [DOI] . [Source]
+          them as a tab separated list. 
         anyOf:
           - "$ref": "#/definitions/doi"
           - type: array
@@ -949,12 +948,20 @@ definitions:
               onboarded to the HOP. Note: If all the datasets from Gateway organisation
               can be linked please indicate “ALL” and the onboarding portal will automate
               linkage across the datasets submitted.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
             - "$ref": "#/definitions/url"
+
+      linkageOpportunity:
+        title: linkageOpportunity
+        "$comment": 'no standard identified'
+        description: 'If applicable, please provide the a description of further linkage opportunities for the datasets and 
+                      if possible the specific variables that can be used to link to other datasets.'
+        allOf:
+        - "$ref": "#/definitions/shortDescription"
+            
 
       derivation:
         title: Derivations
@@ -962,8 +969,7 @@ definitions:
         description: 'Indicate if derived datasets or predefined extracts are available
           and the type of derivation available. Notes. Single or multiple dimensions
           can be provided as a derived extract alongside the dataset.'
-        anyOf:
-        - "$ref": "#/definitions/commaSeparatedValues"
+        allOf:
         - type: array
           items:
             allOf:
@@ -1031,7 +1037,8 @@ definitions:
         title: Observation Date
         "$comment": https://schema.org/observationDate
         default: release date
-        description: Please provide the date of the observation
+        description: 'Please provide the date that the observation was made. Some datasets may be continuously updated and the number of records will change regularly, so the observation date provides users with the date that the analysis or query was run to generate the particular observation.
+                Multiple observations can be made i.e. an observation of cumulative COVID positive cases by specimen on the 1/1/2021 could be 2M. On the 8/1/2021 a new observation could be 2.1M. Users can add multiple observations.'
         anyOf:
         - type: string
           format: date
@@ -1156,6 +1163,7 @@ definitions:
     - 1-10 YEARS
     - MORE 10 YEARS
     - UNKNOWN
+    - CONTINUOUS
     - OTHER
 
   periodicity:
@@ -1186,6 +1194,7 @@ definitions:
     - AUDIT
     - ADMINISTRATIVE
     - FINANCIAL
+    - STATUTORY
     - OTHER
 
   source:
@@ -1194,6 +1203,7 @@ definitions:
     - EPR
     - ELECTRONIC SURVEY
     - LIMS
+    - OTHER INFORMATION SYSTEM
     - PAPER BASED
     - FREETEXT NLP
     - MACHINE GENERATED
@@ -1212,6 +1222,9 @@ definitions:
     - HOME
     - PRIVATE
     - PHARMACY
+    - SOCIAL CARE
+    - LOCAL AUTHORITY
+    - NATIONAL GOVERNMENT
     - OTHER
 
   timeLag:
@@ -1224,6 +1237,7 @@ definitions:
     - 2-6 MONTHS
     - MORE 6 MONTHS
     - VARIABLE
+    - NO TIMELAG
     - NOT APPLICABLE
     - OTHER
 
@@ -1231,10 +1245,16 @@ definitions:
     type: string
     enum:
     - GENERAL RESEARCH USE
+    - COMMERCIAL RESEARCH USE
     - GENETIC STUDIES ONLY
     - NO GENERAL METHODS RESEARCH
     - NO RESTRICTION
+    - GEOGRAPHICAL RESTRICTIONS
+    - INSTITUTION SPECIFIC RESTRICTIONS
+    - NOT FOR PROFIT USE
+    - PROJECT SPECIFIC RESTRICTIONS
     - RESEARCH SPECIFIC RESTRICTIONS
+    - USER SPECIFIC RESTRICTION    
     - RESEARCH USE ONLY
     - NO LINKAGE
 
@@ -1243,15 +1263,11 @@ definitions:
     enum:
     - COLLABORATION REQUIRED
     - ETHICS APPROVAL REQUIRED
-    - GEOGRAPHICAL RESTRICTIONS
-    - INSTITUTION SPECIFIC RESTRICTIONS
-    - NOT FOR PROFIT USE
-    - PROJECT SPECIFIC RESTRICTIONS
     - PUBLICATION MORATORIUM
     - PUBLICATION REQUIRED
     - RETURN TO DATABASE OR RESOURCE
     - TIME LIMIT ON USE
-    - USER SPECIFIC RESTRICTION
+    - DISCLOSURE CONTROL
 
   deliveryLeadTime:
     type: string
