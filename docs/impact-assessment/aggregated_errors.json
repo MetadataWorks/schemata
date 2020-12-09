@@ -1,0 +1,410 @@
+{
+  "accessibility_access": {
+    "uniqueErrors": 1,
+    "totalErrors": 164,
+    "errMessages": [
+      "'dataController' is a required property"
+    ]
+  },
+  "accessibility_access_deliveryLeadTime": {
+    "uniqueErrors": 25,
+    "totalErrors": 261,
+    "errMessages": [
+      "'ONCE WE HAVE ACCEPTED YOUR APPLICATION AFTER ITS INITIAL REVIEW, THE APPLICATION IS SUBJECT TO OUR SERVICE LEVELS. WE ONLY PAUSE THE ELAPSED TIME WHEN WE REQUIRE FURTHER DETAIL, SUCH AS A MORE EXPLICIT ARTICULATION OF THE PURPOSE, OR WHEN APPROVALS ARE REQUIRED FROM AN EXTERNAL BODY (SUCH AS APPROVED RESEARCHER STATUS FROM ONS).  OUR SERVICE RESPONSE TIMES, FROM THE DATE THAT THE APPLICATION IS ACCEPTED TO THE DATE THAT YOU SIGN THE AGREEMENT' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://WWW.QMUL.AC.UK/CHILL/CONTACTS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR SELF-REPORT VARIABLE, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'AVAILABLE UPON REQUEST' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR DEMOGRAPHICS, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'TBC' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://CPRD.COM/LINKED-DATA' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://CPRD.COM/DATA-ACCESS' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR DE-IDENTIFIED GENOTYPE DATA, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'CONTACT PROFESSOR CHRIS BRIGHTLING FOR FURTHER INFORMATION (CEB17@LEICESTER.AC.UK)' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE THAT MEETS QUARTERLY.  WITH CONTACT DETAILS, ACCESS WILL NOT BE APPROVED UNLESS THERE IS A DEMONSTRABLE AND ETHICALLY APPROVED REQUIREMENT, WHICH IS LIKELY TO TAKE MUCH LONGER TO REALISE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE SEE: HTTPS://SAILDATABANK.COM/APPLICATION-PROCESS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE CONTACT THE PUBLISHER USING CONTACT POINT DETAILS PROVIDED' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE CONTACT THE PUBLISHER USING CONTACT POINT DETAILS PROVIDED.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'>1 WEEK' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'ACCESS REQUEST DURATION DEPENDS ON SCOPING AND THE IGRP PROCESS. GENERAL ESTIMATE ~ 3MONTHS.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTP://OPCRD.CO.UK/OPCRD-DATA-REQUEST/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH CONSENT RECORDS, IT IS THE METHOD OF CALCULATION OF THOSE CONSENTING THAT IS APPROVED, AND NOT THE RELEASE OF RECORDS PER SE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'2-3 MONTHS FROM A VALID APPLICATION.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://WWW.ISDSCOTLAND.ORG/PRODUCTS-AND-SERVICES/EDRIS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A SAMPLE ACCESS REQUEST MUST BE APPROVED BY THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC). THE SC MEETS QUARTERLY.  SAMPLE PICKING MAY TAKE MUCH LONGER - OFTEN IN THE ORDER OF WEEKS OR MONTHS - DEPENDING ON THE COMPLEXITY OF THE SELECTION PROCESS.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'SUBJECT TO NEGOTIATION' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'ACCESS REQUEST DURATION DEPENDS ON SCOPING AND THE IGRP PROCESS. GENERAL ESTIMATE ~ 3 MONTHS.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  THE CRFS TEND TO BE COMPLETED AS A CHECKLIST, WITH EACH PARTICIPANT HAVING SPARSE BUT UNIQUE DATA. THIS IS LIKELY TO LEAD TO DATA THAT IS BOTH POTENTIALLY DISCLOSIVE AND HARD TO DE-IDENTIFY WITHOUT REDUCING UTILITY.  THEREFORE DATA REQUESTS FOR ACCESS TO CRF DATA ARE LIKELY TO BE HANDLED BY THE SC.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'YET TO BE DECIDED' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']"
+    ]
+  },
+  "accessibility_access_jurisdiction": {
+    "uniqueErrors": 2,
+    "totalErrors": 81,
+    "errMessages": [
+      "'826' does not match '^[A-Z]{2}(-[A-Z]{2,3})?$'",
+      "None is not of type 'string'"
+    ]
+  },
+  "accessibility_formatAndStandards": {
+    "uniqueErrors": 4,
+    "totalErrors": 358,
+    "errMessages": [
+      "'conformsTo' is a required property",
+      "'language' is a required property",
+      "'format' is a required property",
+      "'vocabularyEncodingScheme' is a required property"
+    ]
+  },
+  "accessibility_formatAndStandards_conformsTo": {
+    "uniqueErrors": 16,
+    "totalErrors": 39,
+    "errMessages": [
+      "'HTTP://WWW.NJRCENTRE.ORG.UK/NJRCENTRE/HEALTHCARE-PROVIDERS/NJR-DATA-SET' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'NULL' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'TBC' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'HTTP://WWW.WCISU.WALES.NHS.UK/HOME' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'INTERNATIONAL STANDARDS. OMOP IS BEING TRIALLED.' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'INTERNATIONAL DATA STANDARDS SEE TECHNICAL METADATA' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'RCGP RSC HOLD DATA IN A GRANULAR' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'NONE' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'RD-CONNECT SAMPLE CATALOGUE FORMAT' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'N/A' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'INTERNATIONAL STANDARDS' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'HTTPS://DIGITAL.NHS.UK/DATA-AND-INFORMATION/DATA-TOOLS-AND-SERVICES/DATA-SERVICES/PATIENT-REPORTED-OUTCOME-MEASURES-PROMS' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'OPEN STANDARDS' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'SNOMED' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'HTTPS://WWW.COGCONSORTIUM.UK/PROTOCOLS/' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']",
+      "'SEE DDI XML CATALOG PROVIDED' is not one of ['HL7 FHIR', 'HL7 V2', 'HL7 CDA', 'HL7 CCOW', 'LOINC', 'DICOM', 'I2B2', 'IHE', 'OMOP', 'OPENEHR', 'SENTINEL', 'PCORNET', 'CDISC', 'NHS DATA DICTIONARY', 'NHS SCOTLAND DATA DICTIONARY', 'NHS WALES DATA DICTIONARY', 'LOCAL', 'OTHER']"
+    ]
+  },
+  "accessibility_formatAndStandards_format": {
+    "uniqueErrors": 1,
+    "totalErrors": 1,
+    "errMessages": [
+      "'' is too short"
+    ]
+  },
+  "accessibility_formatAndStandards_vocabularyEncodingScheme": {
+    "uniqueErrors": 23,
+    "totalErrors": 30,
+    "errMessages": [
+      "'TNM (TUMOUR' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'EDDS DIAGNOSIS CODES' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'HTTP://WWW.NJRCENTRE.ORG.UK/NJRCENTRE/HEALTHCARE-PROVIDERS/NJR-DATA-SET' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'CLOSER DISCOVERY' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'ORPHANET' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'NICIP' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'NULL' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'HTTPS://GOV.WALES/WALES-CHILDREN-RECEIVING-CARE-AND-SUPPORT-CENSUS' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'CHROMOSOME AND POSITION ACCORDING TO GRCH37/HG19 REFERENCE BUILD OF THE HUMAN GENOME.' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'NCBI DBSNP IDENTIFIERS (RSID)' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'N/A' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'NONE' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'HTTPS://WWW.COGCONSORTIUM.UK/PROTOCOLS/' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'TBC' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'DATASET DEFINED CODING. NO CLINICAL CODING' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'SEE CONFORMS TO' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'NODE AND METASTASIS)' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'CANCERS ARE CODED USING THE INTERNATIONAL CLASSIFICATION OF DISEASES FOR ONCOLOGY' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'ICD-0' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'UICC (INTERNATIONAL UNION AGAINST CANCER)' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'ICD-1-' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']",
+      "'REVISION 3' is not one of ['LOCAL', 'OPCS4', 'READ', 'SNOMED CT', 'SNOMED RT', 'DM PLUS D', 'NHS NATIONAL CODES', 'NHS SCOTLAND NATIONAL CODES', 'NHS WALES NATIONAL CODES', 'ODS', 'LOINC', 'ICD10', 'ICD10CM', 'ICD10PCS', 'ICD9CM', 'ICD9', 'ICDO3', 'AMT', 'APC', 'ATC', 'CIEL', 'HPO', 'CPT4', 'DPD', 'DRG', 'HEMONC', 'JMDC', 'KCD7', 'MULTUM', 'NAACCR', 'NDC', 'NDFRT', 'OXMIS', 'RXNORM', 'RXNORM EXTENSION', 'SPL', 'OTHER']"
+    ]
+  },
+  "accessibility_usage_isReferencedBy": {
+    "uniqueErrors": 51,
+    "totalErrors": 205,
+    "errMessages": [
+      "[\"'Data Resource Profile: The UK CF Registry' published in the International Journal of Epidemiology (2018 Feb 1\", '47(1)9-10e)'] is not valid under any of the given schemas",
+      "['https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/vital-events/deaths/deaths-time-series-data'] is not valid under any of the given schemas",
+      "['Offspring Cohort Profile:   Boyd A.', 'Golding J.', 'Macleod J.', 'Lawlor D.A.', 'Fraser A.', 'Henderson J.', 'Molloy L.', 'Ness A.', 'Ring S.', 'Davey Smith G. Cohort Profile: The \u2018Children of the 90s\u2019\u2014the index offspring of the Avon Longitudinal Study of Parents and Children. International Journal of Epidemiology 2013', '42(1): 111-127.\\n\\nMothers Cohort Profile:   Fraser A', 'Macdonald-Wallis C', 'Tilling K', 'et al.: Cohort Profile: The Avon Longitudinal Study of Parents and Children: ALSPAC mothers cohort. International Journal of Epidemiology 2013', '42(1): 97\u2013110.\\n\\nCohort Profile Update:   Northstone K.', 'Lewcock M.', 'Groom A.', 'Boyd A.', 'Macleod J.', 'Timpson N.', 'Wells N. Cohort Profile:The Avon Longitudinal Study of Parents and Children (ALSPAC): an update on the enrolled sample of index children in 2019'] is not valid under any of the given schemas",
+      "['Schl\u00fcter et al.', '(2019)', 'Impact of cystic fibrosis on birthweight: a population based study of children in Denmark and Wales. \\nhttp://dx.doi.org/10.1136/thoraxjnl-2018-211706'] is not valid under any of the given schemas",
+      "['https://www.imperial.ac.uk/neonatal-data-analysis-unit/our-research/research-publications/'] is not valid under any of the given schemas",
+      "['https://bmjopenrespres.bmj.com/content/6/1/e000439'] is not valid under any of the given schemas",
+      "['Johns et al.', '(2017)', 'Effect of population breast screening on breast cancer mortality up to 2005 in England and Wales: an individual-level cohort study. \\nhttps://www.nature.com/articles/bjc2016415'] is not valid under any of the given schemas",
+      "['CPRD Aurum Data Resource Profile: https://academic.oup.com/ije/advance-article/doi/10.1093/ije/dyz034/5374844\\nBibliography: https://cprd.com/bibliography\\nUsing patient data citation: https://understandingpatientdata.org.uk/data-citation'] is not valid under any of the given schemas",
+      "['https://bmcpsychiatry.biomedcentral.com/articles/10.1186/1471-244X-9-51', 'https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/1472-6947-13-71', 'https://bmjopen.bmj.com/content/4/12/e005654', 'https://bmjopen.bmj.com/content/6/3/e008721'] is not valid under any of the given schemas",
+      "['Not Available'] is not valid under any of the given schemas",
+      "['TBC'] is not valid under any of the given schemas",
+      "['https://www.bmj.com/content/bmj/367/bmj.l6055.full.pdf'] is not valid under any of the given schemas",
+      "['Allen', 'L.A.', 'Cannings-John', 'R.L.', 'Evans', 'A. et al. Pregnancy in teenagers diagnosed with type 1 diabetes mellitus in childhood: a national population-based e-cohort study. Diabetologia 63', '799\u2013810 (2020). https://doi.org/10.1007/s00125-019-05063-w'] is not valid under any of the given schemas",
+      "['https://www.researchgate.net/scientific-contributions/38247584_Richard_G_Feltbower\\n\\nPublications\\n\\nSmith L', 'Stiller C', 'Lyngsie Hjalgrim L', 'Johannesen TB', 'Lahtennmaki P', 'McCabe M', 'Pritchard-Jones K', 'Steliarova-Foucher E', 'Falck Winther J', 'Woods R', 'Glaser AW', 'Feltbower RG. International variation in childhood cancer mortality rates from 2001-2015: comparison of trends in the International Cancer Benchmarking Partnership countries (in preparation)\\n\\nSmith L', 'Glaser AW', 'Greenwood DC', 'Feltbower RG. Cumulative burden of subsequent neoplasms', 'cardiovascular and respiratory morbidity in young people surviving cancer (submitted)\\n\\nSmith L', 'Glaser AW', 'Peckham D', 'Greenwood DC', 'Feltbower RG. Respiratory morbidity in young people surviving cancer: population-based study of hospital admissions', 'treatment-related risk factors and subsequent mortality. Int J Cancer 2018 https://doi.org/10.1002/ijc.32066 \\n\\nBerrie L', 'Ellison GT', 'Norman PD', 'Baxter PD', 'Feltbower RG', 'Tennant PW', 'Gilthorpe MS. The association between childhood leukemia and population mixing: an artifact of focusing on clusters? Epidemiology 2018 doi: 10.1097/EDE.0000000000000921\\n\\nSmith L', 'Glaser AW', 'Kinsey SE', 'Greenwood DC', 'Chilton L', 'Moorman AV', 'Feltbower RG. Long-term survival after childhood acute lymphoblastic leukaemia: population-based trends in cure and relapse by clinical characteristics. Br J Haematol 2018', '182: 851-858 doi.org/10.1111/bjh.15424 \\n\\nFriend', 'A.J.', 'Feltbower', 'R.G.', 'Hughes', 'E.J.', 'Dye', 'K.P. and Glaser', 'A.W.', 'Mental Health of Long Term Survivors of Childhood and Young Adult Cancer: A Systematic Review. International journal of cancer 2018', 'Feb 22. doi: 10.1002/ijc.31337\\n\\nSmith L', 'Norman P', 'Kapetanstrataki M', 'Fleming S', 'Fraser LK', 'Parslow RC', 'Feltbower RG. Comparison of ethnic group classification using naming analysis and routinely collected data: application to cancer incidence trends in children and young people. BMJ Open 2017', '7 (9) e016332', 'DOI: 10.1136/bmjopen-2017-016332\\n\\nFairley L', 'Stark DP', 'Yeomanson D', 'Kinsey SE', 'Glaser AW', 'Picton SV', 'Evans L', 'Feltbower RG. Access to Principal Treatment Centres and survival rates for children and young people with cancer in Yorkshire', 'UK. BMC Cancer 2017', '17: 168 \\n\\nFurness CL', 'Smith L', 'Morris E', 'Brocklehurst C', 'Daly S', 'Hough RE. Cancer Patient Experience in the Teenage and Young Adult Population: Key issues and trends over time. An analysis of the national UK National Cancer Patient Experience Surveys 2010-2014. Journal of Adolescent and Young Adult Oncology 2017', '6: 450-458 doi: 10.1089/jayao.2016.0058'] is not valid under any of the given schemas",
+      "['1) Organ et al Respir Res 2019 \\n2) Stewart et al Eur Resp J 2019 \\n3) Maher et al Lancet Respir Med 2017 \\n4) Allen et al Lancet Respir Med 2017 \\n5) Jenkins et al Lancet respir Med 2015'] is not valid under any of the given schemas",
+      "['https://www.genomicsengland.co.uk/about-gecip/publications/'] is not valid under any of the given schemas",
+      "['Song et al. (2019) Homelessness and health needs in Wales. https://doi.org/10.23889/ijpds.v4i3.1336'] is not valid under any of the given schemas",
+      "['Szakmany et al (2019) Risk factors for 1-year mortality and hospital utilisation patterns\\nin critical care survivors: a retrospective', 'observational', 'population-based data-linkage study.  10.1097/CCM.0000000000003424'] is not valid under any of the given schemas",
+      "['Williams et al.', '(2017)', \"Women's perspectives on human papillomavirus self?sampling in the context of the UK cervical screening programme. \\nhttps://onlinelibrary.wiley.com/doi/full/10.1111/hex.12544\"] is not valid under any of the given schemas",
+      "['Citations to follow'] is not valid under any of the given schemas",
+      "['Akbari et al (2018) Analysis of factors associated with changing general practice in the first 14 years of life in Wales using linked cohort and primary care records: implications for using primary care databanks for life course research. https://doi.org/10.23889/ijpds.v3i4.818'] is not valid under any of the given schemas",
+      "['PMID 30552067'] is not valid under any of the given schemas",
+      "['Ahern', 'A.', 'Jones', 'M. (2017) An Investigation into the use of Health Services in Wales by those who Self\u2013report Disability using Linked Data https://doi.org/10.23889/ijpds.v1i1.159'] is not valid under any of the given schemas",
+      "['1.\\tStiller C. Childhood Cancer in Britain: Incidence', 'Survival and Mortality. Oxford University Press', '2007\\n2.\\tStiller CA', 'Kroll ME', 'Pritchard-Jones K.  Population survival from childhood cancer in Britain during 1978-2005 by eras of entry to clinical trials. Ann Oncol. 2012', '23(9):2464-9. \\n3.\\tPritchard-Jones K et al', 'on behalf of the SIOP Renal Tumours Study Group. Doxorubicin omission from the treatment of stage II\u2013III', 'intermediate-risk histology Wilms\u2019 tumour: results of the SIOP WT 2001 randomised trial. The Lancet 2015 Sept. 386:1156-64.\\n4.\\tPritchard J', 'Imeson J', 'Barnes J', 'Cotterill S', 'Gough D', 'Marsden HB', 'Morris-Jones P', 'Pearson D. Results of the United Kingdom\u2019s Children\u2019s Cancer Study Group First Wilms Tumour study. J Clin Oncol', '1995', '13:124-133 Pritchard-Jones K', 'Moroz V', 'Vujanic G', 'Powis M', 'Walker J', 'Messahel B', 'Hobson R', 'Levitt G', 'Kelsey A', 'Mitchell C', \"on behalf of the Children\u2019s Cancer and Leukaemia Group (CCLG) Renal Tumours Group. Treatment and outcome of Wilms' tumour patients: an analysis of all cases registered in the UKW3 trial. Ann Oncol. 2012 Sep\", '23(9):2457-63. \\n5.\\tMitchell C', 'Pritchard-Jones K', 'Shannon R', 'Hutton C', 'Stevens S', 'Machin D', 'Imeson J', 'Kelsey A', 'Vujanic GM', 'Gornall P', 'Walker J', 'Taylor R', 'Sartori P', 'Hale J', 'Levitt G', 'Messahael B', 'Middleton H', 'Grundy R', \"Pritchard J. Immediate nephrectomy versus pre-operative chemotherapy in the management of non-metastatic Wilms' Tumour\", \"Results of a Randomised Trial (UKW3) by the UK Children's Cancer Study Group. European J Cancer\", '42(15):2554-62', '2006.\\n6.\\tC Mitchell', 'P Morris Jones', 'A Kelsey', 'GM Vujanic', 'B Marsden', 'R Shannon', 'P Gornall', 'C Owens', 'R Taylor', 'J Imeson', 'H Middleton and J Pritchard for the UKCCSG. The treatment of Wilms\u2019 tumour: results of the United Kingdom Children\u2019s Cancer Study Group (UKCCSG) second Wilms\u2019 tumour study. British Journal of Cancer (2000) 83(5)', '602\u2013608\\n7.\\tHawkins M et al. The British Childhood Cancer Survivor Study: objectives', 'methods', 'population structure', 'response rates and initial descriptive information. Pediatr Blood Cancer 2008', '50:1018\u20131025.\\n8.\\thttps://www.cancerresearchuk.org/about-cancer/find-a-clinical-trial/study-improving-treatment-children-kidney-cancer \\n9.\\tHenson K', 'Brock R', 'Shand B et al.  Cohort profile: prescriptions dispensed in the community linked to the national cancer registry in England.  BMJ Open 2018', '8:e020980\\n10.\\tMathoulin-P\u00e9lissier S & Pritchard-Jones K. Evidence-based data and rare cancers: The need for a new methodological approach in research and investigation. Eur J Surg Oncol. 2019', '45:22-30.\\n11.\\tGatta G et al', 'oral presentation at ENCR conference', '2018. https://encr.eu/sites/default/files/2018-ENCR-Conference/GGatta%20presentation%20JRC%20ENCR%20Copenhagen.pdf\\n12.\\tGatta G et al. Childhood cancer survival in Europe 1999-2007: results of EUROCARE-5--a population-based study. Lancet Oncol 2014', '15:35\u201347. \\n13.\\tPritchard-Jones K', 'Graf N', 'van Tinteren H', 'Craft A. Evidence for a delay in diagnosis of Wilms\u2019 tumour in the UK compared with Germany: implications for primary care for children. Arch Dis Child 2016', '101:417\u201320. \\n14.\\tWhelan J', 'Hackshaw A', 'McTiernan A', 'Grimer R', 'Spooner D', 'Bate J', 'Ranft A', 'Paulussen M', 'Juergens H', 'Craft A', 'Lewis I. Survival is influenced by approaches to local treatment of Ewing sarcoma within an international randomised controlled trial: analysis of EICESS-92. Clin Sarcoma Res. 2018 Mar 30', '8:6. doi: 10.1186/s13569-018-0093-y. eCollection 2018.\\n15.\\thttps://twitter.com/wilmsuk', 'https://www.facebook.com/groups/449199621834603/'] is not valid under any of the given schemas",
+      "['Song et al.', '(2018)', 'Assessing lifestyle risk factors and inequalities in health outcomes in most deprived communities in Wales.\\nhttps://doi.org/10.23889/ijpds.v3i4.789'] is not valid under any of the given schemas",
+      "['Carter et al.', '(2019)', 'Identifying cerebral palsy from routinely-collected data in England and Wales.\\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC6556471/'] is not valid under any of the given schemas",
+      "['Trefan et al (2019) Electronic Longitudinal Alcohol Study in Communities (ELAStiC) Wales \u2013\\nprotocol for platform development\\n\\nhttps://doi.org/10.23889/ijpds.v4i1.581'] is not valid under any of the given schemas",
+      "['https://www.isdscotland.org/Health-Topics/Child-Health/Child-Health-Programme/Child-Health-Systems-Programme-Pre-School.asp#HealthVisitor'] is not valid under any of the given schemas",
+      "['https://academic.oup.com/ije/article/45/3/714/2572798'] is not valid under any of the given schemas",
+      "['D. A. Drew et al.', 'Science\\n10.1126/science.abc0473 (2020)'] is not valid under any of the given schemas",
+      "['https://mbio.asm.org/content/10/3/e00699-19'] is not valid under any of the given schemas",
+      "['Szakmany', 'T. et al. (2019) Risk Factors for 1-Year Mortality and Hospital Utilization Patterns in Critical Care Survivors: A Retrospective', 'Observational', 'Population-Based Data Linkage Study\\n\\n10.1097/CCM.0000000000003424'] is not valid under any of the given schemas",
+      "['Al Sallakh', '(2018)', 'Creating and utilising the Wales Asthma Observatory to support health policy', 'health service planning and clinical research. Doctoral thesis', 'Swansea University. \\nhttp://cronfa.swan.ac.uk/Record/cronfa48569'] is not valid under any of the given schemas",
+      "['Catherine John', 'Nicola F Reeve', 'Robert C Free', 'Alexander T Williams', 'Ioanna Ntalla', 'Aliki-Eleni Farmaki', 'Jane Bethea', 'Linda M Barton', 'Nick Shrine', 'Chiara Batini', 'Richard Packer', 'Sarah Terry', 'Beverley Hargadon', 'Qingning Wang', 'Carl A Melbourne', 'Emma L Adams', 'Catherine E Bee', 'Kyla Harrington', 'Jos\u00e9 Miola', 'Nigel J Brunskill', 'Christopher E Brightling', 'Julian Barwell', 'Susan E Wallace', 'Ron Hsu', 'David J Shepherd', 'Edward J Hollox', 'Louise V Wain', 'Martin D Tobin', 'Cohort Profile: Extended Cohort for E-health', 'Environment and DNA (EXCEED)', 'International Journal of Epidemiology', 'Volume 48', 'Issue 3', 'June 2019', 'Pages 678\u2013679j'] is not valid under any of the given schemas",
+      "['https://www.researchgate.net/scientific-contributions/2047163416_Geoff_Hall'] is not valid under any of the given schemas",
+      "['Koo S', 'Neilson LJ', 'Von Wagner C', 'Rees CJ (2017)', 'The NHS Bowel Cancer Screening Program: current perspectives on strategies for improvement.\\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC5720037/'] is not valid under any of the given schemas",
+      "['Griffiths et al.', '(2019)', 'Are active children and young people at increased risk of injuries resulting in hospital admission or accident and emergency department attendance? Analysis of linked cohort and electronic hospital records in Wales and Scotland. \\nhttps://doi.org/10.1371/journal.pone.0213435'] is not valid under any of the given schemas",
+      "['Available upon request'] is not valid under any of the given schemas",
+      "['https://www.nature.com/articles/s41588-018-0321-7'] is not valid under any of the given schemas",
+      "['To follow'] is not valid under any of the given schemas",
+      "['de Lusignan S', 'Correa A', 'Smith GE', 'Yonova I', 'Pebody R', 'Ferreira F', 'Elliot AJ', 'Fleming DM. RCGP Research and Surveillance Centre: 50 years\u2019 surveillance of influenza', 'infections', 'and respiratory conditions. BJGP 2017', '67 (663): 440-441. DOI: https://doi.org/10.3399/bjgp17X692645.\\n\\nCorrea A', 'Hinton W', 'McGovern A', 'van Vlymen J', 'Yonova I', 'Jones S', 'de Lusignan S. Royal College of General Practitioners Research and Surveillance Centre (RCGP RSC) sentinel network: a cohort profile. BMJ Open. 2016 Apr 20', '6(4):e011092.\\n\\nHinton W', 'McGovern A', 'Coyle R', 'Thang SH', 'Sharma P', 'Correa A', 'Ferreira F', 'de Lusignan s. Incidence and prevalence of cardiovascular disease in English primary care: a cross-sectional and follow-up study of the Royal College of General Practitioners (RCGP) Research and Surveillance Centre (RSC)BMJ Open 2018', '8:e020282. doi: 10.1136/bmjopen-2017-020282\\n\\nWhyte', 'M. B.', 'Hinton', 'W.', 'McGovern', 'A.', 'van Vlymen', 'J.', 'Ferreira', 'F.', 'Calderara', 'S.', '\u2026 de Lusignan', 'S. (2019). Disparities in glycaemic control', 'monitoring', 'and treatment of type 2 diabetes in England: A retrospective cohort analysis. PLoS medicine', '16(10)', 'e1002942. doi:10.1371/journal.pmed.1002942\\n\\nHill', 'E. M.', 'Petrou', 'S.', 'de Lusignan', 'S.', 'Yonova', 'I.', '& Keeling', 'M. J. (2019). Seasonal influenza: Modelling approaches to capture immunity propagation. PLoS computational biology', '15(10)', 'e1007096. doi:10.1371/journal.pcbi.1007096\\n\\nHoang U', 'James AC', 'Liyanage H', 'et al\\nDeterminants of inter-practice variation in ADHD diagnosis and stimulant prescribing: cross-sectional database study of a national surveillance network\\nBMJ Evidence-Based Medicine 2019', '24:155-161.\\n\\nFeher MD', 'Munro N', 'Russell-Jones D', 'de Lusignan S', 'Khunti K. Novel diabetes subgroups. Lancet Diabetes Endocrinol. 2018 Jun', '6(6):439. doi: 10.1016/S2213-8587(18)30126-8.\\n\\nPebody', 'R.', 'Djennad', 'A.', 'Ellis', 'J.', 'Andrews', 'N.', 'Marques', 'D.', 'Cottrell', 'S.', '\u2026 Zambon', 'M. (2019). End of season influenza vaccine effectiveness in adults and children in the United Kingdom in 2017/18. Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin', '24(31)', '1800488. doi:10.2807/1560-7917.ES.2019.24.31.1800488\\n\\nWoodmansey C', 'McGovern AP', 'McCullough KA', 'Whyte MB', 'Munro NM', 'Correa AC', 'Gatenby PAC', 'Jones SA', 'de Lusignan S. Incidence', 'Demographics', 'and Clinical Characteristics of Diabetes of the Exocrine Pancreas (Type 3c): A Retrospective Cohort Study. Diabetes Care. 2017 Aug 31. pii: dc170542. doi: 10.2337/dc17-0542. \\n\\nde Lusignan', 'S.', 'Correa', 'A.', 'Dos Santos', 'G.', 'Meyer', 'N.', 'Haguinet', 'F.', 'Webb', 'R.', '\u2026 Jones', 'S. (2019). Enhanced Safety Surveillance of Influenza Vaccines in General Practice', 'Winter 2015-16: Feasibility Study. JMIR public health and surveillance', '5(4)', 'e12016. doi:10.2196/12016\\n\\n\\nWe continue to publish new ontologies in scientific journals and contribute to global repositories of machine processible ontologies', 'for example:\\nChronic Kidney disease\\nCole NI', 'Liyanage H', 'Suckling RJ', 'Swift PA', 'Gallagher H', 'Byford R', 'Williams J', 'Kumar S', 'de Lusignan S. An ontological approach to identifying cases of chronic kidney disease from routine primary care data: a cross-sectional study. BMC Nephrol. 2018 Apr 10', '19(1):85.  https://bioportal.bioontology.org/ontologies/CKDO \\nAsthma\\nHoang U', 'Liyanage H', 'Coyle R', 'Godden C', 'Jones S', 'Blair M', 'Rigby M', 'de Lusignan S. Determinants of inter-practice variation in childhood asthma and respiratory infections: cross-sectional study of a national sentinel network. BMJ Open. 2019 Jan 24', '9(1):e024372. https://bioportal.bioontology.org/ontologies/AO\\nInfectious Intestinal Disease\\nde Lusignan', 'S.', 'Shinneman', 'S.', 'Yonova', 'I.', 'van Vlymen', 'J.', 'Elliot', 'A. J.', 'Bolton', 'F.', \"\u2026 O'Brien\", 'S. (2017). An Ontology to Improve Transparency in Case Definition and Increase Case Finding of Infectious Intestinal Disease: Database Study in English General Practice. JMIR medical informatics', '5(3)', 'e34. doi:10.2196/medinform.7641\\nEthnicity\\nTippu Z', 'Correa A', 'Liyanage H', 'Burleigh D', 'McGovern A', 'Van Vlymen J', 'Jones S', 'De Lusignan S. Ethnicity Recording in Primary Care Computerised Medical Record Systems: An Ontological Approach. J Innov Health Inform. 2017 Mar 14', '23(4):920. https://bioportal.bioontology.org/ontologies/EO'] is not valid under any of the given schemas",
+      "['Hunt', 'L.P. et al. (2013)90-day mortality after 409?096 total hip replacements for osteoarthritis', 'from the National Joint Registry for England and Wales: a retrospective analysis', 'The Lancet', '382:9898', '1097-1104', '10.1016/S0140-6736(13)61749-3'] is not valid under any of the given schemas",
+      "['CPRD GOLD Data Resource Profile: https://academic.oup.com/ije/article/44/3/827/632531\\nBibliography: https://cprd.com/bibliography\\nUsing patient data citation: https://understandingpatientdata.org.uk/data-citation'] is not valid under any of the given schemas",
+      "['Lyons', 'R.A.', 'Jones', 'K.H.', 'John', 'G. et al. The SAIL databank: linking multiple health and social care datasets. BMC Med Inform Decis Mak 9', '3 (2009). https://doi.org/10.1186/1472-6947-9-3'] is not valid under any of the given schemas",
+      "['https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/vital-events/general-publications/vital-events-reference-tables'] is not valid under any of the given schemas",
+      "['https://popdatasci.swan.ac.uk/wp-content/uploads/2020/06/nfjo_1000-mothers_report_final_20200603_english.pdf'] is not valid under any of the given schemas",
+      "['PMID: 31710517', 'https://www.biorxiv.org/content/10.1101/636761v1'] is not valid under any of the given schemas",
+      "['Publications are listed at https://bioresourcesupport.org.uk/publications/?nyear=all'] is not valid under any of the given schemas",
+      "['https://www.ndrs.nhs.uk/wp-content/uploads/2020/02/Final-NCRAS-publications-and-resources-Jan19-to-Dec-19.pdf'] is not valid under any of the given schemas",
+      "['None'] is not valid under any of the given schemas",
+      "['Rolfe et al.', '(2017)', 'Linking AWPS and CARIS data to estimate perinatal mortality in Wales due to congenital anomalies. \\nhttps://doi.org/10.23889/ijpds.v1i1.238'] is not valid under any of the given schemas"
+    ]
+  },
+  "coverage_physicalSampleAvailability": {
+    "uniqueErrors": 8,
+    "totalErrors": 49,
+    "errMessages": [
+      "['AVAILABLE'] is not valid under any of the given schemas",
+      "['NOT KNOWN'] is not valid under any of the given schemas",
+      "['LINKAGES HAVE BEEN MADE WITH SOME LOCAL', 'SEPARATELY ADMINISTERED BIORESOURCES'] is not valid under any of the given schemas",
+      "['IN PROGRESS'] is not valid under any of the given schemas",
+      "['PLESAE SEE HERE FOR DETAILS: HTTP://WWW.BRISTOL.AC.UK/ALSPAC/RESEARCHERS/OUR-DATA/BIOLOGICAL-RESOURCES/'] is not valid under any of the given schemas",
+      "['INFLUENZA VIROLOGY'] is not valid under any of the given schemas",
+      "['NO'] is not valid under any of the given schemas",
+      "['N/A'] is not valid under any of the given schemas"
+    ]
+  },
+  "coverage_typicalAgeRange": {
+    "uniqueErrors": 8,
+    "totalErrors": 134,
+    "errMessages": [
+      "'Not Known' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'All Ages' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'All ages' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'Any Age' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'>16 years' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'12 - 109' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'>18 years' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'",
+      "'ALL' does not match '(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])-(150|1[0-4][0-9]|[0-9]|[1-8][0-9]|9[0-9])'"
+    ]
+  },
+  "documentation_associatedMedia": {
+    "uniqueErrors": 1,
+    "totalErrors": 455,
+    "errMessages": [
+      "None is not of type 'string'"
+    ]
+  },
+  "documentation_description": {
+    "uniqueErrors": 7,
+    "totalErrors": 7,
+    "errMessages": [
+      "ERROR too long: '\"Available for patients diagnosed with Cancer (ICD10 C00-97, D00(...)'",
+      "ERROR too long: ''Cancer data are presented for either the patient level cancer d(...)'",
+      "ERROR too long: ''The Royal College of General Practitioners (RCGP) Research and (...)'",
+      "ERROR too long: ''GOSH is the custodian of the most recent study dataset (\u201cIMPORT(...)'",
+      "ERROR too long: ''A regional asset for Yorkshire and Humber Data, a population-ba(...)'",
+      "ERROR too long: '\"Rare Disease data are presented at the level of Rare Disease fa(...)'",
+      "ERROR too long: '\"Background:\\nThe Leeds Biobanking and Sample Processing Lab (LB(...)'"
+    ]
+  },
+  "enrichmentAndLinkage_derivation": {
+    "uniqueErrors": 4,
+    "totalErrors": 58,
+    "errMessages": [
+      "'No' is too short",
+      "'NA' is too short",
+      "'None' is too short",
+      "'N/A' is too short"
+    ]
+  },
+  "provenance_temporal": {
+    "uniqueErrors": 2,
+    "totalErrors": 455,
+    "errMessages": [
+      "'startDate' is a required property",
+      "'timeLag' is a required property"
+    ]
+  },
+  "provenance_temporal_accrualPeriodicity": {
+    "uniqueErrors": 5,
+    "totalErrors": 109,
+    "errMessages": [
+      "'PROVISIONAL DATA: MONTHLY. THE DATASET IS GENERALLY FULLY COMPLETE AND READY FOR ANALYSIS THREE MONTH PRECEDING THE CURRENT DATE.  SO FOR EXAMPLE AT THE END OF AUGUST, DATA IS AVAILABLE UNTIL THE END OF MAY.' is not one of ['STATIC', 'IRREGULAR', 'CONTINUOUS', 'BIENNIAL', 'ANNUAL', 'BIANNUAL', 'QUARTERLY', 'BIMONTHLY', 'MONTHLY', 'BIWEEKLY', 'WEEKLY', 'SEMIWEEKLY', 'DAILY', 'OTHER']",
+      "'PROVISIONAL DATA: NHS24/SAS SUBMITTED DAILY. A&E DATA (MONTHLY). INPATIENT ADMISSIONS (MONTHLY)' is not one of ['STATIC', 'IRREGULAR', 'CONTINUOUS', 'BIENNIAL', 'ANNUAL', 'BIANNUAL', 'QUARTERLY', 'BIMONTHLY', 'MONTHLY', 'BIWEEKLY', 'WEEKLY', 'SEMIWEEKLY', 'DAILY', 'OTHER']",
+      "'IN PROGRESS' is not one of ['STATIC', 'IRREGULAR', 'CONTINUOUS', 'BIENNIAL', 'ANNUAL', 'BIANNUAL', 'QUARTERLY', 'BIMONTHLY', 'MONTHLY', 'BIWEEKLY', 'WEEKLY', 'SEMIWEEKLY', 'DAILY', 'OTHER']",
+      "'2012-2019' is not one of ['STATIC', 'IRREGULAR', 'CONTINUOUS', 'BIENNIAL', 'ANNUAL', 'BIANNUAL', 'QUARTERLY', 'BIMONTHLY', 'MONTHLY', 'BIWEEKLY', 'WEEKLY', 'SEMIWEEKLY', 'DAILY', 'OTHER']",
+      "'N/A' is not one of ['STATIC', 'IRREGULAR', 'CONTINUOUS', 'BIENNIAL', 'ANNUAL', 'BIANNUAL', 'QUARTERLY', 'BIMONTHLY', 'MONTHLY', 'BIWEEKLY', 'WEEKLY', 'SEMIWEEKLY', 'DAILY', 'OTHER']"
+    ]
+  },
+  "revisions_url": {
+    "uniqueErrors": 1,
+    "totalErrors": 71,
+    "errMessages": [
+      "None is not of type 'string'"
+    ]
+  },
+  "revisions_version": {
+    "uniqueErrors": 1,
+    "totalErrors": 71,
+    "errMessages": [
+      "None is not of type 'string'"
+    ]
+  },
+  "root": {
+    "uniqueErrors": 2,
+    "totalErrors": 71,
+    "errMessages": [
+      "'issued' is a required property",
+      "'modified' is a required property"
+    ]
+  },
+  "summary": {
+    "uniqueErrors": 1,
+    "totalErrors": 117,
+    "errMessages": [
+      "'keywords' is a required property"
+    ]
+  },
+  "summary_abstract": {
+    "uniqueErrors": 36,
+    "totalErrors": 46,
+    "errMessages": [
+      "ERROR too long: '\"The NIHR BIoResource ran the pilot for GEL's 100,000 Genomes Pr(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set was superseded by the Mental(...)'",
+      "ERROR too long: ''The Currencies data collected from the Mental Health Services D(...)'",
+      "ERROR too long: ''The Community data collected from the Mental Health Services Da(...)'",
+      "ERROR too long: ''The Mental Health and Learning Disabilities Data Set version\\xa(...)'",
+      "ERROR too long: ''The NJR datasets collect continuous, prospective data on patien(...)'",
+      "ERROR too long: ''This dataset comprises data pulled from Cerner SURGINET and a b(...)'",
+      "ERROR too long: ''The Mental Health and Learning Disabilities Data Set version 1 (...)'",
+      "ERROR too long: ''The Emergency Care Data Set (ECDS) is the national data set for(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version\\xa04 (Episode Level (...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 4 (Event Level - sen(...)'",
+      "ERROR too long: ''A survey completed by lead consultant surgeons at each hospital(...)'",
+      "ERROR too long: ''The aim of the school health service is to promote the physical(...)'",
+      "ERROR too long: ''The Inpatients data collected from the Mental Health Services D(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version\\xa04 (Event Level - (...)'",
+      "ERROR too long: ''The 27-30 month review form is completed at around 27-30 months(...)'",
+      "ERROR too long: ''An anonymised dataset derived from routinely collected data fro(...)'",
+      "ERROR too long: ''The NDA Core audit collects information about general diabetes (...)'",
+      "ERROR too long: ''Patient Reported Outcome Measures (PROMs) have been collected n(...)'",
+      "ERROR too long: ''The Service User (patient) data collected from the Mental Healt(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 4.1 (Episode Level -(...)'",
+      "ERROR too long: '\"SAMBA is an annual 'day of care' survey which collects data on (...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 4.1 (Record Level - (...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 4.1 (Event Level - s(...)'",
+      "ERROR too long: ''The Mental Health and Learning Disabilities Data Set is the pre(...)'",
+      "ERROR too long: ''Single, comprehensive repository for healthcare data in England(...)'",
+      "ERROR too long: '\"The Scottish Birth Record (SBR) records baby's neonatal care in(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version\\xa04 (Record Level -(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 3 and 3.5 (sensitive(...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 4 (Episode Level - s(...)'",
+      "ERROR too long: ''The Maternity Services Data Set (MSDS) is a patient-level data (...)'",
+      "ERROR too long: ''The Mental Health Minimum Data Set version 2.6 (sensitive data (...)'",
+      "ERROR too long: ''A continuously ascertained, record-level dataset of the hospita(...)'",
+      "ERROR too long: ''The Mental Health Services Data Set (MHSDS) collects data from (...)'",
+      "ERROR too long: ''The IBD Registry has the promise to bring Patient Reported Outc(...)'",
+      "ERROR too long: ''ISAR is the first global severe asthma registry; a joint initia(...)'"
+    ]
+  },
+  "summary_doiName": {
+    "uniqueErrors": 7,
+    "totalErrors": 187,
+    "errMessages": [
+      "'n/a' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'not available' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'10.1093/ije/dyz175 (for the research paper)' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'tbd' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'to follow' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'not currently available' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'",
+      "'in progress' does not match '^10.\\\\d{4,9}/[-._;()/:a-zA-Z0-9]+$'"
+    ]
+  },
+  "summary_keywords": {
+    "uniqueErrors": 4,
+    "totalErrors": 19,
+    "errMessages": [
+      "ERROR too long: ''and Evaluation - Immunologic Surveillance - Sentinel Surveillan(...)'",
+      "ERROR too long: ''Information Storage and Retrieval - Controlled Vocabulary - Epi(...)'",
+      "'' is too short",
+      "ERROR too long: ''IBD Crohn\u2019s colitis recall SNP chip microarray biobank Affymetr(...)'"
+    ]
+  },
+  "summary_publisher_deliveryLeadTime": {
+    "uniqueErrors": 25,
+    "totalErrors": 237,
+    "errMessages": [
+      "'ONCE WE HAVE ACCEPTED YOUR APPLICATION AFTER ITS INITIAL REVIEW, THE APPLICATION IS SUBJECT TO OUR SERVICE LEVELS. WE ONLY PAUSE THE ELAPSED TIME WHEN WE REQUIRE FURTHER DETAIL, SUCH AS A MORE EXPLICIT ARTICULATION OF THE PURPOSE, OR WHEN APPROVALS ARE REQUIRED FROM AN EXTERNAL BODY (SUCH AS APPROVED RESEARCHER STATUS FROM ONS).  OUR SERVICE RESPONSE TIMES, FROM THE DATE THAT THE APPLICATION IS ACCEPTED TO THE DATE THAT YOU SIGN THE AGREEMENT' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://WWW.QMUL.AC.UK/CHILL/CONTACTS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR SELF-REPORT VARIABLE, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'ACCESS TO FULL GWAS SUMMARY STATISTICS TYPICALLY LESS THAN 3 WORKING DAYS: HTTPS://GITHUB.COM/GENOMICSITER/PFGENETICS' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'AVAILABLE UPON REQUEST' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR DEMOGRAPHICS, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'TBC' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://CPRD.COM/LINKED-DATA' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://CPRD.COM/DATA-ACCESS' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH REQUESTS FOR DE-IDENTIFIED GENOTYPE DATA, THIS SHOULD USE THE LIGHTWEIGHT PROCESS UNLESS THE PURPOSE OF ACCESSING DATA IS UNCLEAR, OR THE DESTINATION UNSAFE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'CONTACT PROFESSOR CHRIS BRIGHTLING FOR FURTHER INFORMATION (CEB17@LEICESTER.AC.UK)' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE THAT MEETS QUARTERLY.  WITH CONTACT DETAILS, ACCESS WILL NOT BE APPROVED UNLESS THERE IS A DEMONSTRABLE AND ETHICALLY APPROVED REQUIREMENT, WHICH IS LIKELY TO TAKE MUCH LONGER TO REALISE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE SEE: HTTPS://SAILDATABANK.COM/APPLICATION-PROCESS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE CONTACT THE PUBLISHER USING CONTACT POINT DETAILS PROVIDED' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'PLEASE CONTACT THE PUBLISHER USING CONTACT POINT DETAILS PROVIDED.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'ACCESS REQUEST DURATION DEPENDS ON SCOPING AND THE IGRP PROCESS. GENERAL ESTIMATE ~ 3MONTHS.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'48 DAYS AS PER PHE POLICY' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTP://OPCRD.CO.UK/OPCRD-DATA-REQUEST/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  WITH CONSENT RECORDS, IT IS THE METHOD OF CALCULATION OF THOSE CONSENTING THAT IS APPROVED, AND NOT THE RELEASE OF RECORDS PER SE.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'16 WEEKS (8 WEEKS FOR COMMITTEE DECISION AND 8 WEEKS FOR DATA EXTRACTION AND PROCESSING)' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'2-3 MONTHS FROM A VALID APPLICATION.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'HTTPS://WWW.ISDSCOTLAND.ORG/PRODUCTS-AND-SERVICES/EDRIS/' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A SAMPLE ACCESS REQUEST MUST BE APPROVED BY THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC). THE SC MEETS QUARTERLY.  SAMPLE PICKING MAY TAKE MUCH LONGER - OFTEN IN THE ORDER OF WEEKS OR MONTHS - DEPENDING ON THE COMPLEXITY OF THE SELECTION PROCESS.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'A DATA ACCESS REQUEST MUST BE APPROVED BY THE DATA ACCESS COMMITTEE (DAC) (FOR LIGHTWEIGHT APPLICATIONS FOR EXISTING RESOURCES) OR THE INDEPENDENT NIHR BIORESOURCE STEERING COMMITTEE (SC) (EVERYTHING ELSE). THE DAC MEETS VIRTUALLY, AND SHOULD DECIDE WITHIN ONE WEEK. THE SC ACTS AS THE POINT OF REPORTING AND ESCALATION FOR THE DAC, AND MEETS QUARTERLY.  THE CRFS TEND TO BE COMPLETED AS A CHECKLIST, WITH EACH PARTICIPANT HAVING SPARSE BUT UNIQUE DATA. THIS IS LIKELY TO LEAD TO DATA THAT IS BOTH POTENTIALLY DISCLOSIVE AND HARD TO DE-IDENTIFY WITHOUT REDUCING UTILITY.  THEREFORE DATA REQUESTS FOR ACCESS TO CRF DATA ARE LIKELY TO BE HANDLED BY THE SC.' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']",
+      "'YET TO BE DECIDED' is not one of ['LESS 1 WEEK', '1-2 WEEKS', '2-4 WEEKS', '1-2 MONTHS', '2-6 MONTHS', 'MORE 6 MONTHS', 'VARIABLE', 'NOT APPLICABLE', 'OTHER']"
+    ]
+  },
+  "summary_title": {
+    "uniqueErrors": 29,
+    "totalErrors": 38,
+    "errMessages": [
+      "ERROR too long: ''National Audit of Psychosis - Early Intervention Psychosis Audi(...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP):COPD and adult(...)'",
+      "ERROR too long: ''Falls and Fragility Fracture Audit Programme Fracture Liaison S(...)'",
+      "ERROR too long: ''South London and Maudsley NHS Foundation Trust (SLaM) Clinical (...)'",
+      "ERROR too long: ''National Cardiac Audit Programme - National Audit of Percutaneo(...)'",
+      "ERROR too long: ''The Primary-Secondary Care Partnership to Improve Outcomes in C(...)'",
+      "ERROR too long: ''Falls and Fragility Fracture Audit Programme National Hip Datab(...)'",
+      "ERROR too long: ''National Paediatric Diabetes Audit - Spotlight survey of workfo(...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP): COPD secondar(...)'",
+      "ERROR too long: ''Quality of Life of Cancer Survivors in England: Pilot Patient R(...)'",
+      "ERROR too long: ''North West London COVID-19 Patient Level Situation Report (NWL (...)'",
+      "ERROR too long: ''Quality of Life of Colorectal Cancer Survivors in England: Pati(...)'",
+      "ERROR too long: ''National Paediatric Diabetes Audit - Spotlight survey of diabet(...)'",
+      "ERROR too long: ''Epilepsy 12 - National organisational audit (service descriptor(...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP): secondary car(...)'",
+      "ERROR too long: '\"St Thomas' Hospitals Plasma, serum & DNA Bio bank from patients(...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP): Pulmonary reh(...)'",
+      "ERROR too long: ''National Cardiac Audit Programme - Myocardial Ischaemia Nationa(...)'",
+      "ERROR too long: ''The Royal College of General Practitioners (RCGP) Research and (...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP): primary care (...)'",
+      "ERROR too long: ''National Clinical Audit of Anxiety and Depression - spotlight a(...)'",
+      "ERROR too long: ''National Cardiac Audit Programme - National Congenital Heart Di(...)'",
+      "ERROR too long: ''National Asthma and COPD Audit Programme (NACAP): Adult Asthma (...)'",
+      "ERROR too long: ''National Audit of Psychosis - Audit on Early Intervention in Ps(...)'",
+      "ERROR too long: ''Maternal, Newborn and Infant Clinical Outcome Review Programme (...)'",
+      "ERROR too long: ''National Audit of Dementia - spotlight audit on the prescriptio(...)'",
+      "ERROR too long: ''Falls and Fragility Fracture Audit Programme National Audit of (...)'",
+      "ERROR too long: ''National Paediatric Diabetes Audit - Parent and Patient Recorde(...)'",
+      "ERROR too long: ''National Paediatric Diabetes Audit - core clinical dataset (car(...)'"
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "identifier": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/latest",
+  "version": "0.0.4",
+  "revisions": [
+    {
+      "version": "0.0.4",
+      "url": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/0.0.4"
+    },
+    {
+      "version": "0.0.3",
+      "url": "https://web.www.healthdatagateway.org/dataset/e0ed59e2-8fb5-44d4-b694-f31d46884954/0.0.3"
+    }
+  ],
+  "issued": "2020-01-23T20:27:58.049Z",
+  "modified": "2020-03-11T20:27:58.049Z",
+  "summary": {
+    "title": "Brecon dataset",
+    "abstract": "A register of children diagnosed with type 1 diabetes, collected from Paediatric diabetes clinics in Wales. Maintained by the Brecon Group. Data has been collected since 1995 and is complete since then, but some people diagnosed earlier are also included.",
+    "publisher": {
+      "memberOf": "ALLIANCE",
+      "accessRights": "https://saildatabank.com/application-process/",
+      "deliveryLeadTime": "2-6 MONTHS",
+      "dataUseLimitation": ["GENERAL RESEARCH USE"],
+      "dataUseRequirements": ["RETURN TO DATABASE OR RESOURCE"],
+      "accessService": "https://saildatabank.com/",
+      "name": "SAIL",
+      "logo": "https://popdatasci.swan.ac.uk/wp-content/uploads/2019/06/CoE07SAIL_Databank_Logo-1024x278.png",
+      "description": "SAIL stands for Secure Anonymised Information Linkage. The SAIL Databank is a world-class flagship for the robust secure storage and use of anonymised person-based data for research to improve health, well-being and services. Its databank of anonymised data about the population of Wales is internationally recognised. Backed and endorsed by the Government, the SAIL Databank receives core funding from the Welsh Government'92s Health and Care Research Wales.",
+      "contactPoint": "SAILDatabank@swansea.ac.uk"
+    },
+    "contactPoint": "SAILDatabank@swansea.ac.uk",
+    "keywords": [
+      "SAIL ",
+      "BRECON",
+      "Diabetes",
+      "Children",
+      "Paediatric"
+    ],
+    "alternateIdentifiers": ["BREC"],
+    "doiName": "10.1007/s00125-019-05063-w"
+  },
+  "documentation": {
+    "description": "A register of children diagnosed with type 1 diabetes in Wales, collected from Paediatric diabetes clinics in Wales. Maintained by the Brecon Group. Two capture-recapture studies have been done showing >97% completeness for type 1 diabetes diagnoses in Wales. Data has been collected since 1995 and is complete since then, but some people diagnosed earlier are also included.",
+    "associatedMedia": [
+      "https://saildatabank.com/saildata/projects-using-sail/"
+    ],
+    "isPartOf": [
+      "NOT APPLICABLE"
+    ]
+  },
+  "coverage": {
+    "spatial": "https://www.geonames.org/2634895/wales.html",
+    "typicalAgeRange": "0-90",
+    "physicalSampleAvailability": [
+      "NOT AVAILABLE"
+    ],
+    "followup": "1-10 YEARS",
+    "pathway": "Not integrated with patient care"
+  },
+  "provenance": {
+    "origin": {
+      "purpose": [
+        "DISEASE REGISTRY"
+      ],
+      "source": [
+        "EPR"
+      ],
+      "collectionSituation": [
+        "OUTPATIENTS"
+      ]
+    },
+    "temporal": {
+      "accrualPeriodicity": "ANNUAL",
+      "distributionReleaseDate": "2019-03-11",
+      "endDate": "2019-01-11",
+      "timeLag": "1-2 WEEKS",
+      "startDate": "1979-06-06"
+    }
+  },
+  "accessibility": {
+    "access": {
+      "accessRights": "https://saildatabank.com/application-process/",
+      "accessService": "SAIL DATABANK",
+      "deliveryLeadTime": "2-6 MONTHS",
+      "jurisdiction": [
+        "GB-WLS"
+      ],
+      "dataController": "Brecon Group",
+      "dataProcessor": "SAIL DATABANK"
+    },
+    "usage": {
+      "dataUseLimitation": [
+        "GENERAL RESEARCH USE"
+
+      ],
+      "dataUseRequirements": [
+        "RETURN TO DATABASE OR RESOURCE"
+
+      ],
+      "resourceCreator": "Brecon group",
+      "investigations": [
+        "https://onlinelibrary.wiley.com/doi/full/10.1111/pedi.12829."
+      ],
+      "isReferencedBy": [
+        "10.1007/s00125-019-05063-"
+      ]
+    },
+    "formatAndStandards": {
+      "vocabularyEncodingScheme": [
+        "LOCAL"
+      ],
+      "conformsTo": [
+        "LOCAL"
+      ],
+      "language": [
+        "en"
+      ],
+      "format": [
+        "application/sql"
+      ]
+    }
+  },
+  "enrichmentAndLinkage": {
+    "qualifiedRelation": [
+      "https://www.cardiff.ac.uk/centre-for-trials-research/research/studies-and-trials/view/novo-nordisk"],
+    "derivation": [
+      "Not Available"
+    ],
+    "tools": ["http://www.weds-wales.co.uk/brecon-group.htm"]
+  },
+  "observations": [
+    {
+
+      "observedNode": "PERSONS",
+      "measuredValue": 4695,
+      "observationDate": "2010-01-11",
+      "disambiguatingDescription": "Children diagnosed with type 1 diabetes in Wales",
+      "measuredProperty": "COUNT"
+
+    }
+  ]
+}

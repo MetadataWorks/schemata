@@ -2,9 +2,13 @@ name: generate-markdown
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - develop
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - develop
 
 jobs:
   generate-markdown:
@@ -13,19 +17,33 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+    - name: Convert Dataset Yaml to JSON
+      run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < schema/dataset/latest/dataset.schema.yaml > schema/dataset/latest/dataset.schema.json
+    
     - name: Set up NodeJS
       uses: actions/setup-node@v1
       with:
         node-version: '13.x'
     
+    - name: Install spectral package
+      run: npm install -g @stoplight/spectral
+    
+    - name: Lint Latest Dataset YAML
+      run: spectral lint schema/dataset/latest/dataset.schema.yaml
+    
     - name: Install jsonschema2md package
       run: npm install -g @adobe/jsonschema2md
     
     - name: Run jsonschema2md package to generate markdown
-      run: jsonschema2md -n -d schema -o docs -x -
+      run: jsonschema2md -n -d schema/dataset/latest -o docs/dataset/latest -x -
     
     - name: Auto-Commit generate-markdown
       uses: stefanzweifel/git-auto-commit-action@v4.1.6
+      if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
       with:
         commit_message: Commit generated markdown
         branch: ${{ github.head_ref }}
