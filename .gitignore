@@ -89,9 +89,10 @@ db_york_p03.py
 
 # data folder
 /data/
-/schemas/
+/lcl_data/
 *.pyc
 v2 Metadata Specs feedback_tracker_9.12.2020.xlsx
 
 # dataset v2 JSON file
 read_datamodels_v2.py
+HDR_read_datamodels_v2.py

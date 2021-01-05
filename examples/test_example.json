@@ -1,83 +1,182 @@
 {
   "count": 1,
-  "timeStamp": "2020-12-16T20:28:30",
+  "timeStamp": "2020-12-17T16:32:37",
   "specVersion": "v2.0.1",
   "dataModels": [
     {
-      "identifier": "https://web.www.healthdatagateway.org/dataset/f56d5407-4a7e-420e-8479-87b075da2b39",
+      "identifier": "https://web.www.healthdatagateway.org/dataset/9525e6e2-e7f8-4034-92f5-21238d57801c",
       "summary": {
-        "title": "GPES Data for Pandemic Planning and Research (COVID-19)",
-        "abstract": "NHS Digital\u2019s\u00a0fortnightly collection of GP data will\u00a0provide\u00a0data to\u00a0support vital planning and research into coronavirus (COVID-19).",
-        "contactPoint": "enquiries@nhsdigital.nhs.uk",
-        "keywords": "[\"DIGITRIALS\",\"GDPPR\",\"NCS\",\"GP DATA\"]",
-        "doiName": null,
+        "title": "MetadataWorks 2.1 Test Datamodel",
+        "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae magna eget dui iaculis vestibulum. Nulla fermentum eget dui tempor efficitur. Ut condimentum vestibulum gravida. Maecenas eget semper ante. Donec vestibulum ante vitae urna molestie.",
+        "contactPoint": "support@metadataworks.co.uk",
+        "keywords": [
+          "Lorem ipsum",
+          "dolor sit",
+          "amet, consectetur",
+          "adipiscing elit"
+        ],
+        "doiName": "10.5220/0007391101050116",
         "publisher": {
-          "name": "NHS DIGITAL",
-          "contactPoint": "enquiries@nhsdigital.nhs.uk",
-          "memberOf": "ALLIANCE"
+          "name": "MDWTest",
+          "contactPoint": "support@metadataworks.co.uk",
+          "memberOf": "OTHER"
         }
       },
       "documentation": {
-        "description": "Coronavirus (COVID-19) has led to increased demand on general practices, including an increasing number of requests to provide patient data to inform planning and support vital research on the cause, effects, treatments and outcomes for patients of the virus.  \r\n\r\nTo support the response to the coronavirus outbreak, NHS Digital has been legally directed to collect and analyse healthcare information about patients, including from their GP record, for the duration of the coronavirus emergency period, under the COVID-19 Public Health Directions 2020 (COVID-19 Direction). All GP practices in England are legally required to share data with NHS Digital for this purpose under the Health and Social Care Act 2012. More information about this requirement is contained in the Data Provision Notice issued by NHS Digital to GP practices.\r\n\r\nThis collection will reduce burden on general practices, allowing them to focus on patient care and support the coronavirus response.\r\n\r\nTimescales for dissemination of agreed data can be found under 'Our Service Levels' at the following link: https://digital.nhs.uk/services/data-access-request-service-dars/data-access-request-service-dars-process",
-        "associatedMedia": "[\"https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research\"]",
+        "description": "Praesent facilisis maximus elementum. Pellentesque maximus massa ex, non luctus justo placerat at. Nulla eu commodo lectus. Mauris a interdum neque. Nulla a consectetur felis. Vestibulum blandit pulvinar libero non efficitur. Duis placerat fringilla massa, non ultrices mi. Maecenas maximus mi eget magna venenatis vulputate vel sit amet enim. Sed pharetra lacinia imperdiet. Cras blandit massa ut euismod gravida. Fusce convallis sed eros eget feugiat. Mauris in lacus non urna euismod fermentum. Vestibulum a commodo justo. Nunc varius accumsan sapien. Maecenas elit quam, suscipit et sem id, dignissim suscipit ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent quis consectetur tortor. Sed ut leo eget urna pellentesque venenatis sed quis felis. Morbi luctus blandit dui sed tristique. Nullam interdum vel augue vel pretium. Nunc id suscipit nisl, eu blandit nunc. Nulla magna lectus, consectetur ut dictum a, suscipit ut orci. Integer rhoncus velit id porta interdum. Aliquam ornare magna et leo lobortis, sit amet aliquam arcu tempor. Ut imperdiet ante rutrum rhoncus condimentum. Duis ut augue quis lacus volutpat sodales nec non dui. Sed a augue vel nisi maximus molestie.",
+        "associatedMedia": [
+          "https://images.app.goo.gl/cR7QPiLLG1tH5Amz7"
+        ],
         "isPartOf": "NOT APPLICABLE"
       },
       "coverage": {
-        "spatial": "England",
-        "typicalAgeRange": "16-150",
-        "physicalSampleAvailability": "[\"NOT AVAILABLE\"]",
-        "followup": "OTHER",
-        "pathway": "NOT APPLICABLE"
+        "spatial": "https://www.geonames.org/6269131/england.html",
+        "typicalAgeRange": "0-150",
+        "physicalSampleAvailability": [
+          "DNA",
+          "RNA"
+        ],
+        "followup": "0 - 6 MONTHS",
+        "pathway": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
       },
       "provenance": {
         "origin": {
-          "purpose": "ADMINISTRATIVE",
-          "source": "EPR",
-          "collectionSituation": "PRIMARY CARE"
+          "purpose": [
+            "TRIAL",
+            "AUDIT",
+            "OTHER"
+          ],
+          "source": [
+            "FREETEXT NLP",
+            "MACHINE GENERATED"
+          ],
+          "collectionSituation": [
+            "ACCIDENT AND EMERGENCY",
+            "SERVICES"
+          ]
         },
         "temporal": {
-          "accrualPeriodicity": "WEEKLY",
-          "distributionReleaseDate": "2020-11-17",
-          "startDate": "1900-01-01",
-          "endDate": "2022-03-31",
-          "timeLag": "VARIABLE"
+          "accrualPeriodicity": "CONTINUOUS",
+          "distributionReleaseDate": null,
+          "startDate": "2020-07-01",
+          "endDate": null,
+          "timeLag": "NO TIMELAG"
         }
       },
       "accessibility": {
         "usage": {
-          "dataUseLimitation": "RESEARCH SPECIFIC RESTRICTIONS",
-          "dataUseRequirements": "[\"INSTITUTION SPECIFIC RESTRICTIONS\",\"PROJECT SPECIFIC RESTRICTIONS\",\"TIME LIMIT ON USE\"]",
-          "resourceCreator": "[\"NHS Digital\"]",
-          "investigations": "[\"https://digital.nhs.uk/services/data-access-request-service-dars/register-of-approved-data-releases\"]",
-          "isReferencedBy": "[\"NOT APPLICABLE\"]"
+          "dataUseLimitation": [
+            "RESEARCH SPECIFIC RESTRICTIONS",
+            "RESEARCH USE ONLY"
+          ],
+          "dataUseRequirements": [
+            "COLLABORATION REQUIRED",
+            "ETHICS APPROVAL REQUIRED",
+            "GEOGRAPHICAL RESTRICTIONS",
+            "NOT FOR PROFIT USE"
+          ],
+          "resourceCreator": [
+            "Aenean hendrerit ex quis nunc hendrerit, eget viverra mauris blandit. ",
+            "Fusce urna felis, fringilla vitae elit nec, consectetur maximus dolor. ",
+            "Sed aliquet sed eros sed aliquam. Aenean feugiat vel ex quis tristique."
+          ],
+          "investigations": [
+            "https://metadataworks.co.uk/products/",
+            "https://metadataworks.co.uk/better-quality/"
+          ],
+          "isReferencedBy": [
+            "10.5220/0007391101050116"
+          ]
         },
         "access": {
-          "accessRights": "[\"https://digital.nhs.uk/services/data-access-request-service-dars\"]",
-          "accessService": "Once your DARS application has been approved, data will be made available either by secure file transfer or through the Data Access Environment (DAE).\r\n\r\nSecure file transfer: https://digital.nhs.uk/services/transfer-data-securely\r\n\r\nDAE: https://digital.nhs.uk/services/data-access-environment-dae",
-          "accessRequestCost": "https://digital.nhs.uk/services/data-access-request-service-dars/data-access-request-service-dars-charges",
-          "deliveryLeadTime": "OTHER",
-          "jurisdiction": "GB-ENG",
-          "dataController": "NHS Digital",
-          "dataProcessor": "Not Applicable"
+          "accessRights": [
+            "https://metadataworks.co.uk/privacy/",
+            "https://metadataworks.co.uk/case-studies/"
+          ],
+          "accessService": "Nullam eu tortor turpis. Quisque vitae magna eu nisi varius porttitor. Quisque facilisis quis quam in convallis. Mauris nec tortor nisi. Lorem ipsum dolor.",
+          "accessRequestCost": "Eget bubkes orci free dictum pulvinar: 0 GBP.",
+          "deliveryLeadTime": "LESS 1 WEEK",
+          "jurisdiction": [
+            "GB-ENG",
+            "GB-NIR",
+            "GB-SCT",
+            "GB-WLS",
+            "BO"
+          ],
+          "dataController": "MetadataWorks",
+          "dataProcessor": "MetadataWorks"
         },
         "formatAndStandards": {
-          "vocabularyEncodingScheme": "[\"SNOMED CT\",\"DM+D\",\"NHS NATIONAL CODES\",\"ODS\"]",
-          "conformsTo": "LOCAL",
-          "language": "en",
-          "format": "[\"csv\"]"
+          "vocabularyEncodingScheme": [
+            "READ",
+            "SNOMED CT",
+            "SNOMED RT",
+            "NHS NATIONAL CODES",
+            "NHS SCOTLAND NATIONAL CODES",
+            "NHS WALES NATIONAL CODES",
+            "ICD10",
+            "ICD9"
+          ],
+          "conformsTo": [
+            "OMOP",
+            "NHS DATA DICTIONARY"
+          ],
+          "language": [
+            "ay",
+            "cy",
+            "en",
+            "gn",
+            "qu"
+          ],
+          "format": [
+            "NoSQL",
+            "JSON",
+            "XML",
+            "YAML"
+          ]
         }
       },
       "enrichmentAndLinkage": {
-        "qualifiedRelation": "[\"NOT APPLICABLE\"]",
-        "derivation": "[\"Data will be minimised as appropriate relative to the data access application\"]",
-        "tools": "[\"https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research/guide-for-analysts-and-users-of-the-data\"]"
+        "qualifiedRelation": [
+          "10.5220/0007391101050116",
+          "https://dl.acm.org/doi/abs/10.5220/0007391101050116",
+          "Milward, D., 2019, February. Model Driven Data Management in Healthcare. In MODELSWARD (pp. 105-116)."
+        ],
+        "derivation": [
+          "10.5220/0007391101050116"
+        ],
+        "tools": [
+          "https://rapidapi.com/serg.osipchuk/api/AlchemyText"
+        ]
       },
-      "observations": "[{\"observedNode\":\"Persons\",\"measuredValue\":\"56441600\",\"disambiguatingDescription\":\"This and other counts (for GP system suppliers, Practices, Journal Entries and Clinical Codes Cluster Utilisation) and coverage proportion for England are reported at https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research/guide-fo\",\"observationDate\":\"2020-08-24\",\"measuredProperty\":\"Count\"}]",
+      "observations": [
+        {
+          "observedNode": "Events",
+          "measuredValue": "128",
+          "disambiguatingDescription": "Fusce ut mauris a quam vulputate condimentum.",
+          "observationDate": "2020-07-01",
+          "measuredProperty": "Count"
+        },
+        {
+          "observedNode": "Findings",
+          "measuredValue": "256",
+          "disambiguatingDescription": "Aliquam ac lorem consequat, bibendum risus sit amet, condimentum eros.",
+          "observationDate": "2020-08-01",
+          "measuredProperty": "Count"
+        },
+        {
+          "observedNode": "Persons",
+          "measuredValue": "512",
+          "disambiguatingDescription": "Curabitur elementum purus eu mi suscipit lobortis.",
+          "observationDate": "2020-09-01",
+          "measuredProperty": "Count"
+        }
+      ],
       "revisions": {
-        "latest": "f56d5407-4a7e-420e-8479-87b075da2b39"
+        "latest": "9525e6e2-e7f8-4034-92f5-21238d57801c"
       },
-      "modified": "2020-12-16T18:41:10",
-      "issued": "2020-12-16T18:41:10"
+      "modified": "2020-12-17T16:24:50",
+      "issued": "2020-12-17T16:24:50"
     }
   ]
 }
