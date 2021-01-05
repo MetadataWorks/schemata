@@ -1278,7 +1278,8 @@
             {
               "type": "string",
               "enum": [
-                "COUNT"
+                "COUNT",
+                "Count"
               ]
             }
           ]
@@ -1388,10 +1389,10 @@
     "followup": {
       "type": "string",
       "enum": [
-        "0-6 MONTHS",
-        "6-12 MONTHS",
-        "1-10 YEARS",
-        "MORE 10 YEARS",
+        "0 - 6 MONTHS",
+        "6 - 12 MONTHS",
+        "1 - 10 YEARS",
+        "> 10 YEARS",
         "UNKNOWN",
         "CONTINUOUS",
         "OTHER"
@@ -1499,12 +1500,17 @@
       "type": "string",
       "enum": [
         "COLLABORATION REQUIRED",
+        "PROJECT SPECIFIC RESTRICTIONS",
         "ETHICS APPROVAL REQUIRED",
+        "INSTITUTION SPECIFIC RESTRICTIONS",
+        "GEOGRAPHICAL RESTRICTIONS",
         "PUBLICATION MORATORIUM",
         "PUBLICATION REQUIRED",
         "RETURN TO DATABASE OR RESOURCE",
         "TIME LIMIT ON USE",
-        "DISCLOSURE CONTROL"
+        "DISCLOSURE CONTROL",
+        "NOT FOR PROFIT USE",
+        "USER SPECIFIC RESTRICTION"
       ]
     },
     "deliveryLeadTime": {

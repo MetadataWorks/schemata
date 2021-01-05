@@ -201,14 +201,14 @@ def assess_completeness(completeness, data_model):
             continue
         elif 'structuralMetadata'==comp_key[:18]:
             dm_completeness[comp_key]['score'] = dm_data * comp_score['weight']
-            dm_completeness[comp_key]['value'] = f"{dm_data}"[:32]
+            dm_completeness[comp_key]['value'] = f"{dm_data}"[:64]
             if dm_data > 0:
                 total_count += 1
             total_weight += dm_data * comp_score['weight']
             continue
         if dm_data:
             dm_completeness[comp_key]['score'] = comp_score['weight']
-            dm_completeness[comp_key]['value'] = f"{dm_data}"[:32]
+            dm_completeness[comp_key]['value'] = f"{dm_data}"[:64]
             total_count += 1
             total_weight += comp_score['weight']
 
@@ -220,6 +220,10 @@ def assess_completeness(completeness, data_model):
             dm_completeness['provenance.temporal.endDate']['value'] = 'continuous data collection'
             total_count += 1
             total_weight += dm_completeness['provenance.temporal.endDate']['score']
+            dm_completeness['provenance.temporal.distributionReleaseDate']['score'] = dm_completeness['provenance.temporal.distributionReleaseDate']['weight']
+            dm_completeness['provenance.temporal.distributionReleaseDate']['value'] = 'continuous data collection'
+            total_count += 1
+            total_weight += dm_completeness['provenance.temporal.distributionReleaseDate']['score']
 
     return {'count': total_count, 'weight': total_weight, 'completeness': dm_completeness}
 
@@ -233,7 +237,9 @@ def assess_errors(validator, validation_errors, data_model):
     if data_model.get('provenance', None):
         if data_model['provenance'].get('temporal', None):
             if 'CONTINUOUS' == data_model['provenance']['temporal'].get('accrualPeriodicity', ''):
-                error_exceptions.append('provenance.temporal.accrualPeriodicity')
+                error_exceptions.extend(['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
+            if 'IRREGULAR' == data_model['provenance']['temporal'].get('accrualPeriodicity', ''):
+                error_exceptions.extend(['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
 
     error_count, error_weight = 0, 0
     errors = sorted(validator.iter_errors(data_model), key=lambda e: e.path)
@@ -257,7 +263,7 @@ def assess_errors(validator, validation_errors, data_model):
                 dm_errors[error_key]['score'] = dm_errors[error_key]['weight']
                 error_count += 1
                 error_weight += dm_errors[error_key]['weight']
-                dm_errors[error_key]['err_msg'] = e.message[-48:]
+                dm_errors[error_key]['err_msg'] = e.message[-128:]
 
     metadataCount = data_model.get('structuralMetadata', {})
     metadataCount = metadataCount.get('structuralMetadataCount', {})
@@ -364,7 +370,7 @@ def score_data_models(val_schema_path, val_weights_path, data_models):
                   'Score': [],
                   'ref': []}
     excel_score = {'datamodels': None}
-    reference_counter = 0
+    reference_counter = len(data_models)
     for data_model in data_models:
         dm_completeness = assess_completeness(completeness, data_model)
         dm_errors = assess_errors(dm_validator, validation_errors, data_model)
@@ -378,9 +384,9 @@ def score_data_models(val_schema_path, val_weights_path, data_models):
         total_sc = 50*((dm_completeness['weight'])+(1-dm_errors['weight']))
         all_scores['Score'].append(f"{total_sc:.2f}%")
         reference_key = f"data-model {reference_counter:04d}"
-        reference_counter += 1
+        reference_counter -= 1
         all_scores['ref'].append(reference_key)
-        write_timestamp(f"{data_model['summary']['publisher'].get('name', 'no org')}>'{data_model['summary'].get('title', 'no title')}': cmp={cmpl_sc:.2f}%, err={err_sc:.2f}%")
+        write_timestamp(f"{reference_counter:04}-{data_model['summary']['publisher'].get('name', 'no org')}>'{data_model['summary'].get('title', 'no title')}': cmp={cmpl_sc:.2f}%, err={err_sc:.2f}%")
         sc_details = explain_score(dm_completeness, dm_errors)
         excel_score[reference_key] = pd.DataFrame(sc_details)
 

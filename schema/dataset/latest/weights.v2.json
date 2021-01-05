@@ -34,7 +34,7 @@
     },
     "5: Accessibility": {
         "accessibility.usage.dataUseLimitation": 0.015873016,
-        "accessibility.usage.datauseRequirements": 0.015873016,
+        "accessibility.usage.dataUseRequirements": 0.015873016,
         "accessibility.usage.resourceCreator": 0.015873016,
         "accessibility.usage.investigations": 0.0,
         "accessibility.usage.isReferencedBy": 0.015873016,
