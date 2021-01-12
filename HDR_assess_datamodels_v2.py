@@ -16,6 +16,7 @@ CWD = os.getcwd()
 DM_JSON_PATH = os.path.join(CWD, 'datasets', '2.0.1', 'datasets_v2.json')
 VALIDATION_SCHEMA_PATH = os.path.join(CWD, 'schema', 'dataset', 'latest', 'dataset.schema.json')
 VALIDATION_WEIGHTS_PATH = os.path.join(CWD, 'schema', 'dataset', 'latest', 'weights.v2.json')
+MEDALLIONS = os.path.join(CWD, 'schema', 'dataset', 'latest', 'medallions.v2.json')
 
 
 def strip_string_to_alphanum(text_in):
@@ -61,7 +62,7 @@ def remove_none_from_dict(json_data):
         js_value = json_data.get(js_key, None)
         if isinstance(js_value, dict):
             remove_none_from_dict(js_value)
-            if 0==len(list(js_value.keys())):
+            if 0 == len(list(js_value.keys())):
                 json_data.pop(js_key, None)
         else:
             if not js_value:
@@ -97,8 +98,8 @@ def get_json(json_uri):
 
 
 def export_json(data, filename, indent=2):
-  with open(filename, 'w') as jsonfile:
-    json.dump(data, jsonfile, indent=indent)
+    with open(filename, 'w') as jsonfile:
+        json.dump(data, jsonfile, indent=indent)
 
 
 # write excel
@@ -158,6 +159,12 @@ def flatten_datamodel(data_model):
     for dict_key, dict_value in complex_model.items():
         if isinstance(dict_value, dict):
             flatten_dictionary(dict_key, dict_value, flat_data)
+        elif 'observations'==dict_key:
+            for obs in dict_value:
+                for obs_key, obs_value in obs.items():
+                    obs_flat = f"{dict_key}.{obs_key}"
+                    if obs_flat not in flat_data:
+                        flat_data[obs_flat] = obs_value
         else:
             flat_data[dict_key] = dict_value
 
@@ -192,14 +199,14 @@ def assess_completeness(completeness, data_model):
     total_count, total_weight = 0, 0
     for comp_key, comp_score in dm_completeness.items():
         dm_data = flat_dm.get(comp_key, None)
-        if 'identifier'==comp_key:
+        if 'identifier' == comp_key:
             dm_completeness[comp_key]['value'] = f"{dm_data}"[-36:]
             # if flat_dm.get('HOP_status', None):
             dm_completeness[comp_key]['score'] = comp_score['weight']
             total_count += 1
             total_weight += comp_score['weight']
             continue
-        elif 'structuralMetadata'==comp_key[:18]:
+        elif 'structuralMetadata' == comp_key[:18]:
             dm_completeness[comp_key]['score'] = dm_data * comp_score['weight']
             dm_completeness[comp_key]['value'] = f"{dm_data}"[:64]
             if dm_data > 0:
@@ -215,12 +222,14 @@ def assess_completeness(completeness, data_model):
     # special rules
     # - continuous data collection
     if flat_dm.get('provenance.temporal.accrualPeriodicity', None):
-        if 'CONTINUOUS'==flat_dm['provenance.temporal.accrualPeriodicity']:
-            dm_completeness['provenance.temporal.endDate']['score'] = dm_completeness['provenance.temporal.endDate']['weight']
+        if 'CONTINUOUS' == flat_dm['provenance.temporal.accrualPeriodicity']:
+            dm_completeness['provenance.temporal.endDate']['score'] = dm_completeness['provenance.temporal.endDate'][
+                'weight']
             dm_completeness['provenance.temporal.endDate']['value'] = 'continuous data collection'
             total_count += 1
             total_weight += dm_completeness['provenance.temporal.endDate']['score']
-            dm_completeness['provenance.temporal.distributionReleaseDate']['score'] = dm_completeness['provenance.temporal.distributionReleaseDate']['weight']
+            dm_completeness['provenance.temporal.distributionReleaseDate']['score'] = \
+            dm_completeness['provenance.temporal.distributionReleaseDate']['weight']
             dm_completeness['provenance.temporal.distributionReleaseDate']['value'] = 'continuous data collection'
             total_count += 1
             total_weight += dm_completeness['provenance.temporal.distributionReleaseDate']['score']
@@ -237,9 +246,11 @@ def assess_errors(validator, validation_errors, data_model):
     if data_model.get('provenance', None):
         if data_model['provenance'].get('temporal', None):
             if 'CONTINUOUS' == data_model['provenance']['temporal'].get('accrualPeriodicity', ''):
-                error_exceptions.extend(['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
+                error_exceptions.extend(
+                    ['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
             if 'IRREGULAR' == data_model['provenance']['temporal'].get('accrualPeriodicity', ''):
-                error_exceptions.extend(['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
+                error_exceptions.extend(
+                    ['provenance.temporal.accrualPeriodicity', 'provenance.temporal.distributionReleaseDate'])
 
     error_count, error_weight = 0, 0
     errors = sorted(validator.iter_errors(data_model), key=lambda e: e.path)
@@ -280,46 +291,54 @@ def assess_errors(validator, validation_errors, data_model):
     if denominator > 0:
         if denominator > smd['structuralMetadata.tableName']:
             score = (denominator - smd['structuralMetadata.tableName']) / denominator
-            dm_errors['structuralMetadata.tableName']['score'] = score * dm_errors['structuralMetadata.tableName']['weight']
+            dm_errors['structuralMetadata.tableName']['score'] = score * dm_errors['structuralMetadata.tableName'][
+                'weight']
             error_count += 1
             error_weight += dm_errors['structuralMetadata.tableName']['score']
         if denominator > smd['structuralMetadata.tableDescription']:
             score = (denominator - smd['structuralMetadata.tableDescription']) / denominator
-            dm_errors['structuralMetadata.tableDescription']['score'] = score * dm_errors['structuralMetadata.tableDescription']['weight']
+            dm_errors['structuralMetadata.tableDescription']['score'] = score * dm_errors[
+                'structuralMetadata.tableDescription']['weight']
             error_count += 1
             error_weight += dm_errors['structuralMetadata.tableDescription']['score']
     else:
-        dm_errors['structuralMetadata.dataClassesCount']['score'] = dm_errors['structuralMetadata.dataClassesCount']['weight']
+        dm_errors['structuralMetadata.dataClassesCount']['score'] = dm_errors['structuralMetadata.dataClassesCount'][
+            'weight']
         error_count += 1
         error_weight += dm_errors['structuralMetadata.dataClassesCount']['weight']
         dm_errors['structuralMetadata.tableName']['score'] = dm_errors['structuralMetadata.tableName']['weight']
         error_count += 1
         error_weight += dm_errors['structuralMetadata.tableName']['weight']
-        dm_errors['structuralMetadata.tableDescription']['score'] = dm_errors['structuralMetadata.tableDescription']['weight']
+        dm_errors['structuralMetadata.tableDescription']['score'] = dm_errors['structuralMetadata.tableDescription'][
+            'weight']
         error_count += 1
         error_weight += dm_errors['structuralMetadata.tableDescription']['weight']
     denominator = smd['structuralMetadata.dataElementsCount']
     if denominator > 0:
         if denominator > smd['structuralMetadata.columnName']:
             score = (denominator - smd['structuralMetadata.columnName']) / denominator
-            dm_errors['structuralMetadata.columnName']['score'] = score * dm_errors['structuralMetadata.columnName']['weight']
+            dm_errors['structuralMetadata.columnName']['score'] = score * dm_errors['structuralMetadata.columnName'][
+                'weight']
             error_count += 1
             error_weight += dm_errors['structuralMetadata.columnName']['score']
         if denominator > smd['structuralMetadata.columnDescription']:
             score = (denominator - smd['structuralMetadata.columnDescription']) / denominator
-            dm_errors['structuralMetadata.columnDescription']['score'] = score * dm_errors['structuralMetadata.columnDescription']['weight']
+            dm_errors['structuralMetadata.columnDescription']['score'] = score * dm_errors[
+                'structuralMetadata.columnDescription']['weight']
             error_count += 1
             error_weight += dm_errors['structuralMetadata.columnDescription']['score']
         if denominator > smd['structuralMetadata.dataType']:
             score = (denominator - smd['structuralMetadata.dataType']) / denominator
-            dm_errors['structuralMetadata.dataType']['score'] = score * dm_errors['structuralMetadata.dataType']['weight']
+            dm_errors['structuralMetadata.dataType']['score'] = score * dm_errors['structuralMetadata.dataType'][
+                'weight']
             error_count += 1
             error_weight += dm_errors['structuralMetadata.dataType']['score']
     else:
         dm_errors['structuralMetadata.columnName']['score'] = dm_errors['structuralMetadata.columnName']['weight']
         error_count += 1
         error_weight += dm_errors['structuralMetadata.columnName']['score']
-        dm_errors['structuralMetadata.columnDescription']['score'] = dm_errors['structuralMetadata.columnDescription']['weight']
+        dm_errors['structuralMetadata.columnDescription']['score'] = dm_errors['structuralMetadata.columnDescription'][
+            'weight']
         error_count += 1
         error_weight += dm_errors['structuralMetadata.columnDescription']['score']
         dm_errors['structuralMetadata.dataType']['score'] = dm_errors['structuralMetadata.dataType']['weight']
@@ -355,13 +374,31 @@ def explain_score(dm_completeness, dm_errors):
     return score_details
 
 
-def score_data_models(val_schema_path, val_weights_path, data_models):
+def determine_medallion(medallions, dm_score):
+    for medallion, rules in medallions.items():
+        if rules['min excluding'] < dm_score['weighted_quality_score'] <= rules['max including']:
+            dm_score['weighted_quality_rating'] = medallion
+            return
+    return
+
+
+def score_data_models(val_schema_path, val_weights_path, m_path, data_models, debug_out=False):
     write_timestamp(f"scoring {len(data_models)} datasets")
     validation_schema = get_json(val_schema_path)
     dm_validator = jsonschema.Draft7Validator(validation_schema, format_checker=jsonschema.draft7_format_checker)
     completeness = get_validation_weights(val_weights_path)
     validation_errors = get_validation_weights(val_weights_path)
+    medallions = get_json(m_path)
 
+    score_json = {'id': '',
+                'publisher': '',
+                'title': '',
+                'weighted_quality_rating': 'Not Rated',
+                'weighted_quality_score': 0,
+                'weighted_completeness_percent': 0,
+                'weighted_error_percent': 0
+               }
+    dm_scores = []
     all_scores = {'Organisation': [],
                   'Title': [],
                   'uuid': [],
@@ -369,34 +406,70 @@ def score_data_models(val_schema_path, val_weights_path, data_models):
                   'Errors': [],
                   'Score': [],
                   'ref': []}
-    excel_score = {'datamodels': None}
+    excel_score = {'Datasets': None}
     reference_counter = len(data_models)
     for data_model in data_models:
+        if not data_model.get('uuid', None):
+            write_timestamp(
+                f"  ERR: no uuid for {data_model['summary']['publisher']['name']}>'{data_model['summary']['title']}'")
+            continue
+        # if 'NHS DIGITAL'!=data_model['summary']['publisher']['name'].upper():
+        #     continue
+        dm_score = copy.deepcopy(score_json)
+        dm_score['id'] = data_model['uuid']
+        dm_score['publisher'] = f"{data_model['summary']['publisher']['memberOf']} > {data_model['summary']['publisher']['name']}"
+        dm_score['title'] = data_model['summary']['title']
         dm_completeness = assess_completeness(completeness, data_model)
         dm_errors = assess_errors(dm_validator, validation_errors, data_model)
         all_scores['Organisation'].append(data_model['summary']['publisher'].get('name', 'no org'))
         all_scores['Title'].append(data_model['summary'].get('title', 'no title'))
         all_scores['uuid'].append(data_model['uuid'])
         cmpl_sc = (100 * dm_completeness['weight'])
+        dm_score['weighted_completeness_percent'] = round(cmpl_sc, 2)
         all_scores['Completeness'].append(f"{cmpl_sc:.2f}%")
-        err_sc = (100*dm_errors['weight'])
+        err_sc = (100 * dm_errors['weight'])
+        dm_score['weighted_error_percent'] = round(err_sc, 2)
         all_scores['Errors'].append(f"{err_sc:.2f}%")
-        total_sc = 50*((dm_completeness['weight'])+(1-dm_errors['weight']))
+        total_sc = 50 * ((dm_completeness['weight']) + (1 - dm_errors['weight']))
+        dm_score['weighted_quality_score'] = round(total_sc, 2)
+        determine_medallion(medallions, dm_score)
         all_scores['Score'].append(f"{total_sc:.2f}%")
         reference_key = f"data-model {reference_counter:04d}"
         reference_counter -= 1
         all_scores['ref'].append(reference_key)
-        write_timestamp(f"{reference_counter:04}-{data_model['summary']['publisher'].get('name', 'no org')}>'{data_model['summary'].get('title', 'no title')}': cmp={cmpl_sc:.2f}%, err={err_sc:.2f}%")
+        write_timestamp(
+            f"{reference_counter:04}-{data_model['summary']['publisher'].get('name', 'no org')}>'{data_model['summary'].get('title', 'no title')}': cmp={cmpl_sc:.2f}%, err={err_sc:.2f}%")
         sc_details = explain_score(dm_completeness, dm_errors)
         excel_score[reference_key] = pd.DataFrame(sc_details)
+        dm_scores.append(dm_score)
 
-    excel_score['datamodels'] = pd.DataFrame(all_scores)
-    print()
-    fname = os.path.join(CWD, 'datasets', '2.0.1', 'Debug and Test v2.xlsx')
+    if debug_out:
+        excel_score['Datasets'] = pd.DataFrame(all_scores)
+        print()
+        fname = os.path.join(CWD, 'datasets', '2.0.1', 'Debug and Test v2.xlsx')
+        write_timestamp(f"{fname}")
+        write_excel(fname, excel_score)
+
+    return dm_scores
+
+
+def write_metadata_quality(dm_scores):
+    fname = os.path.join(CWD, 'datasets', '2.0.1', 'metadata_quality.v2.json')
     write_timestamp(f"{fname}")
-    write_excel(fname, excel_score)
+    export_json(dm_scores, fname)
 
-    return all_scores
+    csv_out = {}
+    for dm in dm_scores:
+        for out_key, out_value in dm.items():
+            if not csv_out.get(out_key, None):
+                csv_out[out_key] = []
+            csv_out[out_key].append(out_value)
+    df_out = pd.DataFrame(csv_out)
+    fname = os.path.join(CWD, 'datasets', '2.0.1', 'metadata_quality.v2.csv')
+    write_timestamp(f"{fname}")
+    df_out.to_csv(fname, index=False)
+    print()
+    return
 
 
 def main():
@@ -404,11 +477,13 @@ def main():
 
     data_models = get_datamodels(DM_JSON_PATH)
 
-    dm_scoring = score_data_models(VALIDATION_SCHEMA_PATH, VALIDATION_WEIGHTS_PATH, data_models)
+    dm_scores = score_data_models(VALIDATION_SCHEMA_PATH, VALIDATION_WEIGHTS_PATH, MEDALLIONS, data_models, True)
+
+    write_metadata_quality(dm_scores)
 
     write_timestamp(f"done")
 
 
-if '__main__'==__name__:
+if '__main__' == __name__:
     main()
     print(f" bye ...")
