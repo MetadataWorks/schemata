@@ -407,14 +407,14 @@ def score_data_models(val_schema_path, val_weights_path, m_path, data_models, de
                   'Score': [],
                   'ref': []}
     excel_score = {'Datasets': None}
-    reference_counter = len(data_models)
+    reference_counter = 0
     for data_model in data_models:
+        # if data_model['summary']['publisher']['name'].upper() not in ['HEALTH AND SOCIAL CARE NORTHERN IRELAND', 'NHS DIGITAL', 'NHS DIGITRIALS', 'OFFICE FOR NATIONAL STATISTICS', 'SCOTLAND']:
+        #     continue
         if not data_model.get('uuid', None):
             write_timestamp(
                 f"  ERR: no uuid for {data_model['summary']['publisher']['name']}>'{data_model['summary']['title']}'")
             continue
-        # if 'NHS DIGITAL'!=data_model['summary']['publisher']['name'].upper():
-        #     continue
         dm_score = copy.deepcopy(score_json)
         dm_score['id'] = data_model['uuid']
         dm_score['publisher'] = f"{data_model['summary']['publisher']['memberOf']} > {data_model['summary']['publisher']['name']}"
@@ -435,7 +435,7 @@ def score_data_models(val_schema_path, val_weights_path, m_path, data_models, de
         determine_medallion(medallions, dm_score)
         all_scores['Score'].append(f"{total_sc:.2f}%")
         reference_key = f"data-model {reference_counter:04d}"
-        reference_counter -= 1
+        reference_counter += 1
         all_scores['ref'].append(reference_key)
         write_timestamp(
             f"{reference_counter:04}-{data_model['summary']['publisher'].get('name', 'no org')}>'{data_model['summary'].get('title', 'no title')}': cmp={cmpl_sc:.2f}%, err={err_sc:.2f}%")
