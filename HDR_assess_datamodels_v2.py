@@ -409,7 +409,7 @@ def score_data_models(val_schema_path, val_weights_path, m_path, data_models, de
     excel_score = {'Datasets': None}
     reference_counter = 0
     for data_model in data_models:
-        # if data_model['summary']['publisher']['name'].upper() not in ['HEALTH AND SOCIAL CARE NORTHERN IRELAND', 'NHS DIGITAL', 'NHS DIGITRIALS', 'OFFICE FOR NATIONAL STATISTICS', 'SCOTLAND']:
+        # if data_model['summary']['publisher']['name'].upper() not in ['DISCOVER NOW']:
         #     continue
         if not data_model.get('uuid', None):
             write_timestamp(

@@ -1449,7 +1449,7 @@
       "enum": [
         "CLINIC",
         "PRIMARY CARE",
-        "ACCIDENT AN EMERGENCY",
+        "ACCIDENT AND EMERGENCY",
         "OUTPATIENTS",
         "IN-PATIENTS",
         "SERVICES",
