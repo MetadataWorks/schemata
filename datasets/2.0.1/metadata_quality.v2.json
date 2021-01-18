@@ -2299,9 +2299,9 @@
     "publisher": "HUB > INSIGHT",
     "title": "Moorfields Eye Image Dataset Release 001",
     "weighted_quality_rating": "Gold",
-    "weighted_quality_score": 84.56,
-    "weighted_completeness_percent": 83.22,
-    "weighted_error_percent": 14.09
+    "weighted_quality_score": 88.26,
+    "weighted_completeness_percent": 85.23,
+    "weighted_error_percent": 8.72
   },
   {
     "id": "94351432-da7e-4d44-97eb-4359d45e0240",

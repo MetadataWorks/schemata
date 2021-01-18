@@ -409,7 +409,7 @@ def score_data_models(val_schema_path, val_weights_path, m_path, data_models, de
     excel_score = {'Datasets': None}
     reference_counter = 0
     for data_model in data_models:
-        # if data_model['summary']['publisher']['name'].upper() not in ['DISCOVER NOW']:
+        # if data_model['summary']['publisher']['name'].upper() not in ['INSIGHT']:
         #     continue
         if not data_model.get('uuid', None):
             write_timestamp(
