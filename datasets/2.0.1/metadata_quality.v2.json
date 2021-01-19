@@ -558,6 +558,15 @@
     "weighted_error_percent": 27.52
   },
   {
+    "id": "9aca57a9-df02-4a93-b0ba-2f590e4ca818",
+    "publisher": "HUB > BREATHE",
+    "title": "Salford Lung Study",
+    "weighted_quality_rating": "Bronze",
+    "weighted_quality_score": 68.12,
+    "weighted_completeness_percent": 58.39,
+    "weighted_error_percent": 22.15
+  },
+  {
     "id": "5d2758c6-b315-421f-9971-9df8ba83a2d4",
     "publisher": "HUB > BREATHE",
     "title": "SpiroMeta Consortium Dataset",
@@ -2394,7 +2403,7 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "c28e4dc6-3956-4bbe-bb10-50bcfc3bba28",
+    "id": "5976dcec-607f-4a42-b7dd-3cfb3904c2af",
     "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Covid-19 UK Non-hospital Antibody Testing Results",
     "weighted_quality_rating": "Platinum",
@@ -2448,12 +2457,12 @@
     "weighted_error_percent": 24.16
   },
   {
-    "id": "7b002523-ab79-42de-bc93-6c73e3cc2921",
+    "id": "de28157e-5319-4972-83ae-4d0c73cdfca9",
     "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Medicines dispensed in Primary Care (NHSBSA data)",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 92.95,
-    "weighted_completeness_percent": 88.59,
+    "weighted_quality_score": 95.64,
+    "weighted_completeness_percent": 93.96,
     "weighted_error_percent": 2.68
   },
   {
@@ -2736,8 +2745,8 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "c2f15f59-8e0d-4e90-9277-342497a6d961",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "1a4a131d-a1aa-4de8-bebf-b755174cf525",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Diagnostic Imaging Dataset",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 92.95,
@@ -2821,9 +2830,9 @@
     "publisher": "ALLIANCE > NHSX",
     "title": "The National COVID-19 Chest Imaging Database",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 95.97,
-    "weighted_completeness_percent": 95.3,
-    "weighted_error_percent": 3.36
+    "weighted_quality_score": 98.32,
+    "weighted_completeness_percent": 99.33,
+    "weighted_error_percent": 2.68
   },
   {
     "id": "f1d3b068-7dd0-4a28-bd64-3519dd104eb6",
