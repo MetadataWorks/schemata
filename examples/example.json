@@ -1,5 +1,5 @@
 {
-  "identifier": "https://a.gidzZ0DVn1YIyI3YFR0HOCau.PJXOWuGISVxmOnVCIHoPEv0B+P",
+  "identifier": "https://a.gidzZ0DVn1YIyI3YFR0HOCau.P",
   "version": "070845093.0411190.581991339",
   "revisions": [
     {
@@ -14,7 +14,7 @@
     "abstract": "anim minim id magna",
     "publisher": {
       "memberOf": "HUB",
-      "accessRights": "blah@blah.com",
+      "accessRights": "http://daasfasd.co",
       "deliveryLeadTime": "LESS 1 WEEK",
       "dataUseLimitation": ["GENERAL RESEARCH USE"],
       "dataUseRequirements": ["COLLABORATION REQUIRED"],
@@ -24,7 +24,7 @@
       "description": "This is the description of the publisher",
       "contactPoint": "blah@blah.com"
     },
-    "contactPoint": "v3VFzon0@KXytkKHaDpxSBvca.cuxv",
+    "contactPoint": "blah@blah.com",
     "keywords": [
       "in ",
       "esse proident officia commodo ad",
@@ -37,17 +37,16 @@
     "description": "Ut Lorem pariatur et",
     "associatedMedia": [
       "http://NzQbkGeDiXxbnwicdcwCcBZPe.hfPj5vJvFsroUn",
-      "http://AVa.cohLBIeQutGe28Vsp5q,zoW6PFmn5",
+      "http://AVa.cohLBIeQutGe28Vsp5q.zoW6PFmn5",
       "https://OQsHkhQdjsqnvPl.ecvyppRYLJSSw"
     ],
     "isPartOf": [
-      "in amet in non incididunt",
-      "NOT APPLICABLE"
+      "in amet in non incididunt"
     ]
   },
   "coverage": {
     "spatial": "https://jpVdVUhbgXhlyKf.nnyyax1vJIrFncXFvjnqijgMnCqXSO",
-    "typicalAgeRange": "/150-5/",
+    "typicalAgeRange": "0-5",
     "physicalSampleAvailability": [
       "SWABS",
       "SERUM",
@@ -55,7 +54,7 @@
       "RNA",
       "AVAILABILITY TO BE CONFIRMED"
     ],
-    "followup": "1-10 YEARS",
+    "followup": "1 - 10 YEARS",
     "pathway": "dolor"
   },
   "provenance": {
@@ -73,7 +72,7 @@
     "temporal": {
       "accrualPeriodicity": "CONTINUOUS",
       "distributionReleaseDate": "1966-06-07",
-      "endDate": "NOT APPLICABLE",
+      "endDate": "CONTINUOUS",
       "timeLag": "1-2 WEEKS",
       "startDate": "1941-10-02"
     }
@@ -95,16 +94,12 @@
         "NO LINKAGE"
       ],
       "dataUseRequirements": [
-        "PUBLICATION MORATORIUM",
-        "PROJECT SPECIFIC RESTRICTIONS"
+        "PUBLICATION MORATORIUM"
       ],
       "resourceCreator": "ea laboris aliqua labore voluptate",
       "investigations": [
         "https://GqRXfiSnUncTCgoKxevVzrdUN.mpiwFBV8MAFrIM2zodgXJQV.",
-        "http://qnOMKOV.jxfnwrD,PeXuUsJqBW9vJFdFs1hcGApyFk,f+pT+W5,TEbvUD.+QBQukoKrUeBnz0.im7PhN",
-        "http://xmxHPpiVwRTkZM.qqqhYc1gjjMMch4W-g6AtZMXTlxsm8E80",
-        "https://sThbgSZMrxdbvVhNkkNQlrpdOOPcE.yoZ43ubdB3W6-tiTTumeNhyo,u3aVOvIgzSe64Aa6ejExr4Q",
-        "http://aaBlT.zdqyZfca5uG0k4FYA+jPXuQ45VzeM.TcYJ98OPPhM,vjyCG5fe43bEOWUUp6jL15+WQ7l6mFKY9sYJW"
+        "http://xmxHPpiVwRTkZM.qqqhYc1gjjMMch4W-g6AtZMXTlxsm8E80"
       ],
       "isReferencedBy": [
         "10r9547505/e.VJuruUR"
@@ -131,12 +126,9 @@
   },
   "enrichmentAndLinkage": {
     "qualifiedRelation": [
-      "http://kEfMFG.pgXz22W-K.DYBAbyxHGwACL.eUTwSFV.rF1w2f3tN4RD",
-      "http://PXeoVoZOTYAcSei.ehrfAFmzn,5J1HtBHsAmMWRBYGy1LQSIiS4XPngcOgNdNBrC2GhUOJ81+4g",
-      "https://MGxSmSaWlYboYhP.sjbKWF4UeWMMbJaY1UBPRy",
-      "http://Couy.yfykW-BUKcbst5Xyr2UD,MAziheXBNh11.hn82QCWJpTauM397RlIG98GynfuFItWL85DJn73rr",
-      "https://yuPJvGVPGKcyLlCSXxPYSXRgn.doixax+ioOk56XjwFYDLBnlkeSZ0k7+hUG"
-    ],
+      "http://kEfMFG.pgXz22W-K.DYBAbyxHGwACL.eUTwSFV.rF1w2f3tN4RD", "http://PXeoVoZOTYAcSei.ehrfAFg",
+      "https://MGxSmSaWlYboYhP.sjbKWF4UeWMMbJaY1UBPRy"],
+    "linkageOpportunity":"Linkage can be achieved using DOB, GENDER, FULL NAME or NHS NUMBER AND DOB",
     "derivation": [
       "sintproident laborum amet dolore incididunt",
       "ut sunt tempor",

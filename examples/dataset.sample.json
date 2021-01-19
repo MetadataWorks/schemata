@@ -24,7 +24,7 @@
       "description": "This is the description of the publisher",
       "contactPoint": "blah@blah.com"
     },
-    "contactPoint": "v3VFzon0@KXytkKHaDpxSBvca.cuxv",
+    "contactPoint": "blah@blah.com",
     "keywords": [
       "in ",
       "esse proident officia commodo ad",
@@ -54,7 +54,7 @@
       "RNA",
       "AVAILABILITY TO BE CONFIRMED"
     ],
-    "followup": "1-10 YEARS",
+    "followup": "1 - 10 YEARS",
     "pathway": "dolor"
   },
   "provenance": {
@@ -72,7 +72,7 @@
     "temporal": {
       "accrualPeriodicity": "CONTINUOUS",
       "distributionReleaseDate": "1966-06-07",
-      "endDate": "NOT APPLICABLE",
+      "endDate": "CONTINUOUS",
       "timeLag": "1-2 WEEKS",
       "startDate": "1941-10-02"
     }
@@ -94,8 +94,7 @@
         "NO LINKAGE"
       ],
       "dataUseRequirements": [
-        "PUBLICATION MORATORIUM",
-        "PROJECT SPECIFIC RESTRICTIONS"
+        "PUBLICATION MORATORIUM"
       ],
       "resourceCreator": "ea laboris aliqua labore voluptate",
       "investigations": [
@@ -129,6 +128,7 @@
     "qualifiedRelation": [
       "http://kEfMFG.pgXz22W-K.DYBAbyxHGwACL.eUTwSFV.rF1w2f3tN4RD", "http://PXeoVoZOTYAcSei.ehrfAFg",
       "https://MGxSmSaWlYboYhP.sjbKWF4UeWMMbJaY1UBPRy"],
+    "linkageOpportunity":"Linkage can be achieved using DOB, GENDER, FULL NAME or NHS NUMBER AND DOB",
     "derivation": [
       "sintproident laborum amet dolore incididunt",
       "ut sunt tempor",
