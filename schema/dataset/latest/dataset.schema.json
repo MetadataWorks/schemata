@@ -4,7 +4,7 @@
   "type": "object",
   "title": "HDR UK Dataset",
   "description": "HDR UK Dataset Schema",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "required": [
     "identifier",
     "version",
@@ -722,7 +722,7 @@
           "title": "Periodicity",
           "$comment": "dct:accrualPeriodicity",
           "default": "",
-          "description": "Please indicate the frequency of distribution release. If a dataset is distributed regularly please choose a distribution release periodicity from the constrained list and indicate the next release date. When the release date becomes historical, a new release date will be calculated based on the publishing periodicity. If a dataset has been published and will remain static please indicate that it is static and indicated when it was released. If a dataset is released on an irregular basis or “on-demand” please indicate that it is Irregular and leave release date as null. If a dataset can be published in real-time or near-real-time please indicate that it is continuous and leave release date as null. Notes: see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/",
+          "description": "Please indicate the frequency of distribution release. If a dataset is distributed regularly please choose a distribution release periodicity from the constrained list and indicate the next release date. When the release date becomes historical, a new release date will be calculated based on the publishing periodicity. If a dataset has been published or released and will remain static please indicate that it is static and indicate when it was released. If a dataset is released on an irregular basis or “on-demand” please indicate that it is Irregular and leave release date as null. If a dataset is published or released in real-time or near-real-time please indicate that it is continuous and leave release date as null. Notes: see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/",
           "allOf": [
             {
               "$ref": "#/definitions/periodicity"
@@ -1395,7 +1395,8 @@
         "> 10 YEARS",
         "UNKNOWN",
         "CONTINUOUS",
-        "OTHER"
+        "OTHER", 
+        "NONE"
       ]
     },
     "periodicity": {
@@ -1500,7 +1501,6 @@
       "type": "string",
       "enum": [
         "COLLABORATION REQUIRED",
-        "PROJECT SPECIFIC RESTRICTIONS",
         "ETHICS APPROVAL REQUIRED",
         "INSTITUTION SPECIFIC RESTRICTIONS",
         "GEOGRAPHICAL RESTRICTIONS",
@@ -1508,9 +1508,7 @@
         "PUBLICATION REQUIRED",
         "RETURN TO DATABASE OR RESOURCE",
         "TIME LIMIT ON USE",
-        "DISCLOSURE CONTROL",
-        "NOT FOR PROFIT USE",
-        "USER SPECIFIC RESTRICTION"
+        "DISCLOSURE CONTROL"
       ]
     },
     "deliveryLeadTime": {
