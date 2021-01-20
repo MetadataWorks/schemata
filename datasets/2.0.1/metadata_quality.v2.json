@@ -598,9 +598,9 @@
     "publisher": "HUB > BREATHE",
     "title": "The Malaysian Asthma Hajj Study",
     "weighted_quality_rating": "Bronze",
-    "weighted_quality_score": 63.42,
+    "weighted_quality_score": 64.77,
     "weighted_completeness_percent": 51.68,
-    "weighted_error_percent": 24.83
+    "weighted_error_percent": 22.15
   },
   {
     "id": "47e9fa0a-d74f-43bc-ae63-0eb33f354f01",
@@ -2745,12 +2745,12 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "1a4a131d-a1aa-4de8-bebf-b755174cf525",
+    "id": "5d76d094-446d-4dcc-baa1-076095f30c23",
     "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Diagnostic Imaging Dataset",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 92.95,
-    "weighted_completeness_percent": 88.59,
+    "weighted_quality_score": 95.64,
+    "weighted_completeness_percent": 93.96,
     "weighted_error_percent": 2.68
   },
   {
@@ -2830,9 +2830,9 @@
     "publisher": "ALLIANCE > NHSX",
     "title": "The National COVID-19 Chest Imaging Database",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 98.32,
+    "weighted_quality_score": 99.66,
     "weighted_completeness_percent": 99.33,
-    "weighted_error_percent": 2.68
+    "weighted_error_percent": 0
   },
   {
     "id": "f1d3b068-7dd0-4a28-bd64-3519dd104eb6",
