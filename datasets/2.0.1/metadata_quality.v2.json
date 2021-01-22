@@ -558,7 +558,7 @@
     "weighted_error_percent": 27.52
   },
   {
-    "id": "9aca57a9-df02-4a93-b0ba-2f590e4ca818",
+    "id": "6413c50a-21a4-49ac-8865-b4e59cf42cd6",
     "publisher": "HUB > BREATHE",
     "title": "Salford Lung Study",
     "weighted_quality_rating": "Bronze",
@@ -2808,8 +2808,8 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "5f592437-20b9-42e3-8457-e1273142c61a",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "c2e112a0-a198-46b0-9a0c-ec91edfb6839",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "National Diabetes Audit",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 95.3,
@@ -2830,8 +2830,8 @@
     "publisher": "ALLIANCE > NHSX",
     "title": "The National COVID-19 Chest Imaging Database",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 99.66,
-    "weighted_completeness_percent": 99.33,
+    "weighted_quality_score": 100.0,
+    "weighted_completeness_percent": 100.0,
     "weighted_error_percent": 0
   },
   {
@@ -3267,6 +3267,15 @@
     "weighted_error_percent": 2.68
   },
   {
+    "id": "c89d31bb-adc9-499d-b94a-6d5b2c85d126",
+    "publisher": "HUB > PIONEER",
+    "title": "UHB 2019 Summer Society of Acute Medicine Benchmarking Audit",
+    "weighted_quality_rating": "Platinum",
+    "weighted_quality_score": 97.32,
+    "weighted_completeness_percent": 94.63,
+    "weighted_error_percent": 0
+  },
+  {
     "id": "dc4d5fc6-b39a-4199-b1f2-1b428fc32cd9",
     "publisher": "HUB > PIONEER",
     "title": "UHB 2020 Winter Society of Acute Medicine Benchmarking Audit",
@@ -3379,8 +3388,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "GP Out of Hours",
     "weighted_quality_rating": "Gold",
-    "weighted_quality_score": 83.89,
-    "weighted_completeness_percent": 73.83,
+    "weighted_quality_score": 86.58,
+    "weighted_completeness_percent": 79.19,
     "weighted_error_percent": 6.04
   },
   {
@@ -3397,17 +3406,17 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Mental Health Inpatient and Day Case - Scottish Morbidity Record (SMR04)",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 94.63,
-    "weighted_completeness_percent": 89.26,
+    "weighted_quality_score": 97.32,
+    "weighted_completeness_percent": 94.63,
     "weighted_error_percent": 0
   },
   {
     "id": "7db1c8bd-8d99-4189-8510-e6bdb0e19219",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "National Records of Scotland (NRS) - Births Data",
-    "weighted_quality_rating": "Bronze",
-    "weighted_quality_score": 68.12,
-    "weighted_completeness_percent": 58.39,
+    "weighted_quality_rating": "Silver",
+    "weighted_quality_score": 70.81,
+    "weighted_completeness_percent": 63.76,
     "weighted_error_percent": 22.15
   },
   {
@@ -3424,8 +3433,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "National Records of Scotland (NRS) - Stillbirth Data",
     "weighted_quality_rating": "Gold",
-    "weighted_quality_score": 83.22,
-    "weighted_completeness_percent": 75.17,
+    "weighted_quality_score": 85.91,
+    "weighted_completeness_percent": 80.54,
     "weighted_error_percent": 8.72
   },
   {
@@ -3451,8 +3460,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Prescribing Information System (PIS)",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 94.97,
-    "weighted_completeness_percent": 92.62,
+    "weighted_quality_score": 97.65,
+    "weighted_completeness_percent": 97.99,
     "weighted_error_percent": 2.68
   },
   {
@@ -3469,8 +3478,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Scotland Accident and Emergency",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 94.63,
-    "weighted_completeness_percent": 89.26,
+    "weighted_quality_score": 97.32,
+    "weighted_completeness_percent": 94.63,
     "weighted_error_percent": 0
   },
   {
@@ -3505,8 +3514,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Scottish Stillbirth and Infant Death Survey",
     "weighted_quality_rating": "Bronze",
-    "weighted_quality_score": 66.11,
-    "weighted_completeness_percent": 54.36,
+    "weighted_quality_score": 68.79,
+    "weighted_completeness_percent": 59.73,
     "weighted_error_percent": 22.15
   },
   {
@@ -3532,8 +3541,8 @@
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Unscheduled Care Datamart",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 94.3,
-    "weighted_completeness_percent": 88.59,
+    "weighted_quality_score": 96.98,
+    "weighted_completeness_percent": 93.96,
     "weighted_error_percent": 0
   },
   {
@@ -3733,6 +3742,15 @@
     "weighted_quality_score": 98.32,
     "weighted_completeness_percent": 99.33,
     "weighted_error_percent": 2.68
+  },
+  {
+    "id": "41a667eb-1c84-4665-b0d4-d26405d277c5",
+    "publisher": "ALLIANCE > SAIL",
+    "title": "Domiciliary Social Care Worker [DSCW]",
+    "weighted_quality_rating": "Platinum",
+    "weighted_quality_score": 90.27,
+    "weighted_completeness_percent": 88.59,
+    "weighted_error_percent": 8.05
   },
   {
     "id": "d2da2750-7482-4ce9-ae5c-2ab393408a67",
@@ -3949,6 +3967,15 @@
     "weighted_quality_score": 95.64,
     "weighted_completeness_percent": 93.96,
     "weighted_error_percent": 2.68
+  },
+  {
+    "id": "3141f405-9653-4189-9a1f-443a463d4b1b",
+    "publisher": "ALLIANCE > SAIL",
+    "title": "Systemic Anti-Cancer Therapy Dataset [SACT]",
+    "weighted_quality_rating": "Gold",
+    "weighted_quality_score": 89.93,
+    "weighted_completeness_percent": 87.92,
+    "weighted_error_percent": 8.05
   },
   {
     "id": "b43309eb-7860-49b7-9f11-1a7a0fd5532e",
