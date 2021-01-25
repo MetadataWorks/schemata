@@ -1111,9 +1111,9 @@
     "publisher": "HUB > DATA-CAN",
     "title": "Yorkshire Specialist Register of Cancer in Children and Young People",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 91.95,
-    "weighted_completeness_percent": 91.95,
-    "weighted_error_percent": 8.05
+    "weighted_quality_score": 94.63,
+    "weighted_completeness_percent": 94.63,
+    "weighted_error_percent": 5.37
   },
   {
     "id": "b9a2cd90-2724-4c7b-a26f-6f5b30a36a00",
@@ -3402,7 +3402,7 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "bfc6e7c5-a81b-4fe2-95b5-d108a48d7d67",
+    "id": "d0137466-d07e-4bfd-817b-198086b9fa13",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Mental Health Inpatient and Day Case - Scottish Morbidity Record (SMR04)",
     "weighted_quality_rating": "Platinum",
@@ -3456,13 +3456,13 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "0b794715-53f3-422f-817a-92be3392c735",
+    "id": "0cb92a4a-cc82-4c33-98f7-06ba93818c50",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Prescribing Information System (PIS)",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 97.65,
-    "weighted_completeness_percent": 97.99,
-    "weighted_error_percent": 2.68
+    "weighted_completeness_percent": 95.3,
+    "weighted_error_percent": 0
   },
   {
     "id": "380cbddb-e64e-42b9-a364-47c550262b6a",
@@ -3474,7 +3474,7 @@
     "weighted_error_percent": 5.37
   },
   {
-    "id": "5cffe432-21f9-44ba-b0fc-a6200115c21c",
+    "id": "22173c55-25db-4616-97d8-04fdb6899387",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Scotland Accident and Emergency",
     "weighted_quality_rating": "Platinum",
@@ -3483,12 +3483,12 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "95876a52-9494-459b-a0e8-3a956740b05c",
+    "id": "621576c2-a995-424b-a506-2276f9b03f37",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Scottish Birth Record (SBR)",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 92.95,
-    "weighted_completeness_percent": 88.59,
+    "weighted_quality_score": 95.64,
+    "weighted_completeness_percent": 93.96,
     "weighted_error_percent": 2.68
   },
   {
@@ -3537,7 +3537,7 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "117aa9f5-db76-48f9-9dd2-19e2d00a1b45",
+    "id": "02dceba1-65c7-49e8-a3e2-05e71c1a3033",
     "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "Unscheduled Care Datamart",
     "weighted_quality_rating": "Platinum",
