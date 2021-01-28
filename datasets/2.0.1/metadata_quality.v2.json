@@ -2309,8 +2309,8 @@
     "title": "Moorfields Eye Image Dataset Release 001",
     "weighted_quality_rating": "Gold",
     "weighted_quality_score": 88.26,
-    "weighted_completeness_percent": 85.23,
-    "weighted_error_percent": 8.72
+    "weighted_completeness_percent": 82.55,
+    "weighted_error_percent": 6.04
   },
   {
     "id": "94351432-da7e-4d44-97eb-4359d45e0240",
@@ -2421,7 +2421,7 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "22f3773a-9157-40ad-8f3e-41feaa3be248",
+    "id": "621008c7-67ac-4e3d-9c54-af87cc2f9579",
     "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Emergency Care Data Set (ECDS)",
     "weighted_quality_rating": "Platinum",
@@ -2736,8 +2736,8 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "54671cc2-614c-487d-89eb-52d94475b24a",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "384176d1-8c17-46e5-8771-7e27fe3b184e",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Civil Registration - Deaths",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 95.3,
@@ -2754,17 +2754,17 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "512ab154-41e9-4231-9091-67814123e964",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "3ce8ddf2-c69b-4143-9e39-86c0ac2d8482",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Hospital Episode Statistics Accident and Emergency",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 90.94,
-    "weighted_completeness_percent": 87.25,
+    "weighted_quality_score": 90.6,
+    "weighted_completeness_percent": 86.58,
     "weighted_error_percent": 5.37
   },
   {
-    "id": "a4c42c98-39cd-407b-b711-c50c2529601f",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "c168178a-143b-402b-9ab4-2f230cf06226",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Hospital Episode Statistics Admitted Patient Care",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 93.96,
@@ -2772,8 +2772,8 @@
     "weighted_error_percent": 5.37
   },
   {
-    "id": "f0392b68-5075-4557-adaa-2fb24b5dec4d",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "26c561da-15eb-4fdd-8dde-c16d0114f297",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Hospital Episode Statistics Critical Care",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 92.62,
@@ -2781,8 +2781,8 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "2ce0e66e-9d68-43bd-b728-e6d1905a9f65",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "8a05b76d-b0ec-4c28-96b5-11601e26933a",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Hospital Episode Statistics Outpatients",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 93.96,
@@ -2790,8 +2790,8 @@
     "weighted_error_percent": 5.37
   },
   {
-    "id": "f3fb7124-4dd7-46ae-851f-90c325131565",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "0d5bb5b4-ad38-4313-8b19-cd37491c0b41",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Mental Health Services Data Set",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 97.99,
@@ -2799,12 +2799,12 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "54b52301-d0be-4441-8b84-8c521fe8946d",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "15123705-7d80-4803-a3b4-d145bf2902c5",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "MSDS (Maternity Services Data Set)",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 92.62,
-    "weighted_completeness_percent": 87.92,
+    "weighted_quality_score": 95.3,
+    "weighted_completeness_percent": 93.29,
     "weighted_error_percent": 2.68
   },
   {
@@ -2817,8 +2817,8 @@
     "weighted_error_percent": 2.68
   },
   {
-    "id": "caf619c9-3e9c-4873-a7ba-c0df8f4a62c2",
-    "publisher": "HUB > NHS DIGITRIALS",
+    "id": "18028eac-b157-4264-9b86-9928c8e1709a",
+    "publisher": "ALLIANCE > NHS DIGITAL",
     "title": "Personal Demographic Service",
     "weighted_quality_rating": "Platinum",
     "weighted_quality_score": 95.3,
@@ -2826,12 +2826,12 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "8c13e03e-b9d2-4b04-8b98-097643a6beaf",
+    "id": "77824298-ef3b-40f7-a0a4-b6dedb2e7a02",
     "publisher": "ALLIANCE > NHSX",
     "title": "The National COVID-19 Chest Imaging Database",
     "weighted_quality_rating": "Platinum",
-    "weighted_quality_score": 100.0,
-    "weighted_completeness_percent": 100.0,
+    "weighted_quality_score": 97.32,
+    "weighted_completeness_percent": 94.63,
     "weighted_error_percent": 0
   },
   {
@@ -3204,6 +3204,15 @@
     "weighted_error_percent": 0
   },
   {
+    "id": "2f8f1d52-3999-40af-9dc8-9fefa0ab348f",
+    "publisher": "HUB > PIONEER - HDR-UK Health data Hub in Acute Care",
+    "title": "Coagulopathies & arterial/venous thrombosis in COVID patients: an OMOP dataset",
+    "weighted_quality_rating": "Platinum",
+    "weighted_quality_score": 97.65,
+    "weighted_completeness_percent": 95.3,
+    "weighted_error_percent": 0
+  },
+  {
     "id": "b095d7ad-5fac-4279-94b0-3c0b0c260acf",
     "publisher": "HUB > PIONEER",
     "title": "Deeply-phenotyped hospital COVID patients: severity, acuity, therapies, outcomes",
@@ -3465,8 +3474,8 @@
     "weighted_error_percent": 0
   },
   {
-    "id": "380cbddb-e64e-42b9-a364-47c550262b6a",
-    "publisher": "ALLIANCE > NHS Scotland",
+    "id": "50e341b3-11cb-4ea3-afd0-be193c0df91f",
+    "publisher": "ALLIANCE > PUBLIC HEALTH SCOTLAND",
     "title": "RAPID (Hospital Stay Level Data)",
     "weighted_quality_rating": "Gold",
     "weighted_quality_score": 87.58,
@@ -3717,6 +3726,15 @@
     "weighted_error_percent": 2.68
   },
   {
+    "id": "28868e22-c162-4374-a408-690933dc318d",
+    "publisher": "ALLIANCE > SAIL",
+    "title": "COVID-19 Test Trace and Protect [CTTP]",
+    "weighted_quality_rating": "Platinum",
+    "weighted_quality_score": 91.95,
+    "weighted_completeness_percent": 89.26,
+    "weighted_error_percent": 5.37
+  },
+  {
     "id": "67ae329c-f51e-4a28-9a1c-e35d2819a6c3",
     "publisher": "ALLIANCE > SAIL",
     "title": "Critical Care Dataset",
@@ -3886,6 +3904,15 @@
     "weighted_quality_score": 95.97,
     "weighted_completeness_percent": 94.63,
     "weighted_error_percent": 2.68
+  },
+  {
+    "id": "16e343ce-61f5-4f04-9fae-4fa6c9babf61",
+    "publisher": "ALLIANCE > SAIL",
+    "title": "NHS 111 Dataset",
+    "weighted_quality_rating": "Platinum",
+    "weighted_quality_score": 90.27,
+    "weighted_completeness_percent": 88.59,
+    "weighted_error_percent": 8.05
   },
   {
     "id": "dbd69f22-2638-42a6-a936-069386e8eb7e",
